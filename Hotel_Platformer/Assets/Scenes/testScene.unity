@@ -120,6 +120,7 @@ GameObject:
   - component: {fileID: 205804357}
   - component: {fileID: 205804356}
   - component: {fileID: 205804355}
+  - component: {fileID: 205804360}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -197,6 +198,21 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &205804360
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205804354}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b42d9adfb2bb08b429833cf47305c138, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  distanceAway: 5
+  distanceUp: 3
+  smooth: 2
+  followedObject: {fileID: 657862555}
 --- !u!1 &657862551
 GameObject:
   m_ObjectHideFlags: 0
@@ -310,9 +326,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7f88e8e052e990340ac7b18e8c5371c5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  jumpSpeed: 10
-  gravity: 10
+  moveSpeed: 7
+  jumpSpeed: 13
+  rotateSpeed: 70
+  gravity: 20
 --- !u!1 &1143998160
 GameObject:
   m_ObjectHideFlags: 0
@@ -573,3 +590,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 7
   jumpspeed: 50
+  rotateSpeed: 70
+  lowJumpMultiplier: 2
