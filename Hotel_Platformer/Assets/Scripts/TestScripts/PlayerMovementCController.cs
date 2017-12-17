@@ -12,6 +12,8 @@ public class PlayerMovementCController : MonoBehaviour
     CharacterController playerController;
     private Vector3 moveDirection;
     private Quaternion playerRotation;
+    private float storedYValue;
+    private float fallmultiplier;
 
 
 
@@ -19,11 +21,14 @@ public class PlayerMovementCController : MonoBehaviour
     {
         playerController = GetComponent<CharacterController>();//Player has to have a charactaercontroller attached in order to make this stuff wörk
         playerRotation = transform.rotation;
+        fallmultiplier = 2f;
     }
 
     //Movement in update, since we aren't using a rigidbody but a characterController
     void Update()
     {
+        storedYValue = transform.position.y;
+
         //move
         if (playerController.isGrounded)//doublejumps not yet implemented, maybe we have to change this because we can't do anything in air
         {
@@ -37,10 +42,20 @@ public class PlayerMovementCController : MonoBehaviour
 
         }
 
+        if (moveDirection.y<storedYValue)//falling
+        {
+            moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
+        }
+        else if(!Input.GetButton("Jump")&&moveDirection.y>storedYValue)
+        {
+            moveDirection.y-= gravity * fallmultiplier * Time.deltaTime;
+        }
+
         moveDirection.y -= gravity * Time.deltaTime;
         playerController.Move(moveDirection * Time.deltaTime);//making the player move ingame
 
         Turn();
+
     }
 
     void Turn()//turns the player with mouseInput, just like in the tutorial
