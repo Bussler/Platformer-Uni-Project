@@ -37,9 +37,8 @@ public class PlayerMovementCController : MonoBehaviour
             allowedToJump = false;
         }
 
-        //|| spruenge < zahlSpruenge TODO double jump: we have to check if the space bar was pressed again
         //move
-        if (playerController.isGrounded|| allowedToJump==true)//doublejumps not yet implemented, maybe we have to change this because we can't do anything in air
+        if (playerController.isGrounded)//doublejumps not yet implemented, maybe we have to change this because we can't do anything in air
         {
 
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed;//calculate a vector/movement with given playerinput
@@ -48,32 +47,28 @@ public class PlayerMovementCController : MonoBehaviour
             if (Input.GetButton("Jump"))//jumping
             {
                 moveDirection.y = jumpSpeed;//setting the y value, therefore making the player jump
-
-                /**
-                if (spruenge>=zahlSpruenge)
-                {
-                    allowedToJump = false;
-                }
-                 */
             }
 
         }
-
-        /**
-        if (Input.GetButtonUp("Jump"))
+        else
         {
-            if (spruenge<zahlSpruenge)
+            if (spruenge < zahlSpruenge && allowedToJump == true)//double jumping
             {
-                allowedToJump = true;
-                spruenge++;
-            }
-            else
-            {
-                allowedToJump = false;
-            }
+                if (Input.GetButton("Jump"))//jumping
+                {
+                    moveDirection.y = jumpSpeed;//setting the y value, therefore making the player jump
+                    spruenge++;//count up
+                }
 
+            }
         }
-    */
+
+        
+        if (Input.GetButtonUp("Jump"))//determines, if the button is pressed again, therefore enbling double jumping
+        {
+            allowedToJump = true;
+        }
+    
 
 
         if (moveDirection.y<storedYValue)//falling
