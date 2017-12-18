@@ -9,12 +9,15 @@ public class PlayerMovementCController : MonoBehaviour
     public float jumpSpeed;
     public float rotateSpeed;
     public float gravity;
+    public float zahlSpruenge;
+
     CharacterController playerController;
     private Vector3 moveDirection;
     private Quaternion playerRotation;
     private float storedYValue;
     private float fallmultiplier;
-
+    private float spruenge = 0;
+    private bool allowedToJump;
 
 
     void Start()
@@ -28,19 +31,50 @@ public class PlayerMovementCController : MonoBehaviour
     void Update()
     {
         storedYValue = transform.position.y;
-
-        //move
-        if (playerController.isGrounded)//doublejumps not yet implemented, maybe we have to change this because we can't do anything in air
+        if (playerController.isGrounded)
         {
+            spruenge = 0;
+            allowedToJump = false;
+        }
+
+        //|| spruenge < zahlSpruenge TODO double jump: we have to check if the space bar was pressed again
+        //move
+        if (playerController.isGrounded|| allowedToJump==true)//doublejumps not yet implemented, maybe we have to change this because we can't do anything in air
+        {
+
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed;//calculate a vector/movement with given playerinput
             moveDirection = transform.TransformDirection(moveDirection);
 
             if (Input.GetButton("Jump"))//jumping
             {
                 moveDirection.y = jumpSpeed;//setting the y value, therefore making the player jump
+
+                /**
+                if (spruenge>=zahlSpruenge)
+                {
+                    allowedToJump = false;
+                }
+                 */
             }
 
         }
+
+        /**
+        if (Input.GetButtonUp("Jump"))
+        {
+            if (spruenge<zahlSpruenge)
+            {
+                allowedToJump = true;
+                spruenge++;
+            }
+            else
+            {
+                allowedToJump = false;
+            }
+
+        }
+    */
+
 
         if (moveDirection.y<storedYValue)//falling
         {

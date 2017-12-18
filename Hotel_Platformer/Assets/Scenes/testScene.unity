@@ -330,6 +330,7 @@ MonoBehaviour:
   jumpSpeed: 13
   rotateSpeed: 70
   gravity: 20
+  zahlSpruenge: 1
 --- !u!1 &1143998160
 GameObject:
   m_ObjectHideFlags: 0
