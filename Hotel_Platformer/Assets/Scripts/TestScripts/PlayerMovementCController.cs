@@ -58,6 +58,7 @@ public class PlayerMovementCController : MonoBehaviour
                 {
                     moveDirection.y = jumpSpeed;//setting the y value, therefore making the player jump
                     spruenge++;//count up
+                    allowedToJump = false;
                 }
 
             }
