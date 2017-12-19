@@ -70,7 +70,7 @@ public class PlayerMovementCController : MonoBehaviour
         }
     
 
-
+        //betterJump
         if (moveDirection.y<storedYValue)//falling
         {
             moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
