@@ -10,6 +10,7 @@ public class PlayerMovementCController : MonoBehaviour
     public float rotateSpeed;
     public float gravity;
     public float zahlSpruenge;
+    public bool isGliding;
 
     CharacterController playerController;
     private Vector3 moveDirection;
@@ -18,6 +19,7 @@ public class PlayerMovementCController : MonoBehaviour
     private float fallmultiplier;
     private float spruenge = 0;
     private bool allowedToJump;
+    private float gravityGliding;
 
 
     void Start()
@@ -25,6 +27,7 @@ public class PlayerMovementCController : MonoBehaviour
         playerController = GetComponent<CharacterController>();//Player has to have a charactaercontroller attached in order to make this stuff wörk
         playerRotation = transform.rotation;
         fallmultiplier = 2f;
+        gravityGliding = gravity*3;//stores the correct gravity, cuz the gravity will be changed during gliding
     }
 
     //Movement in update, since we aren't using a rigidbody but a characterController
@@ -38,7 +41,7 @@ public class PlayerMovementCController : MonoBehaviour
         }
 
         //move
-        if (playerController.isGrounded)//doublejumps not yet implemented, maybe we have to change this because we can't do anything in air
+        if (playerController.isGrounded)
         {
 
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed;//calculate a vector/movement with given playerinput
@@ -52,7 +55,7 @@ public class PlayerMovementCController : MonoBehaviour
         }
         else
         {
-            if (spruenge < zahlSpruenge && allowedToJump == true)//double jumping
+            if (spruenge < zahlSpruenge && allowedToJump == true&&isGliding==false)//double jumping, no double jumping during gliding
             {
                 if (Input.GetButton("Jump"))//jumping
                 {
@@ -74,7 +77,18 @@ public class PlayerMovementCController : MonoBehaviour
         //betterJump
         if (moveDirection.y<storedYValue)//falling
         {
-            moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
+            //gliding
+            if (isGliding==true) //gliding begins, when player is falling for the first time
+            {
+                Gliding();
+                Turn();
+                return;
+            }
+            else
+            {
+                moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
+            }
+
         }
         else if(!Input.GetButton("Jump")&&moveDirection.y>storedYValue)
         {
@@ -95,5 +109,17 @@ public class PlayerMovementCController : MonoBehaviour
             playerRotation *= Quaternion.AngleAxis(Input.GetAxis("Mouse X")*rotateSpeed*Time.deltaTime,Vector3.up);
         }
         transform.rotation = playerRotation;
+    }
+
+    void Gliding()
+    {
+        //the player can move in air
+        moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed;//calculate a vector/movement with given playerinput
+        moveDirection = transform.TransformDirection(moveDirection);
+
+        moveDirection.y -= gravityGliding * Time.deltaTime;//adjusting y value with specialized gravity
+
+        playerController.Move(moveDirection * Time.deltaTime);//making the player move ingame
+
     }
 }
