@@ -11,6 +11,8 @@ public class PlayerMovementCController : MonoBehaviour
     public float gravity;
     public float zahlSpruenge;
     public bool isGliding;
+    public float maxSpeed;
+    public float runMultiplier;
 
     CharacterController playerController;
     private Vector3 moveDirection;
@@ -20,6 +22,9 @@ public class PlayerMovementCController : MonoBehaviour
     private float spruenge = 0;
     private bool allowedToJump;
     private float gravityGliding;
+
+    //run
+    private float runSpeed = 1;
 
 
     void Start()
@@ -40,11 +45,20 @@ public class PlayerMovementCController : MonoBehaviour
             allowedToJump = false;
         }
 
+        if (runSpeed<maxSpeed&&Input.GetButton("Run"))
+        {
+            runSpeed = runSpeed + runMultiplier*Time.deltaTime;
+        }
+        if (Input.GetButtonUp("Run"))
+        {
+            runSpeed = 1;
+        }
+
         //move
         if (playerController.isGrounded)
         {
 
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed;//calculate a vector/movement with given playerinput
+            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed*runSpeed;//calculate a vector/movement with given playerinput
             moveDirection = transform.TransformDirection(moveDirection);
 
             if (Input.GetButton("Jump"))//jumping

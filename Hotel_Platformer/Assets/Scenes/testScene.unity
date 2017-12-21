@@ -331,7 +331,9 @@ MonoBehaviour:
   rotateSpeed: 70
   gravity: 20
   zahlSpruenge: 1
-  isGliding: 1
+  isGliding: 0
+  maxSpeed: 20
+  runMultiplier: 1
 --- !u!1 &1143998160
 GameObject:
   m_ObjectHideFlags: 0
@@ -409,7 +411,7 @@ Transform:
   m_GameObject: {fileID: 1143998160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 10, y: 1, z: 10}
+  m_LocalScale: {x: 100, y: 1, z: 10}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
