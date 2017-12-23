@@ -45,6 +45,7 @@ public class PlayerMovementCController : MonoBehaviour
             allowedToJump = false;
         }
 
+        //run
         if (runSpeed<maxSpeed&&Input.GetButton("Run"))
         {
             runSpeed = runSpeed + runMultiplier*Time.deltaTime;
