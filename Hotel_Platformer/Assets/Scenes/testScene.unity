@@ -213,6 +213,7 @@ MonoBehaviour:
   distanceUp: 3
   smooth: 2
   followedObject: {fileID: 657862555}
+  turnSpeed: 6
 --- !u!1001 &296552400
 Prefab:
   m_ObjectHideFlags: 0
@@ -491,6 +492,10 @@ Prefab:
     - target: {fileID: 4269299190092648, guid: 2f2d646611664a24e899173356aa4676, type: 2}
       propertyPath: m_RootOrder
       value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1772832712119752, guid: 2f2d646611664a24e899173356aa4676, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2f2d646611664a24e899173356aa4676, type: 2}
