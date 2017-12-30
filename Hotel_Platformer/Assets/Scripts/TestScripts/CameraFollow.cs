@@ -13,7 +13,8 @@ public class CameraFollow : MonoBehaviour
     [SerializeField]
     private Transform followedObject; //object to follow, in this case the player
     private Vector3 toPosition;
-
+    private float maxDistanceToPlayerUp = 5;
+    private float maxDistanceToPlayerDown = -5;
     public float turnSpeed;
 
 
@@ -31,9 +32,17 @@ public class CameraFollow : MonoBehaviour
     {
         if (Mathf.Abs(Input.GetAxis("Mouse Y"))>0)
         {
-            
-            distanceUp += -1*(Input.GetAxis("Mouse Y")) * turnSpeed*Time.deltaTime;
-            
+            if (distanceUp < maxDistanceToPlayerUp && distanceUp > maxDistanceToPlayerDown) {
+                distanceUp += -1 * (Input.GetAxis("Mouse Y")) * turnSpeed * Time.deltaTime;
+            }else if(distanceUp >= maxDistanceToPlayerUp) {
+                if(Input.GetAxis("Mouse Y") > 0){
+                    distanceUp += -1 * (Input.GetAxis("Mouse Y")) * turnSpeed * Time.deltaTime;
+                }
+            }else if(distanceUp <= maxDistanceToPlayerDown) {
+                if (Input.GetAxis("Mouse Y") < 0) {
+                    distanceUp += -1 * (Input.GetAxis("Mouse Y")) * turnSpeed * Time.deltaTime;
+                }
+            }
             /** welp, this stuff does not work properly, it bugs if I jump when the camera is under the player and the player is on the teleported platform
             //boundaries
             if(followedObject.position.y-(transform.position.y)>2)
