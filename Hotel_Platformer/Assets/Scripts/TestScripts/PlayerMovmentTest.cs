@@ -5,37 +5,52 @@ using UnityEngine;
 public class PlayerMovmentTest : MonoBehaviour {
 
     public float moveSpeed;
-    public float jumpSpeed;
     public float rotateSpeed;
     public float gravity;
-    
-    public bool isGliding;
-    public float maxSpeed;
-    public float runMultiplier;
     public bool isGrounded;
-    public bool canJump;
 
     CharacterController playerController;
     private Vector3 moveDirection;
     private Quaternion playerRotation;
     private float storedYValue;
     private float fallmultiplier;
-    public float timesToJump = 2;
-    public float hasJumped=0;
+
+    public Vector3 lastMoveDirection;
+    private bool dirSet = false;
+
+    public LayerMask mask;
+
+    #region GlidingVariables
     private float gravityGliding;
+    #endregion
 
 
-    public bool isMovingForwards;
-    public bool isMovingBackwards;
-        public bool isMovingRight;
-    public bool isMovingLeft;
-    
-
-
-
-    //run
+    #region RunningVariables
+    public float maxSpeed;
+    public float runMultiplier;
     private float runSpeed = 1;
+    #endregion;
 
+    #region JumpingVariables
+    public float jumpSpeed;
+    public float timesToJump = 2;
+    private bool canJump;
+    private float hasJumped = 0;
+    #endregion
+
+    #region DirectionBools
+    private bool isMovingForwards;
+    private bool isMovingBackwards;
+    private bool isMovingRight;
+    private bool isMovingLeft;
+    #endregion
+
+    #region Abilities
+    public bool hasAbilityGliding;
+    public bool hasAbilityRunning;
+    public bool hasAbilityWallJump;
+    public bool hasAbilityJumping;
+    #endregion
 
     void Start()
     {
@@ -48,55 +63,39 @@ public class PlayerMovmentTest : MonoBehaviour {
     //Movement in update, since we aren't using a rigidbody but a characterController
     void Update()
     {
-
-        storedYValue = transform.position.y;
-        CheckGround();
-
-
-        calculateMovement();
-        HandleInput();
-
-
-
-      
-
+        storedYValue = transform.position.y;    
+        CheckGround();//Checks if player is grounded
+        calculateMovement(); // calculates the horizontal Movement;
+        HandleInput(); // Handles all  other PlayerInput;
         if (moveDirection.y < storedYValue)//falling
         {
             moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
         }
-        if (!Input.GetButton("Jump") && moveDirection.y > storedYValue)
+        if (!Input.GetButton("Jump") && moveDirection.y > storedYValue)         
         {
-            moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
-            
-        }
+            moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;            
+        }        
 
 
-
-
-
-
-        
-        moveDirection.y -= gravity * Time.deltaTime;
-        playerController.Move(moveDirection * Time.deltaTime);//making the player move ingame
-        
+        moveDirection.y -= gravity * Time.deltaTime;  //applying gravity;
+        playerController.Move(moveDirection * Time.deltaTime);//making the player move ingame      
         Turn();
-
+       
     }
 
     public void CheckGround()
     {
-
         isGrounded = playerController.isGrounded;
         if (isGrounded)
         {
             canJump = true;
-            hasJumped = 0;
+            hasJumped = 0; //setting the times the player has jumped to 0 when on ground;
         }
     }
 
-    public void HandleInput() //ganzen Innput
-    {
-        if(Input.GetAxis("Horizontal") > 0){
+    public void HandleInput() //ganzen Input
+    {                                           // Setting the bools where the player is Moving, maybe useful for later
+        if(Input.GetAxis("Horizontal") > 0){  
             isMovingLeft = false;
             isMovingRight = true;
         }
@@ -125,47 +124,43 @@ public class PlayerMovmentTest : MonoBehaviour {
             isMovingForwards = false;
             isMovingBackwards = false;
         }
-
         if (Input.GetButtonDown("Jump"))
         {
-            Jump();
+            if (hasAbilityJumping)
+            {
+                Jump();
+            }
         }
-
         if (Input.GetButton("Gliding"))
         {
-            Gliding();
+            if (hasAbilityGliding)
+            {
+                Gliding();
+            }
         }
-
         if (Input.GetButton("Run"))
         {
-            Run();
+            if (hasAbilityRunning)
+            {
+                Run();
+            }
         }
         if (Input.GetButtonUp("Run"))
         {
             runSpeed = 1;
         }
-
     }
 
     public void calculateMovement()
     {
-        // Debug.Log("H" + Input.GetAxis("Horizontal"));
-        // Debug.Log("V" + Input.GetAxis("Vertical"));
-        if (isGrounded)
+        if (isGrounded)  //normal movement on Ground
         {
-
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed * runSpeed;//calculate a vector/movement with given playerinput
-
             moveDirection = transform.TransformDirection(moveDirection);
-
-
+            dirSet = false;
         }
-        if (!isGrounded)
+        if (!isGrounded)  // slow changing the movementvector in air when pressing againts movement direction
         {
-             //leichtes dagegebsteuern in der Luft
-
-
-
 
         }
     }
@@ -186,110 +181,80 @@ public class PlayerMovmentTest : MonoBehaviour {
             //the player can move in air
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed;//calculate a vector/movement with given playerinput
             moveDirection = transform.TransformDirection(moveDirection);
-
             moveDirection.y -= gravityGliding * Time.deltaTime;//adjusting y value with specialized gravity
-
             playerController.Move(moveDirection * Time.deltaTime);//making the player move ingame
-
-
-        }
-       
-
-
-
+        }      
     }
-
     public void Jump()
     {
         if (canJump)
         {
             if (isGrounded)
             {
-
                 moveDirection.y = jumpSpeed;//setting the y value, therefore making the player jump
                 Debug.Log(moveDirection.y);
                 hasJumped=1;
-                Debug.Log("Jump");
-              
-               
-                
-
+                Debug.Log("Jump");                                            
             }
             else
             {
-                if (isMovingLeft)
+                if (isMovingLeft)  //checks if player is moving left and wall is left;
                 {
-                    if (Physics.Raycast(this.transform.localPosition, transform.TransformDirection(new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z) - this.transform.position), this.transform.lossyScale.x / 2 + 0.1f, 1))
+                    if (Physics.Raycast(this.transform.localPosition, transform.TransformDirection(new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z) - this.transform.position), this.transform.lossyScale.x / 2 + 0.1f, mask.value))
                     {
                         WallJump(4);
                         Debug.Log("Walljump");
                         return;
-
                     }
-
                 }
                 if (isMovingRight)
                 {
-                    if (Physics.Raycast(this.transform.position,  transform.TransformDirection(new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z) - this.transform.position), this.transform.lossyScale.x / 2 + 0.1f, 1))
+                    if (Physics.Raycast(this.transform.position,  transform.TransformDirection(new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z) - this.transform.position), this.transform.lossyScale.x / 2 + 0.1f, mask.value))
                     {
                         WallJump(2);
                         Debug.Log("Walljump");
                         return;
-
                     }
-
                 }
-
-
-                if (hasJumped < timesToJump)
+                if (hasJumped < timesToJump)  //multple Jumps
                 {
                     moveDirection.y = jumpSpeed;//setting the y value, therefore making the player jump
                     Debug.Log(moveDirection.y);
                     hasJumped++;//count up
                     Debug.Log("doublejump");
-
                 }
                 else
                 {
                     canJump = false;
                 }
-
             }
         }
-
     }
 
-    public void OnDrawGizmos()
+    public void OnDrawGizmos()  //Drawing the Raycasts for walljump in the editor
     {
-
         Vector3 r = transform.TransformDirection(new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z) - this.transform.position);
         Vector3 l =transform.TransformDirection( new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z)-this.transform.position);
         Gizmos.DrawRay(this.transform.position,r);
         Gizmos.DrawRay(this.transform.position, l);
     }
 
-    public void WallJump(int direction)
+    public void WallJump(int direction) //1 front,  2 right,  3 back,  4 left
     {
-        if (direction == 4)// gleice problem wie bei bweegung in der luft;
+        if (direction == 4)
         {
-            // this.transform.Translate(new Vector3(jumpSpeed, jumpSpeed, 0));
             moveDirection.y = moveDirection.y + jumpSpeed*1.5f;
             moveDirection.x =  + jumpSpeed*0.8f;
             moveDirection.z = 0;
             moveDirection = transform.TransformDirection(moveDirection);
-
         }
-
-        if (direction == 2)// gleice problem wie bei bweegung in der luft;
+        if (direction == 2)
         {
-            // this.transform.Translate(new Vector3(jumpSpeed, jumpSpeed, 0));
             moveDirection.y = moveDirection.y + jumpSpeed * 1.5f;
             moveDirection.x =  - jumpSpeed * 0.8f;
             moveDirection.z = 0;
             moveDirection = transform.TransformDirection(moveDirection);
-
         }
-
     }
 
     public void Run()
@@ -298,11 +263,5 @@ public class PlayerMovmentTest : MonoBehaviour {
         {
             runSpeed = runSpeed + runMultiplier * Time.deltaTime;
         }
-      
-
     }
-
-
-
-
 }

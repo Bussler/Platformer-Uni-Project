@@ -127,7 +127,7 @@ GameObject:
   - component: {fileID: 144763244}
   - component: {fileID: 144763243}
   - component: {fileID: 144763242}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: PlayerCharacterContoller
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -146,20 +146,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 7
-  jumpSpeed: 13
   rotateSpeed: 70
   gravity: 20
-  isGliding: 0
+  isGrounded: 0
+  lastMoveDirection: {x: 0, y: 0, z: 0}
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967295
   maxSpeed: 20
   runMultiplier: 1
-  isGrounded: 0
-  canJump: 0
+  jumpSpeed: 13
   timesToJump: 2
-  hasJumped: 0
-  isMovingForwards: 0
-  isMovingBackwards: 0
-  isMovingRight: 0
-  isMovingLeft: 0
+  hasAbilityGliding: 1
+  hasAbilityRunning: 1
+  hasAbilityWallJump: 1
+  hasAbilityJumping: 1
 --- !u!114 &144763243
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -263,7 +264,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 144763241}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.17, y: 10, z: 3.6443572}
+  m_LocalPosition: {x: 5.17, y: 1.39, z: 3.6443572}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -282,7 +283,7 @@ GameObject:
   - component: {fileID: 195138762}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Terrain
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -533,7 +534,8 @@ GameObject:
   - component: {fileID: 1453050850}
   - component: {fileID: 1453050849}
   - component: {fileID: 1453050853}
-  m_Layer: 0
+  - component: {fileID: 1453050855}
+  m_Layer: 8
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -619,6 +621,24 @@ MonoBehaviour:
   smooth: 2
   followedObject: {fileID: 144763248}
   turnSpeed: 6
+  mask:
+    serializedVersion: 2
+    m_Bits: 4294967039
+--- !u!54 &1453050855
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1453050848}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1732422654
 GameObject:
   m_ObjectHideFlags: 0
