@@ -57,7 +57,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         playerController = GetComponent<CharacterController>();//Player has to have a charactaercontroller attached in order to make this stuff wörk
         playerRotation = transform.rotation;
         fallmultiplier = 2f;
-        gravityGliding = gravity * 3;//stores the correct gravity, cuz the gravity will be changed during gliding
+        gravityGliding = gravity * 2;//stores the correct gravity, cuz the gravity will be changed during gliding
     }
 
     //Movement in update, since we aren't using a rigidbody but a characterController
