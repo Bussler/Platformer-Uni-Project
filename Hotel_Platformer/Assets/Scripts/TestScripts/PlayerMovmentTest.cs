@@ -36,6 +36,7 @@ public class PlayerMovmentTest : MonoBehaviour {
     public float timesToJump = 2;
     private bool canJump;
     private float hasJumped = 0;
+    private float jumpMovement = 4;
     #endregion
 
     #region DirectionBools
@@ -159,9 +160,19 @@ public class PlayerMovmentTest : MonoBehaviour {
             moveDirection = transform.TransformDirection(moveDirection);
             dirSet = false;
         }
-        if (!isGrounded)  // slow changing the movementvector in air when pressing againts movement direction
+        if (!isGrounded&&!Input.GetButton("Gliding"))  // slow changing the movementvector in air when pressing againts movement direction
         {
-
+            if (Input.GetButton("Run")||runSpeed>1)
+            {
+                //haven't decided what to do in this case. option1: do nothing like right now(maybe best, its unrealistic to defy all laws of gravity like this) option2: make move possible but I haven't found a solution how to do this and not affect the moved distance
+            }
+            else
+            {
+                moveDirection = new Vector3(Input.GetAxis("Horizontal") * jumpMovement, moveDirection.y, Input.GetAxis("Vertical") * jumpMovement);
+                moveDirection = transform.TransformDirection(moveDirection);
+                dirSet = false;
+            }
+    
         }
     }
 
