@@ -36,7 +36,7 @@ public class PlayerMovmentTest : MonoBehaviour {
     public float timesToJump = 2;
     private bool canJump;
     private float hasJumped = 0;
-    private float jumpMovement = 4;
+    public float jumpMovement = 4;
     #endregion
 
     #region DirectionBools
@@ -70,6 +70,8 @@ public class PlayerMovmentTest : MonoBehaviour {
         HandleInput(); // Handles all  other PlayerInput;
         if (moveDirection.y < storedYValue)//falling
         {
+            this.transform.parent = null;
+          
             moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
         }
         if (!Input.GetButton("Jump") && moveDirection.y > storedYValue)         
@@ -79,10 +81,42 @@ public class PlayerMovmentTest : MonoBehaviour {
 
 
         moveDirection.y -= gravity * Time.deltaTime;  //applying gravity;
-        playerController.Move(moveDirection * Time.deltaTime);//making the player move ingame      
+        playerController.Move(moveDirection * Time.deltaTime);//making the player move ingame  
+     
         Turn();
+
+       
        
     }
+    void OnControllerColliderHit(ControllerColliderHit hit)
+    {
+        //Hier alles rein, wenn was passieren soll, wenn der Spieler etwas berührt;
+        if (hit.gameObject.tag == "FallingPlatform")
+        {
+
+            hit.gameObject.GetComponent<FallingPlatform>().isFalling = true;
+        }
+
+
+        if (hit.gameObject.tag == "MovingPlatform" )
+        {
+           
+            this.gameObject.transform.parent = hit.transform;
+        }
+        if (hit.gameObject.tag == "RotatingPlatform")
+        {
+            if (hit.gameObject.GetComponent<RotatingPlatform>().rotatingDirection.x == 0 && hit.gameObject.GetComponent<RotatingPlatform>().rotatingDirection.z == 0)
+            {
+
+                this.gameObject.transform.parent = hit.transform;
+            }
+           
+          
+        }
+    }
+
+    
+
 
     public void CheckGround()
     {
@@ -168,8 +202,8 @@ public class PlayerMovmentTest : MonoBehaviour {
             }
             else
             {
-                moveDirection = new Vector3(Input.GetAxis("Horizontal") * jumpMovement, moveDirection.y, Input.GetAxis("Vertical") * jumpMovement);
-                moveDirection = transform.TransformDirection(moveDirection);
+                //moveDirection = new Vector3(Input.GetAxis("Horizontal") * jumpMovement, moveDirection.y, Input.GetAxis("Vertical") * jumpMovement);
+               // moveDirection = transform.TransformDirection(moveDirection);      // wenn aktiviert zu starkes bewegen in der luft und walljump funktioniert dann nicht mehr
                 dirSet = false;
             }
     
@@ -198,14 +232,15 @@ public class PlayerMovmentTest : MonoBehaviour {
     }
     public void Jump()
     {
+        this.transform.parent = null;
         if (canJump)
         {
             if (isGrounded)
             {
                 moveDirection.y = jumpSpeed;//setting the y value, therefore making the player jump
-                Debug.Log(moveDirection.y);
+               // Debug.Log(moveDirection.y);
                 hasJumped=1;
-                Debug.Log("Jump");                                            
+               // Debug.Log("Jump");                                            
             }
             else
             {
@@ -214,7 +249,7 @@ public class PlayerMovmentTest : MonoBehaviour {
                     if (Physics.Raycast(this.transform.localPosition, transform.TransformDirection(new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z) - this.transform.position), this.transform.lossyScale.x / 2 + 0.1f, mask.value))
                     {
                         WallJump(4);
-                        Debug.Log("Walljump");
+                       // Debug.Log("Walljump");
                         return;
                     }
                 }
@@ -223,7 +258,7 @@ public class PlayerMovmentTest : MonoBehaviour {
                     if (Physics.Raycast(this.transform.position,  transform.TransformDirection(new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z) - this.transform.position), this.transform.lossyScale.x / 2 + 0.1f, mask.value))
                     {
                         WallJump(2);
-                        Debug.Log("Walljump");
+                        //Debug.Log("Walljump");
                         return;
                     }
                 }
@@ -232,7 +267,7 @@ public class PlayerMovmentTest : MonoBehaviour {
                     moveDirection.y = jumpSpeed;//setting the y value, therefore making the player jump
                     Debug.Log(moveDirection.y);
                     hasJumped++;//count up
-                    Debug.Log("doublejump");
+                   // Debug.Log("doublejump");
                 }
                 else
                 {
@@ -275,4 +310,6 @@ public class PlayerMovmentTest : MonoBehaviour {
             runSpeed = runSpeed + runMultiplier * Time.deltaTime;
         }
     }
+
+    
 }

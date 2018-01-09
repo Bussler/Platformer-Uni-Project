@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - Terrain
+  - MovingPlatform
+  - FallingPlatform
+  - RotatingPlatform
   layers:
   - Default
   - TransparentFX

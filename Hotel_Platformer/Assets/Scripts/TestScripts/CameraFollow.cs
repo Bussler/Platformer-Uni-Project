@@ -115,14 +115,14 @@ public class CameraFollow : MonoBehaviour
         {
             distanceAway -= 10 * Time.deltaTime;
             resetTime = 1f;
-            Debug.Log("hit");
+          //  Debug.Log("hit");
         }
         else
         {
-            Debug.Log("miss");
+           // Debug.Log("miss");
             if (!Physics.Raycast(this.transform.position, -(followedObject.transform.position - this.transform.position).normalized, 0.5f, mask.value))
             {
-                Debug.Log("hinten frei");
+               // Debug.Log("hinten frei");
                 resetTime -= Time.deltaTime;
 
                 if (resetTime <= 0)
