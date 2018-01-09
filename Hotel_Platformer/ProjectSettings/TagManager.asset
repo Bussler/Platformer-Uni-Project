@@ -3,7 +3,14 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
+<<<<<<< HEAD
   tags: []
+=======
+  tags:
+  - FallingPlatform
+  - RotatingPlatform
+  - MovingPlatform
+>>>>>>> 1808473c725ecb92a7c725412d1babd9fa6fcc9c
   layers:
   - Default
   - TransparentFX
