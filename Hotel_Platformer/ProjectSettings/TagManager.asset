@@ -5,9 +5,13 @@ TagManager:
   serializedVersion: 2
   tags:
   - Terrain
+<<<<<<< HEAD
   - MovingPlatform
   - FallingPlatform
   - RotatingPlatform
+=======
+  - PowerUp
+>>>>>>> 05e8dbfcb4cac4ecd265fe5de40291de61be7789
   layers:
   - Default
   - TransparentFX
