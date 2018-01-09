@@ -310,9 +310,10 @@ public class PlayerMovmentTest : MonoBehaviour {
             runSpeed = runSpeed + runMultiplier * Time.deltaTime;
         }
     }
-
+    /*
 <<<<<<< HEAD
     
 =======
 >>>>>>> 05e8dbfcb4cac4ecd265fe5de40291de61be7789
+*/
 }
