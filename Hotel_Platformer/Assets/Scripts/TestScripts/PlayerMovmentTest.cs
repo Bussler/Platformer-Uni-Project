@@ -276,27 +276,4 @@ public class PlayerMovmentTest : MonoBehaviour {
         }
     }
 
-    /**
-    //stick player to platform
-    public void OnTriggerStay(Collider other)
-    {
-        Debug.Log("enter");
-        if (other.gameObject.tag == "movingPlatform")
-        {
-            Debug.Log("enter2");
-            transform.parent = other.transform;
-        }
-    }
-
-    public void OnTriggerExit(Collider other)
-    {
-        Debug.Log("exit");
-
-        if (other.tag == "movingPlatform")
-        {
-            transform.parent = null;
-        }
-    }
-    */
-
 }
