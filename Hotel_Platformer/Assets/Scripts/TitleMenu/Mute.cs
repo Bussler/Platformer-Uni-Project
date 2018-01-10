@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Mute : MonoBehaviour {
 
+
 	// Use this for initialization
 	void Start () {
 		
@@ -13,4 +14,14 @@ public class Mute : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    private void OnMouseOver()
+    {
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            SoundManager.Mute();
+
+        }
+    }
+
 }
