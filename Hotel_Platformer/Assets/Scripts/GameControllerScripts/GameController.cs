@@ -39,7 +39,7 @@ public class GameController : MonoBehaviour {
 
     public void Exit()//Method for loading the start menu
     {
-        //SceneManager.LoadScene("StartMenu");
+        SceneManager.LoadScene("TitleScreen");
     }
 
     public void OptionMenuOpen()
