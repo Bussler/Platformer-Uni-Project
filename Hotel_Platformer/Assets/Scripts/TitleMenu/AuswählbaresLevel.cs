@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class AuswählbaresLevel : MonoBehaviour {
     public int LevelIndex;
     private MeshRenderer renderer;
-    private bool canBeClicked;
+    private bool canBeClicked=false;
     public string LevelName;
 
 	// Use this for initialization
