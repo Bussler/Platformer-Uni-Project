@@ -53,6 +53,9 @@ public class PlayerMovmentTest : MonoBehaviour {
     public bool hasAbilityJumping;
     #endregion
 
+    public float MinSize;
+    public float MaxSize;
+
     void Start()
     {
         playerController = GetComponent<CharacterController>();//Player has to have a charactaercontroller attached in order to make this stuff wörk
@@ -184,6 +187,15 @@ public class PlayerMovmentTest : MonoBehaviour {
         {
             runSpeed = 1;
         }
+
+        if (Input.GetButtonDown("ScalingUp"))
+        {
+            ScalingUp();
+        }
+        if (Input.GetButtonDown("ScalingDown"))
+        {
+            ScalingDown();
+        }
     }
 
     public void calculateMovement()
@@ -208,6 +220,34 @@ public class PlayerMovmentTest : MonoBehaviour {
             }
     
         }
+    }
+
+
+    void ScalingUp()
+    {
+        if (this.transform.localScale.x > 1 - 0.1 && this.transform.localScale.x < 1 + 0.1)
+        {
+            this.transform.localScale = new Vector3(MaxSize, MaxSize, MaxSize);
+        }else if(this.transform.localScale.x > MinSize-0.1&& this.transform.localScale.x < MinSize + 0.1)
+        {
+            this.transform.localScale = new Vector3(1, 1, 1);
+        }
+    }
+
+    void ScalingDown()
+    {
+
+        if (this.transform.localScale.x > 1-0.1&& this.transform.localScale.x < 1 + 0.1)
+        {
+            this.transform.localScale = new Vector3(MinSize, MinSize, MinSize);
+        }
+        else if (this.transform.localScale.x > MaxSize - 0.1 && this.transform.localScale.x < MaxSize + 0.1)
+        {
+            this.transform.localScale = new Vector3(1, 1, 1);
+        }
+
+
+      
     }
 
     void Turn()//turns the player with mouseInput, just like in the tutorial

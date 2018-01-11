@@ -938,15 +938,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4589733053477598, guid: 2c81fd5454ecef24797f396deda70fad, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 77.61
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4589733053477598, guid: 2c81fd5454ecef24797f396deda70fad, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 88.5
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4589733053477598, guid: 2c81fd5454ecef24797f396deda70fad, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.11
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4589733053477598, guid: 2c81fd5454ecef24797f396deda70fad, type: 2}
       propertyPath: m_LocalRotation.x
@@ -966,6 +966,16 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4589733053477598, guid: 2c81fd5454ecef24797f396deda70fad, type: 2}
       propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114074741394139936, guid: 2c81fd5454ecef24797f396deda70fad,
+        type: 2}
+      propertyPath: MinSize
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114074741394139936, guid: 2c81fd5454ecef24797f396deda70fad,
+        type: 2}
+      propertyPath: MaxSize
       value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
