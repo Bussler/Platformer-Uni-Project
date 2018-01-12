@@ -19,6 +19,7 @@ public class CameraFollow : MonoBehaviour
     private float savedDisstanceAway;
     private float resetTime=1f;
     private bool turnupdownallowed = true;
+    public float minY;
 
     public LayerMask mask;
     
@@ -32,7 +33,7 @@ public class CameraFollow : MonoBehaviour
 
     private void LateUpdate()//is called after update, so when the player has already moved
     {
-       
+        minY = followedObject.transform.position.y;
         SetDistance();
         TurnUpDown();//turns up and down by changing the distanceUp var while still making the camera looking at the player
        
@@ -41,9 +42,9 @@ public class CameraFollow : MonoBehaviour
         
         transform.LookAt(followedObject);
 
-        if(transform.position.y < 1)
+        if(transform.position.y < minY-followedObject.transform.lossyScale.y*0.55f)
         {
-            this.transform.position = new Vector3(this.transform.position.x, 1, this.transform.position.z);
+            this.transform.position = new Vector3(this.transform.position.x, minY- followedObject.transform.lossyScale.y * 0.5f, this.transform.position.z);
         }
       
 

@@ -20,6 +20,10 @@ public class PlayerMovmentTest : MonoBehaviour {
 
     public LayerMask mask;
 
+    private GameObject ausgewähltesObject;
+    public Camera camera;
+    private bool hasObject;
+
     #region GlidingVariables
     private float gravityGliding;
     #endregion
@@ -58,6 +62,7 @@ public class PlayerMovmentTest : MonoBehaviour {
 
     void Start()
     {
+        camera = GameObject.FindObjectOfType<Camera>();
         playerController = GetComponent<CharacterController>();//Player has to have a charactaercontroller attached in order to make this stuff wörk
         playerRotation = transform.rotation;
         fallmultiplier = 2f;
@@ -88,11 +93,19 @@ public class PlayerMovmentTest : MonoBehaviour {
      
         Turn();
 
+        Vector3 vor =  new Vector3(this.transform.position.x - camera.transform.position.x,  camera.transform.position.y-this.transform.position.y, this.transform.position.z - camera.transform.position.z).normalized*3f;
+
+        if (ausgewähltesObject != null)
+        {
+            ausgewähltesObject.transform.position = new Vector3(this.transform.position.x, this.transform.position.y+1, this.transform.position.z) + vor;
+        }
+
        
        
     }
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
+       // camera.gameObject.GetComponent<CameraFollow>().minY = hit.gameObject.transform.position.y;
         //Hier alles rein, wenn was passieren soll, wenn der Spieler etwas berührt;
         if (hit.gameObject.tag == "FallingPlatform")
         {
@@ -112,9 +125,20 @@ public class PlayerMovmentTest : MonoBehaviour {
             {
 
                 this.gameObject.transform.parent = hit.transform;
+
             }
            
           
+        }
+
+        if (hit.gameObject.tag == "ZählerPlatform")
+        {
+            if (hit.gameObject.GetComponent<ZaelerPatfrom>().canBeHit == true)
+            {
+                hit.gameObject.GetComponent<ZaelerPatfrom>().Leben--;
+                hit.gameObject.GetComponent<ZaelerPatfrom>().canBeHit = false;
+                hit.gameObject.GetComponent<ZaelerPatfrom>().ChangeColor();
+            }
         }
     }
 
@@ -196,7 +220,47 @@ public class PlayerMovmentTest : MonoBehaviour {
         {
             ScalingDown();
         }
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            Debug.Log("maus");
+            ObjectAuswahl();
+
+        }
+        if (Input.GetKeyDown(KeyCode.Mouse1))
+        {
+            ausgewähltesObject = null;
+
+        }
+
+
     }
+
+    public void ObjectAuswahl()
+    {
+        // Vector3 vor = Quaternion.AngleAxis(-45, Vector3.up) *new Vector3(this.transform.position.x - camera.transform.position.x, this.transform.position.y - camera.transform.position.y, this.transform.position.z - camera.transform.position.z).normalized*5f;
+        //Vector3 vor = Quaternion.Euler(0,45,0)*new Vector3(this.transform.position.x - camera.transform.position.x, this.transform.position.y - camera.transform.position.y, this.transform.position.z - camera.transform.position.z).normalized*5f;
+       // Vector3 vor2 = new Vector3(vor.x, -vor.y, vor.z) + vor;
+
+        Ray ray = new Ray(this.transform.position,new Vector3(this.transform.position.x-camera.transform.position.x,this.transform.position.y,this.transform.position.z-camera.transform.position.z));
+        RaycastHit hit;
+        if (Physics.Raycast(ray,out hit))
+        {
+            Debug.Log("ray");
+            if (hit.collider.gameObject.tag=="Aufhebbar")
+            {
+                 ausgewähltesObject= hit.collider.gameObject;
+                Debug.Log(ausgewähltesObject.name);
+
+            }
+              
+
+        }
+        
+
+
+    }
+
+
 
     public void calculateMovement()
     {
@@ -321,8 +385,11 @@ public class PlayerMovmentTest : MonoBehaviour {
     {
         Vector3 r = transform.TransformDirection(new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z) - this.transform.position);
         Vector3 l =transform.TransformDirection( new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z)-this.transform.position);
+        //Vector3 vor = transform.TransformVector( Quaternion.Euler(0,-45, -45) * new Vector3(this.transform.position.x - camera.transform.position.x, this.transform.position.y - camera.transform.position.y, this.transform.position.z - camera.transform.position.z));
+       // Vector3 vor2 = new Vector3(vor.x, -vor.y, vor.z) + vor;
         Gizmos.DrawRay(this.transform.position,r);
         Gizmos.DrawRay(this.transform.position, l);
+       // Gizmos.DrawRay(this.transform.position, vor);
     }
 
     public void WallJump(int direction) //1 front,  2 right,  3 back,  4 left
