@@ -227,7 +227,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         {
             ScalingDown();
         }
-<<<<<<< HEAD
+
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Debug.Log("maus");
@@ -239,45 +239,46 @@ public class PlayerMovmentTest : MonoBehaviour {
             ausgewähltesObject = null;
 
         }
-
-
-    }
-
-    public void ObjectAuswahl()
-    {
-        // Vector3 vor = Quaternion.AngleAxis(-45, Vector3.up) *new Vector3(this.transform.position.x - camera.transform.position.x, this.transform.position.y - camera.transform.position.y, this.transform.position.z - camera.transform.position.z).normalized*5f;
-        //Vector3 vor = Quaternion.Euler(0,45,0)*new Vector3(this.transform.position.x - camera.transform.position.x, this.transform.position.y - camera.transform.position.y, this.transform.position.z - camera.transform.position.z).normalized*5f;
-       // Vector3 vor2 = new Vector3(vor.x, -vor.y, vor.z) + vor;
-
-        Ray ray = new Ray(this.transform.position,new Vector3(this.transform.position.x-camera.transform.position.x,this.transform.position.y,this.transform.position.z-camera.transform.position.z));
-        RaycastHit hit;
-        if (Physics.Raycast(ray,out hit))
-        {
-            Debug.Log("ray");
-            if (hit.collider.gameObject.tag=="Aufhebbar")
-            {
-                 ausgewähltesObject= hit.collider.gameObject;
-                Debug.Log(ausgewähltesObject.name);
-
-            }
-              
-
-        }
-        
-
-
-    }
-
-
-=======
-
-        if (Input.GetButtonDown("PlatformSpawn")&&hasAbilityPlatform)
+        if (Input.GetButtonDown("PlatformSpawn") && hasAbilityPlatform)
         {
             SpawnPlatform();
         }
+
     }
 
-    public void SpawnPlatform()
+  
+
+
+
+
+       
+    
+  public void ObjectAuswahl()
+{
+    // Vector3 vor = Quaternion.AngleAxis(-45, Vector3.up) *new Vector3(this.transform.position.x - camera.transform.position.x, this.transform.position.y - camera.transform.position.y, this.transform.position.z - camera.transform.position.z).normalized*5f;
+    //Vector3 vor = Quaternion.Euler(0,45,0)*new Vector3(this.transform.position.x - camera.transform.position.x, this.transform.position.y - camera.transform.position.y, this.transform.position.z - camera.transform.position.z).normalized*5f;
+    // Vector3 vor2 = new Vector3(vor.x, -vor.y, vor.z) + vor;
+
+    Ray ray = new Ray(this.transform.position, new Vector3(this.transform.position.x - camera.transform.position.x, this.transform.position.y, this.transform.position.z - camera.transform.position.z));
+    RaycastHit hit;
+    if (Physics.Raycast(ray, out hit))
+    {
+        Debug.Log("ray");
+        if (hit.collider.gameObject.tag == "Aufhebbar")
+        {
+            ausgewähltesObject = hit.collider.gameObject;
+            Debug.Log(ausgewähltesObject.name);
+
+        }
+
+
+    }
+
+
+
+}
+
+public void SpawnPlatform()
     {
         //TODO maybe use the storeyYData to spawn enemies when you are falling
         Transform spawnPosition = transform.GetChild(0).transform;
@@ -306,7 +307,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         }
     
     } 
->>>>>>> 4482d7f472295227a458d8163cb9d5a17b374297
+
 
     public void calculateMovement()
     {
