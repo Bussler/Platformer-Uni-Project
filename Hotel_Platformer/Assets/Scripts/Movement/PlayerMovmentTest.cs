@@ -8,6 +8,11 @@ public class PlayerMovmentTest : MonoBehaviour {
     public float rotateSpeed;
     public float gravity;
     public bool isGrounded;
+    public int maxNumberOfPlatforms;
+
+    GameObject[] objectArray = new GameObject[0];
+
+    public GameObject SpawnablePlatform;
 
     CharacterController playerController;
     private Vector3 moveDirection;
@@ -55,6 +60,8 @@ public class PlayerMovmentTest : MonoBehaviour {
     public bool hasAbilityRunning;
     public bool hasAbilityWallJump;
     public bool hasAbilityJumping;
+    public bool hasAbilityScaling;//TODO
+    public bool hasAbilityPlatform;
     #endregion
 
     public float MinSize;
@@ -212,14 +219,15 @@ public class PlayerMovmentTest : MonoBehaviour {
             runSpeed = 1;
         }
 
-        if (Input.GetButtonDown("ScalingUp"))
+        if (Input.GetButtonDown("ScalingUp")&&hasAbilityScaling)
         {
             ScalingUp();
         }
-        if (Input.GetButtonDown("ScalingDown"))
+        if (Input.GetButtonDown("ScalingDown")&&hasAbilityScaling)
         {
             ScalingDown();
         }
+<<<<<<< HEAD
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Debug.Log("maus");
@@ -261,6 +269,44 @@ public class PlayerMovmentTest : MonoBehaviour {
     }
 
 
+=======
+
+        if (Input.GetButtonDown("PlatformSpawn")&&hasAbilityPlatform)
+        {
+            SpawnPlatform();
+        }
+    }
+
+    public void SpawnPlatform()
+    {
+        //TODO maybe use the storeyYData to spawn enemies when you are falling
+        Transform spawnPosition = transform.GetChild(0).transform;
+        GameObject p = Instantiate(SpawnablePlatform, new Vector3(spawnPosition.position.x, spawnPosition.position.y, spawnPosition.position.z), Quaternion.identity)as GameObject;
+
+        
+            GameObject[] newArray = new GameObject[objectArray.Length + 1];
+            for (int i=0;i<objectArray.Length;i++)
+            {
+                newArray[i] = objectArray[i];
+            }
+            newArray[newArray.Length - 1] = p;
+            objectArray = newArray;
+        
+        if (objectArray.Length>maxNumberOfPlatforms)
+        {
+            Destroy(objectArray[0]);
+            
+            GameObject[] newArray2 = new GameObject[objectArray.Length - 1];
+            for (int i=0;i<newArray2.Length;i++)
+            {
+                newArray2[i] = objectArray[i+1];
+            }
+            objectArray = newArray2;
+    
+        }
+    
+    } 
+>>>>>>> 4482d7f472295227a458d8163cb9d5a17b374297
 
     public void calculateMovement()
     {
