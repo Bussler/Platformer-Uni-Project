@@ -8,6 +8,7 @@ TagManager:
   - RotatingPlatform
   - MovingPlatform
   - Aufhebbar
+  - "Z\xE4hlerPlatform"
   layers:
   - Default
   - TransparentFX

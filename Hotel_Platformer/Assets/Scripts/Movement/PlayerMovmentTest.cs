@@ -8,11 +8,6 @@ public class PlayerMovmentTest : MonoBehaviour {
     public float rotateSpeed;
     public float gravity;
     public bool isGrounded;
-    public int maxNumberOfPlatforms;
-
-    GameObject[] objectArray = new GameObject[0];
-
-    public GameObject SpawnablePlatform;
 
     CharacterController playerController;
     private Vector3 moveDirection;
@@ -60,8 +55,6 @@ public class PlayerMovmentTest : MonoBehaviour {
     public bool hasAbilityRunning;
     public bool hasAbilityWallJump;
     public bool hasAbilityJumping;
-    public bool hasAbilityScaling;//TODO
-    public bool hasAbilityPlatform;
     #endregion
 
     public float MinSize;
@@ -100,11 +93,11 @@ public class PlayerMovmentTest : MonoBehaviour {
      
         Turn();
 
-        Vector3 vor =  new Vector3(this.transform.position.x - camera.transform.position.x,  camera.transform.position.y-this.transform.position.y, this.transform.position.z - camera.transform.position.z).normalized*3f;
+ 
 
         if (ausgewähltesObject != null)
         {
-            ausgewähltesObject.transform.position = new Vector3(this.transform.position.x, this.transform.position.y+1, this.transform.position.z) + vor;
+           // ausgewähltesObject.transform.position = new Vector3(this.transform.position.x, this.transform.position.y+1, this.transform.position.z);
         }
 
        
@@ -219,15 +212,14 @@ public class PlayerMovmentTest : MonoBehaviour {
             runSpeed = 1;
         }
 
-        if (Input.GetButtonDown("ScalingUp")&&hasAbilityScaling)
+        if (Input.GetButtonDown("ScalingUp"))
         {
             ScalingUp();
         }
-        if (Input.GetButtonDown("ScalingDown")&&hasAbilityScaling)
+        if (Input.GetButtonDown("ScalingDown"))
         {
             ScalingDown();
         }
-<<<<<<< HEAD
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Debug.Log("maus");
@@ -249,7 +241,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         //Vector3 vor = Quaternion.Euler(0,45,0)*new Vector3(this.transform.position.x - camera.transform.position.x, this.transform.position.y - camera.transform.position.y, this.transform.position.z - camera.transform.position.z).normalized*5f;
        // Vector3 vor2 = new Vector3(vor.x, -vor.y, vor.z) + vor;
 
-        Ray ray = new Ray(this.transform.position,new Vector3(this.transform.position.x-camera.transform.position.x,this.transform.position.y,this.transform.position.z-camera.transform.position.z));
+        Ray ray = new Ray(this.transform.position,new Vector3(this.transform.position.x-camera.transform.position.x,0,this.transform.position.z-camera.transform.position.z));
         RaycastHit hit;
         if (Physics.Raycast(ray,out hit))
         {
@@ -269,44 +261,6 @@ public class PlayerMovmentTest : MonoBehaviour {
     }
 
 
-=======
-
-        if (Input.GetButtonDown("PlatformSpawn")&&hasAbilityPlatform)
-        {
-            SpawnPlatform();
-        }
-    }
-
-    public void SpawnPlatform()
-    {
-        //TODO maybe use the storeyYData to spawn enemies when you are falling
-        Transform spawnPosition = transform.GetChild(0).transform;
-        GameObject p = Instantiate(SpawnablePlatform, new Vector3(spawnPosition.position.x, spawnPosition.position.y, spawnPosition.position.z), Quaternion.identity)as GameObject;
-
-        
-            GameObject[] newArray = new GameObject[objectArray.Length + 1];
-            for (int i=0;i<objectArray.Length;i++)
-            {
-                newArray[i] = objectArray[i];
-            }
-            newArray[newArray.Length - 1] = p;
-            objectArray = newArray;
-        
-        if (objectArray.Length>maxNumberOfPlatforms)
-        {
-            Destroy(objectArray[0]);
-            
-            GameObject[] newArray2 = new GameObject[objectArray.Length - 1];
-            for (int i=0;i<newArray2.Length;i++)
-            {
-                newArray2[i] = objectArray[i+1];
-            }
-            objectArray = newArray2;
-    
-        }
-    
-    } 
->>>>>>> 4482d7f472295227a458d8163cb9d5a17b374297
 
     public void calculateMovement()
     {
@@ -432,10 +386,11 @@ public class PlayerMovmentTest : MonoBehaviour {
         Vector3 r = transform.TransformDirection(new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z) - this.transform.position);
         Vector3 l =transform.TransformDirection( new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z)-this.transform.position);
         //Vector3 vor = transform.TransformVector( Quaternion.Euler(0,-45, -45) * new Vector3(this.transform.position.x - camera.transform.position.x, this.transform.position.y - camera.transform.position.y, this.transform.position.z - camera.transform.position.z));
-       // Vector3 vor2 = new Vector3(vor.x, -vor.y, vor.z) + vor;
+
+        Vector3 vor = new Vector3(this.transform.position.x - camera.transform.position.x, 0, this.transform.position.z - camera.transform.position.z);// Vector3 vor2 = new Vector3(vor.x, -vor.y, vor.z) + vor;
         Gizmos.DrawRay(this.transform.position,r);
         Gizmos.DrawRay(this.transform.position, l);
-       // Gizmos.DrawRay(this.transform.position, vor);
+        Gizmos.DrawRay(this.transform.position, vor);
     }
 
     public void WallJump(int direction) //1 front,  2 right,  3 back,  4 left
