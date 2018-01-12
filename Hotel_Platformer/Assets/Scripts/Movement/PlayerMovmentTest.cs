@@ -227,7 +227,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         {
             ScalingDown();
         }
-<<<<<<< HEAD
+
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Debug.Log("maus");
@@ -266,10 +266,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         
 
 
-    }
-
-
-=======
+   
 
         if (Input.GetButtonDown("PlatformSpawn")&&hasAbilityPlatform)
         {
@@ -306,7 +303,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         }
     
     } 
->>>>>>> 4482d7f472295227a458d8163cb9d5a17b374297
+
 
     public void calculateMovement()
     {
