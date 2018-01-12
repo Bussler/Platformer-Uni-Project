@@ -220,10 +220,6 @@ public class PlayerMovmentTest : MonoBehaviour {
         {
             ScalingDown();
         }
-<<<<<<< HEAD
-=======
-
->>>>>>> 51faf55d70c312e38748d12061a83bf8eed6b745
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
             Debug.Log("maus");
@@ -262,48 +258,8 @@ public class PlayerMovmentTest : MonoBehaviour {
         
 
 
-<<<<<<< HEAD
     }
 
-=======
-   
-
-        if (Input.GetButtonDown("PlatformSpawn")&&hasAbilityPlatform)
-        {
-            SpawnPlatform();
-        }
-    }
-
-    public void SpawnPlatform()
-    {
-        //TODO maybe use the storeyYData to spawn enemies when you are falling
-        Transform spawnPosition = transform.GetChild(0).transform;
-        GameObject p = Instantiate(SpawnablePlatform, new Vector3(spawnPosition.position.x, spawnPosition.position.y, spawnPosition.position.z), Quaternion.identity)as GameObject;
-
-        
-            GameObject[] newArray = new GameObject[objectArray.Length + 1];
-            for (int i=0;i<objectArray.Length;i++)
-            {
-                newArray[i] = objectArray[i];
-            }
-            newArray[newArray.Length - 1] = p;
-            objectArray = newArray;
-        
-        if (objectArray.Length>maxNumberOfPlatforms)
-        {
-            Destroy(objectArray[0]);
-            
-            GameObject[] newArray2 = new GameObject[objectArray.Length - 1];
-            for (int i=0;i<newArray2.Length;i++)
-            {
-                newArray2[i] = objectArray[i+1];
-            }
-            objectArray = newArray2;
-    
-        }
-    
-    } 
->>>>>>> 51faf55d70c312e38748d12061a83bf8eed6b745
 
 
     public void calculateMovement()
