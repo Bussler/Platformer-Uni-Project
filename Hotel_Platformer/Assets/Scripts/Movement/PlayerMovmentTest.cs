@@ -100,16 +100,28 @@ public class PlayerMovmentTest : MonoBehaviour {
      
         Turn();
 
-        Vector3 vor =  new Vector3(this.transform.position.x - camera.transform.position.x,  camera.transform.position.y-this.transform.position.y, this.transform.position.z - camera.transform.position.z).normalized*3f;
-
-        if (ausgewähltesObject != null)
-        {
-            ausgewähltesObject.transform.position = new Vector3(this.transform.position.x, this.transform.position.y+1, this.transform.position.z) + vor;
-        }
+      
 
        
        
     }
+
+    public void LateUpdate()
+    {
+        Vector3 vor = new Vector3(this.transform.position.x - camera.transform.position.x, -this.transform.position.y, this.transform.position.z - camera.transform.position.z);
+      // Vector3 vor = Vector3.forward;
+
+        if (ausgewähltesObject != null)
+        {
+            if (this.transform.position.y + (2) - (camera.transform.position.y - (this.transform.position.y + 2)) > this.transform.position.y - transform.lossyScale.y * 0.5f)
+            {
+                ausgewähltesObject.transform.position = this.transform.position + new Vector3(vor.x, (2) - (camera.transform.position.y - (this.transform.position.y + 2)), vor.z);
+            }
+
+
+        }
+    }
+
     void OnControllerColliderHit(ControllerColliderHit hit)
     {
        // camera.gameObject.GetComponent<CameraFollow>().minY = hit.gameObject.transform.position.y;

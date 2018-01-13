@@ -114,7 +114,10 @@ public class CameraFollow : MonoBehaviour
 
         if (Physics.Raycast(this.transform.position, followedObject.transform.position - this.transform.position, (followedObject.transform.position - this.transform.position).magnitude, mask.value))
         {
-            distanceAway -= 10 * Time.deltaTime;
+            if (distanceAway - 10 * Time.deltaTime > 0)
+            {
+                distanceAway -= 10 * Time.deltaTime;
+            }
             resetTime = 1f;
           //  Debug.Log("hit");
         }
