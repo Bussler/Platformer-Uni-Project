@@ -10,6 +10,8 @@ public class PlayerMovmentTest : MonoBehaviour {
     public bool isGrounded;
     public int maxNumberOfPlatforms;
 
+    public Transform SpawnPoint; //spawnPoint
+
     GameObject[] objectArray = new GameObject[0];
 
     public GameObject SpawnablePlatform;
@@ -475,6 +477,12 @@ public void SpawnPlatform()
         {
             runSpeed = runSpeed + runMultiplier * Time.deltaTime;
         }
+    }
+
+
+    public void Spawn()//use this for touching deathzone etc.
+    {
+        this.transform.position = SpawnPoint.position;
     }
 
 }
