@@ -64,6 +64,7 @@ public class PlayerMovmentTest : MonoBehaviour {
     public bool hasAbilityJumping;
     public bool hasAbilityScaling;//TODO
     public bool hasAbilityPlatform;
+    public bool hasAbilityAusheben;
     #endregion
 
     public float MinSize;
@@ -110,17 +111,21 @@ public class PlayerMovmentTest : MonoBehaviour {
 
     public void LateUpdate()
     {
-        Vector3 vor = new Vector3(this.transform.position.x - camera.transform.position.x, -this.transform.position.y, this.transform.position.z - camera.transform.position.z);
-      // Vector3 vor = Vector3.forward;
-
-        if (ausgewähltesObject != null)
+        if (hasAbilityAusheben)
         {
-            if (this.transform.position.y + (2) - (camera.transform.position.y - (this.transform.position.y + 2)) > this.transform.position.y - transform.lossyScale.y * 0.5f)
+
+            Vector3 vor = new Vector3(this.transform.position.x - camera.transform.position.x, -this.transform.position.y, this.transform.position.z - camera.transform.position.z);
+            // Vector3 vor = Vector3.forward;
+
+            if (ausgewähltesObject != null)
             {
-                ausgewähltesObject.transform.position = this.transform.position + new Vector3(vor.x, (2) - (camera.transform.position.y - (this.transform.position.y + 2)), vor.z);
+                if (this.transform.position.y + (2) - (camera.transform.position.y - (this.transform.position.y + 2)) > this.transform.position.y - transform.lossyScale.y * 0.5f)
+                {
+                    ausgewähltesObject.transform.position = this.transform.position + new Vector3(vor.x, (2) - (camera.transform.position.y - (this.transform.position.y + 2)), vor.z);
+                }
+               
+
             }
-
-
         }
     }
 
@@ -233,19 +238,28 @@ public class PlayerMovmentTest : MonoBehaviour {
             runSpeed = 1;
         }
 
-        if (Input.GetButtonDown("ScalingUp")&&hasAbilityScaling)
+        if (Input.GetButtonDown("ScalingUp"))
         {
-            ScalingUp();
+            if (hasAbilityScaling)
+            {
+                ScalingUp();
+            }
         }
-        if (Input.GetButtonDown("ScalingDown")&&hasAbilityScaling)
+        if (Input.GetButtonDown("ScalingDown"))
         {
-            ScalingDown();
+            if (hasAbilityScaling)
+            {
+                ScalingDown();
+            }
         }
 
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            Debug.Log("maus");
-            ObjectAuswahl();
+            if (hasAbilityAusheben)
+            {
+                Debug.Log("maus");
+                ObjectAuswahl();
+            }
 
         }
         if (Input.GetKeyDown(KeyCode.Mouse1))
@@ -277,7 +291,7 @@ public class PlayerMovmentTest : MonoBehaviour {
     RaycastHit hit;
     if (Physics.Raycast(ray, out hit))
     {
-        Debug.Log("ray");
+       
         if (hit.collider.gameObject.tag == "Aufhebbar")
         {
             ausgewähltesObject = hit.collider.gameObject;

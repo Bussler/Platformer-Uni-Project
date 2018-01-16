@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Quit : MonoBehaviour {
 
@@ -13,4 +14,17 @@ public class Quit : MonoBehaviour {
 	void Update () {
 		
 	}
+
+
+    public void OnMouseOver()
+    {
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && SplashScreen.isDestroyed == true)
+        {
+            Application.Quit();
+           
+
+        }
+    }
+
 }
