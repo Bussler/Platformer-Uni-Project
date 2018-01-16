@@ -11,6 +11,9 @@ Shader "Custom/Bendy diffuse - Radial"
 
 	SubShader 
 	{
+          Cull Off
+	
+
 		Tags { "RenderType"="Opaque" }
 		LOD 200
 
@@ -30,6 +33,8 @@ Shader "Custom/Bendy diffuse - Radial"
 		// Per material properties
 		sampler2D _MainTex;
 		fixed4 _Color;
+
+		
 
 		struct Input 
 		{
