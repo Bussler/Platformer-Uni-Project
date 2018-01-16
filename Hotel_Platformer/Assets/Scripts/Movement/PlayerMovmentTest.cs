@@ -14,6 +14,8 @@ public class PlayerMovmentTest : MonoBehaviour {
 
     GameObject[] objectArray = new GameObject[0];
 
+    public GameObject[] respawn = new GameObject[10];
+
     public GameObject SpawnablePlatform;
 
     CharacterController playerController;
@@ -76,7 +78,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         playerController = GetComponent<CharacterController>();//Player has to have a charactaercontroller attached in order to make this stuff wörk
         playerRotation = transform.rotation;
         fallmultiplier = 2f;
-        gravityGliding = gravity * 2;//stores the correct gravity, cuz the gravity will be changed during gliding
+        gravityGliding = gravity * 1.5f;//stores the correct gravity, cuz the gravity will be changed during gliding
     }
 
     //Movement in update, since we aren't using a rigidbody but a characterController
@@ -497,6 +499,17 @@ public void SpawnPlatform()
     public void Spawn()//use this for touching deathzone etc.
     {
         this.transform.position = SpawnPoint.position;
+
+
+        //setting all the inactive deathzones as obstacles active again, maybe we find a better solution here
+        for (int i=0;i<respawn.Length;i++)
+        {
+            if (respawn[i]!=null)
+            {
+                respawn[i].SetActive(true);
+            }
+        }
+
     }
 
 }
