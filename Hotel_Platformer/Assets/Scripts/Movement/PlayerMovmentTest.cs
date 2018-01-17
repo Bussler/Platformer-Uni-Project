@@ -141,6 +141,8 @@ public class PlayerMovmentTest : MonoBehaviour {
             hit.gameObject.GetComponent<FallingPlatform>().isFalling = true;
         }
 
+        
+
 
         if (hit.gameObject.tag == "MovingPlatform" )
         {

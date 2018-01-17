@@ -18,10 +18,11 @@ public class PowerUpBehaviour : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-
+       
         if (other.tag=="Player")//collision with the player
         {
-           playerScript=other.gameObject.GetComponent<PlayerMovmentTest>();
+            Debug.Log("Power");
+            playerScript =other.gameObject.GetComponent<PlayerMovmentTest>();
 
             //enable abilities, this could also be used to disable abilities
             if (run==true)
