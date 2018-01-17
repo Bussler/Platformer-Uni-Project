@@ -24,6 +24,8 @@ public class PlayerMovmentTest : MonoBehaviour {
     private float storedYValue;
     private float fallmultiplier;
 
+    private bool isFloating=false; //bool for floating
+
     public Vector3 lastMoveDirection;
     private bool dirSet = false;
 
@@ -88,6 +90,12 @@ public class PlayerMovmentTest : MonoBehaviour {
         CheckGround();//Checks if player is grounded
         calculateMovement(); // calculates the horizontal Movement;
         HandleInput(); // Handles all  other PlayerInput;
+
+        if (isFloating)//only press v once to glide
+        {
+            Gliding();
+        }
+
         if (moveDirection.y < storedYValue)//falling
         {
             this.transform.parent = null;
@@ -182,6 +190,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         {
             canJump = true;
             hasJumped = 0; //setting the times the player has jumped to 0 when on ground;
+            isFloating = false;//resetting the value if touching the ground
         }
     }
 
@@ -223,11 +232,20 @@ public class PlayerMovmentTest : MonoBehaviour {
                 Jump();
             }
         }
-        if (Input.GetButton("Gliding"))
+        if (Input.GetButtonDown("Gliding"))//changed to button down
         {
+
             if (hasAbilityGliding)
             {
-                Gliding();
+                // Gliding();
+                if (isFloating)
+                {
+                    isFloating = false;//deactivate gliding
+                }
+                else
+                {
+                    isFloating = true;//activate gliding
+                }
             }
         }
         if (Input.GetButton("Run"))
@@ -349,7 +367,7 @@ public void SpawnPlatform()
             moveDirection = transform.TransformDirection(moveDirection);
             dirSet = false;
         }
-        if (!isGrounded&&!Input.GetButton("Gliding"))  // slow changing the movementvector in air when pressing againts movement direction
+        if (!isGrounded&&isFloating==false)  // slow changing the movementvector in air when pressing againts movement direction
         {
             if (Input.GetButton("Run")||runSpeed>1)
             {

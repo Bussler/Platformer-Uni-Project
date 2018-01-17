@@ -2,11 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameController : MonoBehaviour {
 
     public Transform canvas;
     public Transform optionsMenu;
+    public AudioSource bMusic;
+    public GameObject VolumeSlider;
 
 	// Update is called once per frame
 	void Update () {
@@ -57,6 +60,12 @@ public class GameController : MonoBehaviour {
 
     public void MuteMusic()
     {
-        //TODO
+        bMusic.mute = !bMusic.mute;//mute/play music
+    }
+
+    public void VolumeMusic()//calls when the value of the slider is changed
+    {
+        float newValue = VolumeSlider.GetComponent<Slider>().value;
+        bMusic.volume = newValue;
     }
 }
