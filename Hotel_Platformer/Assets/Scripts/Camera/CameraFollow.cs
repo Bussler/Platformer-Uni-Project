@@ -20,6 +20,7 @@ public class CameraFollow : MonoBehaviour
     private float resetTime=1f;
     private bool turnupdownallowed = true;
     public float minY;
+    
 
     public LayerMask mask;
     
@@ -75,25 +76,6 @@ public class CameraFollow : MonoBehaviour
                         distanceUp += -1 * (Input.GetAxis("Mouse Y")) * turnSpeed * Time.deltaTime;
                     }
                 }
-                /** welp, this stuff does not work properly, it bugs if I jump when the camera is under the player and the player is on the teleported platform
-                //boundaries
-                if(followedObject.position.y-(transform.position.y)>2)
-                {
-                    distanceUp = distanceUp+0.1f;
-                }
-                else
-                {
-                    if (followedObject.position.y + (transform.position.y) > 9)
-                    {
-                        distanceUp = distanceUp - 0.1f;
-                    }
-                    else
-                    {
-                        distanceUp += -1 * (Input.GetAxis("Mouse Y")) * turnSpeed * Time.deltaTime;
-                    }
-                    
-                }
-                */
 
             }
         }
@@ -110,45 +92,49 @@ public class CameraFollow : MonoBehaviour
 
     public void SetDistance()
     {
+        
 
-
-        if (Physics.Raycast(this.transform.position, followedObject.transform.position - this.transform.position, (followedObject.transform.position - this.transform.position).magnitude, mask.value))
-        {
-            if (distanceAway - 10 * Time.deltaTime > 0)
-            {
-                distanceAway -= 10 * Time.deltaTime;
-            }
-            resetTime = 1f;
-          //  Debug.Log("hit");
-        }
-        else
-        {
-           // Debug.Log("miss");
-            if (!Physics.Raycast(this.transform.position, -(followedObject.transform.position - this.transform.position).normalized, 0.5f, mask.value))
-            {
-               // Debug.Log("hinten frei");
-                resetTime -= Time.deltaTime;
-
-                if (resetTime <= 0)
-                {
-
-                    if (distanceAway < savedDisstanceAway)
-                    {
-                        distanceAway += 10 * Time.deltaTime;
-                    }
-                    if (distanceAway > savedDisstanceAway)
-                    {
-                        distanceAway = savedDisstanceAway;
-                    }
-
+            if (Physics.Raycast(this.transform.position, followedObject.transform.position - this.transform.position, (followedObject.transform.position - this.transform.position).magnitude, mask.value)) {
+                if (distanceAway - 10 * Time.deltaTime > 0) {
+                    distanceAway -= 10 * Time.deltaTime;
                 }
-
-
-            }
-            else
-            {
                 resetTime = 1f;
+                //  Debug.Log("hit");
+            } else {
+                // Debug.Log("miss");
+                if (!Physics.Raycast(this.transform.position, -(followedObject.transform.position - this.transform.position).normalized, 0.5f, mask.value)) {
+                    // Debug.Log("hinten frei");
+                    resetTime -= Time.deltaTime;
+
+                    if (resetTime <= 0) {
+
+                        if (distanceAway < savedDisstanceAway) {
+                            distanceAway += 10 * Time.deltaTime;
+                        }
+                        if (distanceAway > savedDisstanceAway) {
+                            distanceAway = savedDisstanceAway;
+                        }
+
+                    }
+
+
+                } else {
+                    resetTime = 1f;
+                }
             }
-        }
+        
     }
+
+
+    bool checkCollision() {
+        Ray ray = new Ray(followedObject.transform.position, followedObject.transform.position - transform.position);
+        RaycastHit hit = new RaycastHit();
+        if (Physics.Raycast(followedObject.transform.position, -(followedObject.transform.position - transform.position),out hit)) {
+            Debug.Log("HI");
+            transform.Translate(hit.point);
+            return true;
+        }
+        return false;
+    }
+
 }

@@ -1,0 +1,324 @@
+fileFormatVersion: 2
+guid: 6caf10105ab04b34da03ec3ff5457309
+timeCreated: 1516196442
+licenseType: Free
+ModelImporter:
+  serializedVersion: 22
+  fileIDToRecycleName:
+    100000: //RootNode
+    100002: Bettkasten
+    100004: BEttTop
+    100006: Himmelpfosten
+    100008: Himmelpfosten.001
+    100010: Himmelpfosten.002
+    100012: Himmelpfosten.003
+    100014: "Pfosten_Bl\xFCte"
+    100016: "Pfosten_Bl\xFCte.001"
+    100018: "Pfosten_Bl\xFCte.002"
+    100020: "Pfosten_Bl\xFCte.003"
+    100022: "Pfosten_Bl\xFCte.004"
+    100024: "Pfosten_Bl\xFCte.005"
+    100026: "Pfosten_Bl\xFCte.006"
+    100028: "Pfosten_Bl\xFCte.007"
+    100030: "Pfosten_Bl\xFCte.008"
+    100032: "Pfosten_Bl\xFCte.009"
+    100034: "Pfosten_Bl\xFCte.010"
+    100036: "Pfosten_Bl\xFCte.011"
+    100038: "Pfosten_Bl\xFCte.012"
+    100040: "Pfosten_Bl\xFCte.013"
+    100042: "Pfosten_Bl\xFCte.014"
+    100044: "Pfosten_Bl\xFCte.015"
+    100046: Plane
+    100048: Schmuck Vorne
+    100050: Schmuck Vorne.001
+    100052: Schmuck Vorne.002
+    100054: Schmuck Vorne.003
+    100056: Schmuck Vorne.004
+    100058: Schmuck Vorne.005
+    100060: Schmuck Vorne.006
+    100062: Schmuck Vorne.007
+    100064: "Schmuck_Bl\xFCte"
+    100066: "Schmuck_Bl\xFCte.001"
+    100068: "Schmuck_Bl\xFCte.002"
+    100070: "Schmuck_Bl\xFCte.003"
+    100072: "Schmuck_Bl\xFCte.004"
+    100074: "Schmuck_Bl\xFCte.005"
+    100076: "Schmuck_Bl\xFCte.006"
+    100078: "Wei\xDFes Top"
+    400000: //RootNode
+    400002: Bettkasten
+    400004: BEttTop
+    400006: Himmelpfosten
+    400008: Himmelpfosten.001
+    400010: Himmelpfosten.002
+    400012: Himmelpfosten.003
+    400014: "Pfosten_Bl\xFCte"
+    400016: "Pfosten_Bl\xFCte.001"
+    400018: "Pfosten_Bl\xFCte.002"
+    400020: "Pfosten_Bl\xFCte.003"
+    400022: "Pfosten_Bl\xFCte.004"
+    400024: "Pfosten_Bl\xFCte.005"
+    400026: "Pfosten_Bl\xFCte.006"
+    400028: "Pfosten_Bl\xFCte.007"
+    400030: "Pfosten_Bl\xFCte.008"
+    400032: "Pfosten_Bl\xFCte.009"
+    400034: "Pfosten_Bl\xFCte.010"
+    400036: "Pfosten_Bl\xFCte.011"
+    400038: "Pfosten_Bl\xFCte.012"
+    400040: "Pfosten_Bl\xFCte.013"
+    400042: "Pfosten_Bl\xFCte.014"
+    400044: "Pfosten_Bl\xFCte.015"
+    400046: Plane
+    400048: Schmuck Vorne
+    400050: Schmuck Vorne.001
+    400052: Schmuck Vorne.002
+    400054: Schmuck Vorne.003
+    400056: Schmuck Vorne.004
+    400058: Schmuck Vorne.005
+    400060: Schmuck Vorne.006
+    400062: Schmuck Vorne.007
+    400064: "Schmuck_Bl\xFCte"
+    400066: "Schmuck_Bl\xFCte.001"
+    400068: "Schmuck_Bl\xFCte.002"
+    400070: "Schmuck_Bl\xFCte.003"
+    400072: "Schmuck_Bl\xFCte.004"
+    400074: "Schmuck_Bl\xFCte.005"
+    400076: "Schmuck_Bl\xFCte.006"
+    400078: "Wei\xDFes Top"
+    2100000: No Name
+    2300000: Bettkasten
+    2300002: BEttTop
+    2300004: Himmelpfosten
+    2300006: Himmelpfosten.001
+    2300008: Himmelpfosten.002
+    2300010: Himmelpfosten.003
+    2300012: "Pfosten_Bl\xFCte"
+    2300014: "Pfosten_Bl\xFCte.001"
+    2300016: "Pfosten_Bl\xFCte.002"
+    2300018: "Pfosten_Bl\xFCte.003"
+    2300020: "Pfosten_Bl\xFCte.004"
+    2300022: "Pfosten_Bl\xFCte.005"
+    2300024: "Pfosten_Bl\xFCte.006"
+    2300026: "Pfosten_Bl\xFCte.007"
+    2300028: "Pfosten_Bl\xFCte.008"
+    2300030: "Pfosten_Bl\xFCte.009"
+    2300032: "Pfosten_Bl\xFCte.010"
+    2300034: "Pfosten_Bl\xFCte.011"
+    2300036: "Pfosten_Bl\xFCte.012"
+    2300038: "Pfosten_Bl\xFCte.013"
+    2300040: "Pfosten_Bl\xFCte.014"
+    2300042: "Pfosten_Bl\xFCte.015"
+    2300044: Plane
+    2300046: Schmuck Vorne
+    2300048: Schmuck Vorne.001
+    2300050: Schmuck Vorne.002
+    2300052: Schmuck Vorne.003
+    2300054: Schmuck Vorne.004
+    2300056: Schmuck Vorne.005
+    2300058: Schmuck Vorne.006
+    2300060: Schmuck Vorne.007
+    2300062: "Schmuck_Bl\xFCte"
+    2300064: "Schmuck_Bl\xFCte.001"
+    2300066: "Schmuck_Bl\xFCte.002"
+    2300068: "Schmuck_Bl\xFCte.003"
+    2300070: "Schmuck_Bl\xFCte.004"
+    2300072: "Schmuck_Bl\xFCte.005"
+    2300074: "Schmuck_Bl\xFCte.006"
+    2300076: "Wei\xDFes Top"
+    3300000: Bettkasten
+    3300002: BEttTop
+    3300004: Himmelpfosten
+    3300006: Himmelpfosten.001
+    3300008: Himmelpfosten.002
+    3300010: Himmelpfosten.003
+    3300012: "Pfosten_Bl\xFCte"
+    3300014: "Pfosten_Bl\xFCte.001"
+    3300016: "Pfosten_Bl\xFCte.002"
+    3300018: "Pfosten_Bl\xFCte.003"
+    3300020: "Pfosten_Bl\xFCte.004"
+    3300022: "Pfosten_Bl\xFCte.005"
+    3300024: "Pfosten_Bl\xFCte.006"
+    3300026: "Pfosten_Bl\xFCte.007"
+    3300028: "Pfosten_Bl\xFCte.008"
+    3300030: "Pfosten_Bl\xFCte.009"
+    3300032: "Pfosten_Bl\xFCte.010"
+    3300034: "Pfosten_Bl\xFCte.011"
+    3300036: "Pfosten_Bl\xFCte.012"
+    3300038: "Pfosten_Bl\xFCte.013"
+    3300040: "Pfosten_Bl\xFCte.014"
+    3300042: "Pfosten_Bl\xFCte.015"
+    3300044: Plane
+    3300046: Schmuck Vorne
+    3300048: Schmuck Vorne.001
+    3300050: Schmuck Vorne.002
+    3300052: Schmuck Vorne.003
+    3300054: Schmuck Vorne.004
+    3300056: Schmuck Vorne.005
+    3300058: Schmuck Vorne.006
+    3300060: Schmuck Vorne.007
+    3300062: "Schmuck_Bl\xFCte"
+    3300064: "Schmuck_Bl\xFCte.001"
+    3300066: "Schmuck_Bl\xFCte.002"
+    3300068: "Schmuck_Bl\xFCte.003"
+    3300070: "Schmuck_Bl\xFCte.004"
+    3300072: "Schmuck_Bl\xFCte.005"
+    3300074: "Schmuck_Bl\xFCte.006"
+    3300076: "Wei\xDFes Top"
+    4300000: Plane
+    4300002: "Wei\xDFes Top"
+    4300004: BEttTop
+    4300006: Himmelpfosten
+    4300008: Schmuck Vorne
+    4300010: Bettkasten
+    4300012: Schmuck Vorne.001
+    4300014: Schmuck Vorne.002
+    4300016: Schmuck Vorne.003
+    4300018: Schmuck Vorne.004
+    4300020: Schmuck Vorne.005
+    4300022: Schmuck Vorne.006
+    4300024: Schmuck Vorne.007
+    4300026: "Schmuck_Bl\xFCte"
+    4300028: "Schmuck_Bl\xFCte.001"
+    4300030: "Schmuck_Bl\xFCte.002"
+    4300032: "Schmuck_Bl\xFCte.003"
+    4300034: "Schmuck_Bl\xFCte.004"
+    4300036: "Schmuck_Bl\xFCte.005"
+    4300038: "Schmuck_Bl\xFCte.006"
+    4300040: "Pfosten_Bl\xFCte.003"
+    4300042: "Pfosten_Bl\xFCte"
+    4300044: "Pfosten_Bl\xFCte.002"
+    4300046: "Pfosten_Bl\xFCte.001"
+    4300048: Himmelpfosten.001
+    4300050: "Pfosten_Bl\xFCte.004"
+    4300052: "Pfosten_Bl\xFCte.005"
+    4300054: "Pfosten_Bl\xFCte.006"
+    4300056: "Pfosten_Bl\xFCte.007"
+    4300058: Himmelpfosten.002
+    4300060: "Pfosten_Bl\xFCte.008"
+    4300062: "Pfosten_Bl\xFCte.009"
+    4300064: "Pfosten_Bl\xFCte.010"
+    4300066: "Pfosten_Bl\xFCte.011"
+    4300068: Himmelpfosten.003
+    4300070: "Pfosten_Bl\xFCte.012"
+    4300072: "Pfosten_Bl\xFCte.013"
+    4300074: "Pfosten_Bl\xFCte.014"
+    4300076: "Pfosten_Bl\xFCte.015"
+    6400000: Bettkasten
+    6400002: BEttTop
+    6400004: Himmelpfosten
+    6400006: Himmelpfosten.001
+    6400008: Himmelpfosten.002
+    6400010: Himmelpfosten.003
+    6400012: "Pfosten_Bl\xFCte"
+    6400014: "Pfosten_Bl\xFCte.001"
+    6400016: "Pfosten_Bl\xFCte.002"
+    6400018: "Pfosten_Bl\xFCte.003"
+    6400020: "Pfosten_Bl\xFCte.004"
+    6400022: "Pfosten_Bl\xFCte.005"
+    6400024: "Pfosten_Bl\xFCte.006"
+    6400026: "Pfosten_Bl\xFCte.007"
+    6400028: "Pfosten_Bl\xFCte.008"
+    6400030: "Pfosten_Bl\xFCte.009"
+    6400032: "Pfosten_Bl\xFCte.010"
+    6400034: "Pfosten_Bl\xFCte.011"
+    6400036: "Pfosten_Bl\xFCte.012"
+    6400038: "Pfosten_Bl\xFCte.013"
+    6400040: "Pfosten_Bl\xFCte.014"
+    6400042: "Pfosten_Bl\xFCte.015"
+    6400044: Plane
+    6400046: Schmuck Vorne
+    6400048: Schmuck Vorne.001
+    6400050: Schmuck Vorne.002
+    6400052: Schmuck Vorne.003
+    6400054: Schmuck Vorne.004
+    6400056: Schmuck Vorne.005
+    6400058: Schmuck Vorne.006
+    6400060: Schmuck Vorne.007
+    6400062: "Schmuck_Bl\xFCte"
+    6400064: "Schmuck_Bl\xFCte.001"
+    6400066: "Schmuck_Bl\xFCte.002"
+    6400068: "Schmuck_Bl\xFCte.003"
+    6400070: "Schmuck_Bl\xFCte.004"
+    6400072: "Schmuck_Bl\xFCte.005"
+    6400074: "Schmuck_Bl\xFCte.006"
+    6400076: "Wei\xDFes Top"
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 1
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 0
+    importLights: 0
+    swapUVChannels: 0
+    generateSecondaryUV: 1
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 0
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
