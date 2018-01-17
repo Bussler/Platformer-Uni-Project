@@ -80,7 +80,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         playerController = GetComponent<CharacterController>();//Player has to have a charactaercontroller attached in order to make this stuff wörk
         playerRotation = transform.rotation;
         fallmultiplier = 2f;
-        gravityGliding = gravity * 1.5f;//stores the correct gravity, cuz the gravity will be changed during gliding
+        gravityGliding = gravity * 1.5f;//stores the correct gravity, cuz the gravity will be changed during gliding 1.6, 6
     }
 
     //Movement in update, since we aren't using a rigidbody but a characterController
@@ -95,28 +95,27 @@ public class PlayerMovmentTest : MonoBehaviour {
         {
             Gliding();
         }
+        //else
+        //{
+            if (moveDirection.y < storedYValue)//falling
+            {
+                this.transform.parent = null;
 
-        if (moveDirection.y < storedYValue)//falling
-        {
-            this.transform.parent = null;
-          
-            moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
-        }
-        if (!Input.GetButton("Jump") && moveDirection.y > storedYValue)         
-        {
-            moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;            
-        }        
+                moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
+            }
+            if (!Input.GetButton("Jump") && moveDirection.y > storedYValue)
+            {
+                moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
+            }
 
+            moveDirection.y -= gravity * Time.deltaTime;  //applying gravity;
+            playerController.Move(moveDirection * Time.deltaTime);//making the player move ingame 
 
-        moveDirection.y -= gravity * Time.deltaTime;  //applying gravity;
-        playerController.Move(moveDirection * Time.deltaTime);//making the player move ingame  
+        //}
+
      
         Turn();
 
-      
-
-       
-       
     }
 
     public void LateUpdate()
@@ -422,13 +421,18 @@ public void SpawnPlatform()
 
     void Gliding()
     {
+        //Debug.Log("isGliding when falling");
+
         if (moveDirection.y < storedYValue)//falling
         {
+            //Debug.Log("isGliding when falling");
             //the player can move in air
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed;//calculate a vector/movement with given playerinput
             moveDirection = transform.TransformDirection(moveDirection);
             moveDirection.y -= gravityGliding * Time.deltaTime;//adjusting y value with specialized gravity
             playerController.Move(moveDirection * Time.deltaTime);//making the player move ingame
+
+            //Debug.Log("isGliding after falling");
         }      
     }
     public void Jump()
