@@ -12919,6 +12919,15 @@ Prefab:
       propertyPath: mask.m_Bits
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114345601665898982, guid: 612690dad8264164e81a0025e10e8be8,
+        type: 2}
+      propertyPath: layers.m_Bits
+      value: 33
+      objectReference: {fileID: 0}
+    - target: {fileID: 1855845047056496, guid: 612690dad8264164e81a0025e10e8be8, type: 2}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 612690dad8264164e81a0025e10e8be8, type: 2}
   m_IsPrefabParent: 0

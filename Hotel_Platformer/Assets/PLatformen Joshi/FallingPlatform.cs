@@ -19,7 +19,7 @@ public class FallingPlatform : MonoBehaviour {
             time = time + Time.deltaTime;
             if (time > timeBeforFall)
             {
-                this.transform.Translate(Vector3.down * fallingSpeed*Time.deltaTime);
+                this.transform.Translate(Vector3.down * fallingSpeed*Time.deltaTime,Space.World);
 
             }
         }
@@ -29,9 +29,11 @@ public class FallingPlatform : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
+        
         if (collision.gameObject.GetComponent<PlayerMovmentTest>() != null)
         {
             isFalling = true;
         }
     }
+
 }

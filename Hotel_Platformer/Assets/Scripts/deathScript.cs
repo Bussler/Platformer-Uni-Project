@@ -20,7 +20,7 @@ public class deathScript : MonoBehaviour {
     {
             if (other.tag == "Player")
             {
-            Debug.Log("death");
+
             other.gameObject.GetComponent<PlayerMovmentTest>().Spawn();
             pScript = other.gameObject.GetComponent<PlayerMovmentTest>();
             pScript.Spawn();

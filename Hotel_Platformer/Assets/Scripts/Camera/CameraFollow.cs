@@ -23,13 +23,17 @@ public class CameraFollow : MonoBehaviour
     
 
     public LayerMask mask;
-    
+    public LayerMask layers;
     public void Start()
     {
         savedDisstanceAway = distanceAway;
     }
 
-    
+    private void Update() {
+        
+          
+        
+    }
 
 
     private void LateUpdate()//is called after update, so when the player has already moved
@@ -47,7 +51,7 @@ public class CameraFollow : MonoBehaviour
         {
             this.transform.position = new Vector3(this.transform.position.x, minY- followedObject.transform.lossyScale.y * 0.5f, this.transform.position.z);
         }
-      
+
 
 
     }
@@ -90,51 +94,40 @@ public class CameraFollow : MonoBehaviour
 
 
 
-    public void SetDistance()
-    {
-        
+    public void SetDistance() {
 
-            if (Physics.Raycast(this.transform.position, followedObject.transform.position - this.transform.position, (followedObject.transform.position - this.transform.position).magnitude, mask.value)) {
-                if (distanceAway - 10 * Time.deltaTime > 0) {
-                    distanceAway -= 10 * Time.deltaTime;
-                }
-                resetTime = 1f;
-                //  Debug.Log("hit");
-            } else {
-                // Debug.Log("miss");
-                if (!Physics.Raycast(this.transform.position, -(followedObject.transform.position - this.transform.position).normalized, 0.5f, mask.value)) {
-                    // Debug.Log("hinten frei");
-                    resetTime -= Time.deltaTime;
+        if (Physics.Raycast(this.transform.position, followedObject.transform.position - this.transform.position, (followedObject.transform.position - this.transform.position).magnitude, mask.value)) {
+            if (distanceAway - 10 * Time.deltaTime > 0) {
+                distanceAway -= 10 * Time.deltaTime;
+            }
+            resetTime = 1f;
+            //  Debug.Log("hit");
+        } else {
+            // Debug.Log("miss");
+            if (!Physics.Raycast(this.transform.position, -(followedObject.transform.position - this.transform.position).normalized, 0.5f, mask.value)) {
+                // Debug.Log("hinten frei");
+                resetTime -= Time.deltaTime;
 
-                    if (resetTime <= 0) {
+                if (resetTime <= 0) {
 
-                        if (distanceAway < savedDisstanceAway) {
-                            distanceAway += 10 * Time.deltaTime;
-                        }
-                        if (distanceAway > savedDisstanceAway) {
-                            distanceAway = savedDisstanceAway;
-                        }
-
+                    if (distanceAway < savedDisstanceAway) {
+                        distanceAway += 10 * Time.deltaTime;
+                    }
+                    if (distanceAway > savedDisstanceAway) {
+                        distanceAway = savedDisstanceAway;
                     }
 
-
-                } else {
-                    resetTime = 1f;
                 }
+
+
+            } else {
+                resetTime = 1f;
             }
-        
-    }
-
-
-    bool checkCollision() {
-        Ray ray = new Ray(followedObject.transform.position, followedObject.transform.position - transform.position);
-        RaycastHit hit = new RaycastHit();
-        if (Physics.Raycast(followedObject.transform.position, -(followedObject.transform.position - transform.position),out hit)) {
-            Debug.Log("HI");
-            transform.Translate(hit.point);
-            return true;
         }
-        return false;
+    
     }
+
+
+
 
 }
