@@ -9,7 +9,7 @@ public class PlayerMovmentTest : MonoBehaviour {
     public float gravity;
     public bool isGrounded;
     public int maxNumberOfPlatforms;
-
+    private int floatingFallSpeed = 0;
     public Transform SpawnPoint; //spawnPoint
 
     GameObject[] objectArray = new GameObject[0];
@@ -80,7 +80,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         playerController = GetComponent<CharacterController>();//Player has to have a charactaercontroller attached in order to make this stuff wörk
         playerRotation = transform.rotation;
         fallmultiplier = 2f;
-        gravityGliding = gravity * 1.5f;//stores the correct gravity, cuz the gravity will be changed during gliding 1.6, 6
+        gravityGliding = gravity * 3.5f;//stores the correct gravity, cuz the gravity will be changed during gliding 1.6, 6
     }
 
     //Movement in update, since we aren't using a rigidbody but a characterController
@@ -88,6 +88,7 @@ public class PlayerMovmentTest : MonoBehaviour {
     {
         storedYValue = transform.position.y;    
         CheckGround();//Checks if player is grounded
+        handleFloating();
         calculateMovement(); // calculates the horizontal Movement;
         HandleInput(); // Handles all  other PlayerInput;
 
@@ -97,21 +98,22 @@ public class PlayerMovmentTest : MonoBehaviour {
         }
         //else
         //{
-            if (moveDirection.y < storedYValue)//falling
+            if (moveDirection.y < storedYValue && !isFloating)//falling
             {
                 this.transform.parent = null;
 
                 moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
             }
-            if (!Input.GetButton("Jump") && moveDirection.y > storedYValue)
+            if (!Input.GetButton("Jump") && moveDirection.y > storedYValue && !isFloating)
             {
                 moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
             }
-
+        if (!isFloating) {
             moveDirection.y -= gravity * Time.deltaTime;  //applying gravity;
+        }
             playerController.Move(moveDirection * Time.deltaTime);//making the player move ingame 
-
-        //}
+        
+       // }
 
      
         Turn();
@@ -231,22 +233,7 @@ public class PlayerMovmentTest : MonoBehaviour {
                 Jump();
             }
         }
-        if (Input.GetButtonDown("Gliding"))//changed to button down
-        {
-
-            if (hasAbilityGliding)
-            {
-                // Gliding();
-                if (isFloating)
-                {
-                    isFloating = false;//deactivate gliding
-                }
-                else
-                {
-                    isFloating = true;//activate gliding
-                }
-            }
-        }
+        
         if (Input.GetButton("Run"))
         {
             if (hasAbilityRunning)
@@ -278,7 +265,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         {
             if (hasAbilityAusheben)
             {
-                Debug.Log("maus");
+                //Debug.Log("maus");
                 ObjectAuswahl();
             }
 
@@ -316,7 +303,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         if (hit.collider.gameObject.tag == "Aufhebbar")
         {
             ausgewähltesObject = hit.collider.gameObject;
-            Debug.Log(ausgewähltesObject.name);
+           // Debug.Log(ausgewähltesObject.name);
 
         }
 
@@ -360,9 +347,16 @@ public void SpawnPlatform()
 
     public void calculateMovement()
     {
-        if (isGrounded)  //normal movement on Ground
+        if (isGrounded )  //normal movement on Ground
         {
-            moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed * runSpeed;//calculate a vector/movement with given playerinput
+            moveDirection = new Vector3(Input.GetAxis("Horizontal"), floatingFallSpeed, Input.GetAxis("Vertical")) * moveSpeed * runSpeed;//calculate a vector/movement with given playerinput
+            moveDirection = transform.TransformDirection(moveDirection);
+            dirSet = false;
+        }
+        if (!isGrounded&&isFloating)  //normal movement on Ground
+      {
+            
+            moveDirection = new Vector3(Input.GetAxis("Horizontal"), floatingFallSpeed, Input.GetAxis("Vertical")) * moveSpeed * runSpeed;//calculate a vector/movement with given playerinput
             moveDirection = transform.TransformDirection(moveDirection);
             dirSet = false;
         }
@@ -381,7 +375,22 @@ public void SpawnPlatform()
     
         }
     }
+    void handleFloating() {
+        if (Input.GetButtonDown("Gliding"))//changed to button down
+        {
 
+            if (hasAbilityGliding) {
+                // Gliding();
+                if (isFloating) {
+                    isFloating = false;//deactivate gliding
+                    floatingFallSpeed = 0;
+                } else {
+                    isFloating = true;//activate gliding
+                    floatingFallSpeed = -200;
+                }
+            }
+        }
+    }
 
     void ScalingUp()
     {
@@ -428,8 +437,11 @@ public void SpawnPlatform()
             //Debug.Log("isGliding when falling");
             //the player can move in air
             moveDirection = new Vector3(Input.GetAxis("Horizontal"), 0, Input.GetAxis("Vertical")) * moveSpeed;//calculate a vector/movement with given playerinput
+            
             moveDirection = transform.TransformDirection(moveDirection);
-            moveDirection.y -= gravityGliding * Time.deltaTime;//adjusting y value with specialized gravity
+            //moveDirection.y = -2* gravityGliding * Time.deltaTime;//adjusting y value with specialized gravity
+            
+             moveDirection.y -= gravityGliding * Time.deltaTime;//adjusting y value with specialized gravity
             playerController.Move(moveDirection * Time.deltaTime);//making the player move ingame
 
             //Debug.Log("isGliding after falling");
@@ -470,7 +482,7 @@ public void SpawnPlatform()
                 if (hasJumped < timesToJump)  //multple Jumps
                 {
                     moveDirection.y = jumpSpeed;//setting the y value, therefore making the player jump
-                    Debug.Log(moveDirection.y);
+                   // Debug.Log(moveDirection.y);
                     hasJumped++;//count up
                    // Debug.Log("doublejump");
                 }
