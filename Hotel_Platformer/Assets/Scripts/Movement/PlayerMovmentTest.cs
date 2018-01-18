@@ -80,7 +80,7 @@ public class PlayerMovmentTest : MonoBehaviour {
         playerController = GetComponent<CharacterController>();//Player has to have a charactaercontroller attached in order to make this stuff wörk
         playerRotation = transform.rotation;
         fallmultiplier = 2f;
-        gravityGliding = gravity * 3.5f;//stores the correct gravity, cuz the gravity will be changed during gliding 1.6, 6
+        gravityGliding = gravity * 4.5f;//stores the correct gravity, cuz the gravity will be changed during gliding 1.6, 6
     }
 
     //Movement in update, since we aren't using a rigidbody but a characterController
@@ -192,6 +192,7 @@ public class PlayerMovmentTest : MonoBehaviour {
             canJump = true;
             hasJumped = 0; //setting the times the player has jumped to 0 when on ground;
             isFloating = false;//resetting the value if touching the ground
+            floatingFallSpeed = 0;
         }
     }
 
