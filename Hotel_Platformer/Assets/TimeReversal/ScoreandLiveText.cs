@@ -6,15 +6,17 @@ using UnityEngine.UI;
 public class ScoreandLiveText : MonoBehaviour {
 
     public Text text;
+    private PlayerMovmentTest player;
 
 	
 	void Start () {
-        text = this.gameObject.GetComponent<Text>();
-        text.text = "Score: " + GameData.Instance.Score+"\nLives: "+GameData.Instance.Lives;
+        player = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerMovmentTest>();
+      
+        text.text = "Lives:" + player.health; 
 	}
 	
-	public void UpdateScore()
+	 void Update()
     {
-        text.text = "Score: " + GameData.Instance.Score + "\nLives: " + GameData.Instance.Lives;
+        text.text = "Lives:" + player.health;
     }
 }

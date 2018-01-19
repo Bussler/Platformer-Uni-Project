@@ -7,20 +7,31 @@ public class TimeREverse : MonoBehaviour {
     // private Stack<TRObject> objectsOnStack = new Stack<TRObject>();
     private CircularBuffer objectsInCircularBuffer = new CircularBuffer(1000);
     private ITR otherScript;
+    public PlayerMovmentTest player;
     void Start()
     {
         otherScript = (ITR)gameObject.GetComponent(typeof(ITR));
     }
     void FixedUpdate()
     {
-        if (Input.GetButton("TimeControl"))
-        {
-            if (objectsInCircularBuffer.Count > 0)
-                otherScript.LoadTRObject(objectsInCircularBuffer.Pop());
+        if (player.hasAbilityTimeReversal) {
+            if (Input.GetButton("TimeReversal"))
+            {
+                Debug.Log("Time");
+              player.canBeControlled = false;
+                if (objectsInCircularBuffer.Count > 0)
+                {
+                    Debug.Log("Time2");
+                    otherScript.LoadTRObject(objectsInCircularBuffer.Pop());
+                }
+            }
+            else
+            {
+               
+                otherScript.SaveTRObject();
+                player.canBeControlled = true;
+            }
         }
-        else
-            otherScript.SaveTRObject();
-
     }
 
     public void PushTRObject(TRObject trobject)

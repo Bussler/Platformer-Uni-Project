@@ -8,6 +8,9 @@ TagManager:
   - RotatingPlatform
   - MovingPlatform
   - Aufhebbar
+  - FallingPlatform
+  - "Z\xE4hlerPlatform"
+  - DeathZone
   layers:
   - Default
   - TransparentFX
