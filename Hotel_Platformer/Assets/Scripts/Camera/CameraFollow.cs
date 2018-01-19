@@ -47,9 +47,9 @@ public class CameraFollow : MonoBehaviour
         
         transform.LookAt(followedObject);
 
-        if(transform.position.y < minY-followedObject.transform.lossyScale.y*0.55f)
+        if(transform.position.y < minY+1)
         {
-            this.transform.position = new Vector3(this.transform.position.x, minY- followedObject.transform.lossyScale.y * 0.5f, this.transform.position.z);
+            this.transform.position = new Vector3(this.transform.position.x, minY + 1, this.transform.position.z);
         }
 
 

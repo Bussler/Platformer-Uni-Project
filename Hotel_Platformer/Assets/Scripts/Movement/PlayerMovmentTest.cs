@@ -23,6 +23,7 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
 
     public GameObject SpawnablePlatform;
 
+    public Animator animator;
     private TimeREverse trscript;
     CharacterController playerController;
     private Vector3 moveDirection;
@@ -97,6 +98,7 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
         health = maxHealth;
         buffer = FindObjectOfType<CircularBuffer>();
         trscript = GetComponent<TimeREverse>();
+        animator = this.transform.GetChild(0).GetComponent<Animator>();
     }
 
     //Movement in update, since we aren't using a rigidbody but a characterController
@@ -145,6 +147,9 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
         {
             Death();
         }
+
+        animator.SetFloat("x", Input.GetAxis("Horizontal"));
+        animator.SetFloat("y", Input.GetAxis("Vertical"));
 
     }
 
@@ -234,6 +239,11 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
             hasJumped = 0; //setting the times the player has jumped to 0 when on ground;
             isFloating = false;//resetting the value if touching the ground
             floatingFallSpeed = 0;
+            animator.SetBool("isGrounded", true);
+        }
+        else
+        {
+            animator.SetBool("isGrounded", false);
         }
     }
 
@@ -242,31 +252,44 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
         if(Input.GetAxis("Horizontal") > 0){  
             isMovingLeft = false;
             isMovingRight = true;
+            animator.SetBool("right",true);
+            animator.SetBool("left", false);
+            
         }
         if (Input.GetAxis("Horizontal") < 0)
         {
             isMovingLeft = true;
             isMovingRight = false;
+            animator.SetBool("right",false);
+            animator.SetBool("left", true);
         }
         if (Input.GetAxis("Horizontal") == 0)
         {
             isMovingLeft = false;
             isMovingRight = false;
+            animator.SetBool("right", false);
+            animator.SetBool("left", false);
         }
         if (Input.GetAxis("Vertical") < 0)
         {
             isMovingForwards = false;
             isMovingBackwards = true;
+            animator.SetBool("back", true);
+            animator.SetBool("forward", false);
         }
         if (Input.GetAxis("Vertical") > 0)
         {
             isMovingForwards = true;
             isMovingBackwards = false;
+            animator.SetBool("back", false);
+            animator.SetBool("forward", true);
         }
         if (Input.GetAxis("Vertical") == 0)
         {
             isMovingForwards = false;
             isMovingBackwards = false;
+            animator.SetBool("back", false);
+            animator.SetBool("forward", false);
         }
         if (Input.GetButtonDown("Jump"))
         {
@@ -499,25 +522,29 @@ public void SpawnPlatform()
                 moveDirection.y = jumpSpeed;//setting the y value, therefore making the player jump
                // Debug.Log(moveDirection.y);
                 hasJumped=1;
-               // Debug.Log("Jump");                                            
+                // Debug.Log("Jump");                           
+                animator.SetTrigger("jump");
             }
             else
             {
+                
                 if (isMovingLeft)  //checks if player is moving left and wall is left;
                 {
-                    if (Physics.Raycast(this.transform.localPosition, transform.TransformDirection(new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z) - this.transform.position), this.transform.lossyScale.x / 2 + 0.1f, mask.value))
+                    Debug.Log("left");
+                    if (Physics.Raycast(this.transform.localPosition, transform.TransformDirection(new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z) - this.transform.position), 1.3f, mask.value))
                     {
                         WallJump(4);
-                       // Debug.Log("Walljump");
+                        Debug.Log("Walljump");
                         return;
                     }
                 }
                 if (isMovingRight)
                 {
-                    if (Physics.Raycast(this.transform.position,  transform.TransformDirection(new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z) - this.transform.position), this.transform.lossyScale.x / 2 + 0.1f, mask.value))
+                    Debug.Log("left");
+                    if (Physics.Raycast(this.transform.position,  transform.TransformDirection(new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z) - this.transform.position), 1.3f, mask.value))
                     {
                         WallJump(2);
-                        //Debug.Log("Walljump");
+                        Debug.Log("Walljump");
                         return;
                     }
                 }
@@ -526,7 +553,8 @@ public void SpawnPlatform()
                     moveDirection.y = jumpSpeed;//setting the y value, therefore making the player jump
                    // Debug.Log(moveDirection.y);
                     hasJumped++;//count up
-                   // Debug.Log("doublejump");
+                                // Debug.Log("doublejump");
+                    animator.SetTrigger("jump");
                 }
                 else
                 {
