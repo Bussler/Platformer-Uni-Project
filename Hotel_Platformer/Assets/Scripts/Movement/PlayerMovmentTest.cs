@@ -2,7 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerMovmentTest : MonoBehaviour {
+public class PlayerMovmentTest : MonoBehaviour, ITR
+{
+    public int health;
+    private int maxHealth;
+    
+
 
     public float moveSpeed;
     public float rotateSpeed;
@@ -18,11 +23,13 @@ public class PlayerMovmentTest : MonoBehaviour {
 
     public GameObject SpawnablePlatform;
 
+    private TimeREverse trscript;
     CharacterController playerController;
     private Vector3 moveDirection;
     private Quaternion playerRotation;
     private float storedYValue;
     private float fallmultiplier;
+    public bool canBeControlled = true;
 
     private bool isFloating=false; //bool for floating
 
@@ -34,6 +41,8 @@ public class PlayerMovmentTest : MonoBehaviour {
     private GameObject ausgewähltesObject;
     public Camera camera;
     private bool hasObject;
+
+    public CircularBuffer buffer;
 
     #region GlidingVariables
     private float gravityGliding;
@@ -69,6 +78,7 @@ public class PlayerMovmentTest : MonoBehaviour {
     public bool hasAbilityScaling;//TODO
     public bool hasAbilityPlatform;
     public bool hasAbilityAusheben;
+    public bool hasAbilityTimeReversal;
     #endregion
 
     public float MinSize;
@@ -76,11 +86,17 @@ public class PlayerMovmentTest : MonoBehaviour {
 
     void Start()
     {
+        maxHealth = health;
+        SpawnPoint = GameObject.Find("SpawnPoint").transform;
         camera = GameObject.FindObjectOfType<Camera>();
         playerController = GetComponent<CharacterController>();//Player has to have a charactaercontroller attached in order to make this stuff wörk
         playerRotation = transform.rotation;
         fallmultiplier = 2f;
         gravityGliding = gravity * 4.5f;//stores the correct gravity, cuz the gravity will be changed during gliding 1.6, 6
+        Spawn();
+        health = maxHealth;
+        buffer = FindObjectOfType<CircularBuffer>();
+        trscript = GetComponent<TimeREverse>();
     }
 
     //Movement in update, since we aren't using a rigidbody but a characterController
@@ -89,9 +105,15 @@ public class PlayerMovmentTest : MonoBehaviour {
         storedYValue = transform.position.y;    
         CheckGround();//Checks if player is grounded
         handleFloating();
-        calculateMovement(); // calculates the horizontal Movement;
-        HandleInput(); // Handles all  other PlayerInput;
+        if (canBeControlled)
+        {
+          
+           
+        }
 
+        calculateMovement(); // calculates the horizontal Movement;
+
+        HandleInput(); // Handles all  other PlayerInput;
         if (isFloating)//only press v once to glide
         {
             Gliding();
@@ -118,6 +140,12 @@ public class PlayerMovmentTest : MonoBehaviour {
      
         Turn();
 
+
+        if (health <= 0)
+        {
+            Death();
+        }
+
     }
 
     public void LateUpdate()
@@ -138,6 +166,15 @@ public class PlayerMovmentTest : MonoBehaviour {
 
             }
         }
+    }
+
+    void Death()
+    {
+      
+        SpawnPoint = GameObject.Find("SpawnPoint").transform;
+        Spawn();
+        health = maxHealth;
+
     }
 
     void OnControllerColliderHit(ControllerColliderHit hit)
@@ -179,6 +216,10 @@ public class PlayerMovmentTest : MonoBehaviour {
                 hit.gameObject.GetComponent<ZaelerPatfrom>().ChangeColor();
             }
         }
+
+        
+
+
     }
 
     
@@ -296,7 +337,7 @@ public class PlayerMovmentTest : MonoBehaviour {
     //Vector3 vor = Quaternion.Euler(0,45,0)*new Vector3(this.transform.position.x - camera.transform.position.x, this.transform.position.y - camera.transform.position.y, this.transform.position.z - camera.transform.position.z).normalized*5f;
     // Vector3 vor2 = new Vector3(vor.x, -vor.y, vor.z) + vor;
 
-    Ray ray = new Ray(this.transform.position, new Vector3(this.transform.position.x - camera.transform.position.x, this.transform.position.y, this.transform.position.z - camera.transform.position.z));
+    Ray ray = new Ray(this.transform.position, new Vector3(this.transform.position.x - camera.transform.position.x, 0, this.transform.position.z - camera.transform.position.z));
     RaycastHit hit;
     if (Physics.Raycast(ray, out hit))
     {
@@ -497,12 +538,14 @@ public void SpawnPlatform()
 
     public void OnDrawGizmos()  //Drawing the Raycasts for walljump in the editor
     {
+        Ray ray = new Ray(this.transform.position, new Vector3(this.transform.position.x - camera.transform.position.x, 0, this.transform.position.z - camera.transform.position.z));
         Vector3 r = transform.TransformDirection(new Vector3(this.transform.position.x + 1, this.transform.position.y, this.transform.position.z) - this.transform.position);
         Vector3 l =transform.TransformDirection( new Vector3(this.transform.position.x - 1, this.transform.position.y, this.transform.position.z)-this.transform.position);
         //Vector3 vor = transform.TransformVector( Quaternion.Euler(0,-45, -45) * new Vector3(this.transform.position.x - camera.transform.position.x, this.transform.position.y - camera.transform.position.y, this.transform.position.z - camera.transform.position.z));
        // Vector3 vor2 = new Vector3(vor.x, -vor.y, vor.z) + vor;
         Gizmos.DrawRay(this.transform.position,r);
         Gizmos.DrawRay(this.transform.position, l);
+        Gizmos.DrawRay(ray);
        // Gizmos.DrawRay(this.transform.position, vor);
     }
 
@@ -536,7 +579,7 @@ public void SpawnPlatform()
     public void Spawn()//use this for touching deathzone etc.
     {
         this.transform.position = SpawnPoint.position;
-
+        
 
         //setting all the inactive deathzones as obstacles active again, maybe we find a better solution here
         for (int i=0;i<respawn.Length;i++)
@@ -546,7 +589,31 @@ public void SpawnPlatform()
                 respawn[i].SetActive(true);
             }
         }
+       
 
+    }
+
+
+    private class MyStatus : TRObject
+    {
+        public Vector3 myPosition;
+        public Quaternion myRotation;
+    }
+
+    public void SaveTRObject()
+    {
+        MyStatus status = new MyStatus();
+        status.myPosition = transform.position;
+        status.myRotation = transform.rotation;
+        trscript.PushTRObject(status);
+        //playerRigidbody.isKinematic = false;
+    }
+    public void LoadTRObject(TRObject trobject)
+    {
+        MyStatus newStatus = (MyStatus)trobject;
+        transform.position = newStatus.myPosition;
+        transform.rotation = newStatus.myRotation;
+       // playerRigidbody.isKinematic = true;
     }
 
 }

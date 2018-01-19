@@ -9,11 +9,26 @@ public class SoundManager : MonoBehaviour {
     static float MasterVolumeSaved;
 	string mastervolumeKEY= "MASTERVOLUME";
     public AudioSource audioo;
+    string savedMasterVolumeKEY = "SAVEDMASTERVOLUME";
+    string muteKEY = "MUTE";
 
     void Start()
     {
+        
+        Debug.Log("" + PlayerPrefs.GetInt("MUTE"));
+        if (PlayerPrefs.GetInt("MUTE") == 0)
+        {
+            mute = false;
+           
+        }
+        else
+        {
+            mute = true;
+        }
+
         MasterVolume = getVolume();
         audioo.volume = MasterVolume;
+       
         
     }
 
@@ -25,7 +40,15 @@ public class SoundManager : MonoBehaviour {
 
     static public float getVolume()
     {
-        return PlayerPrefs.GetFloat("MASTERVOLUME");
+        if (PlayerPrefs.GetFloat("MASTERVOLUME") ==0 && !mute)
+        {
+           
+            return 1;
+        }
+        else
+        {
+            return PlayerPrefs.GetFloat("MASTERVOLUME");
+        }
     }
 
     static public void setVolume(float v)
@@ -67,15 +90,18 @@ public class SoundManager : MonoBehaviour {
         if (!mute)
         {
             MasterVolumeSaved = MasterVolume;
+            PlayerPrefs.SetFloat("SAVEDMASTERVOLUME", MasterVolume);
             MasterVolume = 0;
             mute = true;
+            PlayerPrefs.SetInt("MUTE", 1);
             PlayerPrefs.SetFloat("MASTERVOLUME", MasterVolume);
 
         }
         else
         {
+            PlayerPrefs.SetInt("MUTE", 0);
             mute = false;
-            MasterVolume = MasterVolumeSaved;
+            MasterVolume = PlayerPrefs.GetFloat("SAVEDMASTERVOLUME");
             PlayerPrefs.SetFloat("MASTERVOLUME", MasterVolume);
 
         }

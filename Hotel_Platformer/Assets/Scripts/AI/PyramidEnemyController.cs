@@ -75,7 +75,7 @@ public class PyramidEnemyController : MonoBehaviour {
     private void OnCollisionEnter(Collision col) {
         if (col.gameObject.tag == "Player") {
             //respawn
-            Debug.Log("tot");
+            col.gameObject.GetComponent<PlayerMovmentTest>().health--;
         }
     }
 }

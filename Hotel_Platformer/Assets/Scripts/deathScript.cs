@@ -5,10 +5,11 @@ using UnityEngine;
 public class deathScript : MonoBehaviour {
 
     private PlayerMovmentTest pScript;
+  
 
 	// Use this for initialization
 	void Start () {
-		
+      
 	}
 	
 	// Update is called once per frame
@@ -20,11 +21,15 @@ public class deathScript : MonoBehaviour {
     {
             if (other.tag == "Player")
             {
-
-            other.gameObject.GetComponent<PlayerMovmentTest>().Spawn();
-            pScript = other.gameObject.GetComponent<PlayerMovmentTest>();
-            pScript.Spawn();
+             other.gameObject.GetComponent<PlayerMovmentTest>().health--;
+               
+                Debug.Log("DEath");
+              
+                other.gameObject.GetComponent<PlayerMovmentTest>().Spawn();
+            }
+           // pScript = other.gameObject.GetComponent<PlayerMovmentTest>();
+           // pScript.Spawn();
             }
     }
 
-}
+
