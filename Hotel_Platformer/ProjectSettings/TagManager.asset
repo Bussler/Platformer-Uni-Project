@@ -5,8 +5,12 @@ TagManager:
   serializedVersion: 2
   tags:
   - Terrain
-  - PowerUp
-  - movingPlatform
+  - RotatingPlatform
+  - MovingPlatform
+  - Aufhebbar
+  - FallingPlatform
+  - "Z\xE4hlerPlatform"
+  - DeathZone
   layers:
   - Default
   - TransparentFX
@@ -16,7 +20,7 @@ TagManager:
   - UI
   - 
   - 
-  - player/camera
+  - 
   - 
   - 
   - 
