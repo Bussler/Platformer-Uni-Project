@@ -38,7 +38,11 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0.11480223, g: 0.11976789, b: 0.10575684, a: 1}
+=======
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+>>>>>>> parent of cdf0b6d... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -71,8 +75,8 @@ LightmapSettings:
     m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 256
     m_ReflectionCompression: 2
-    m_MixedBakeMode: 0
-    m_BakeBackend: 1
+    m_MixedBakeMode: 2
+    m_BakeBackend: 0
     m_PVRSampling: 1
     m_PVRDirectSampleCount: 32
     m_PVRSampleCount: 500
@@ -85,20 +89,11 @@ LightmapSettings:
     m_PVRFilteringGaussRadiusDirect: 1
     m_PVRFilteringGaussRadiusIndirect: 5
     m_PVRFilteringGaussRadiusAO: 2
-<<<<<<< HEAD
     m_PVRFilteringAtrousPositionSigmaDirect: 0.5
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
   m_LightingDataAsset: {fileID: 0}
   m_UseShadowmask: 1
-=======
-    m_PVRFilteringAtrousColorSigma: 1
-    m_PVRFilteringAtrousNormalSigma: 1
-    m_PVRFilteringAtrousPositionSigma: 1
-  m_LightingDataAsset: {fileID: 112000058, guid: bc5af09ce455af9489b5a9b36fecd0ca,
-    type: 2}
-  m_UseShadowmask: 0
->>>>>>> a592ae9506183b3b5261ab37da235a0d8eb7c652
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -121,8 +116,8 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
-<<<<<<< HEAD
 --- !u!1 &926248420
+<<<<<<< HEAD
 =======
 --- !u!4 &3596754 stripped
 Transform:
@@ -4546,67 +4541,28 @@ Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 9b567533c58d57c46855a760dcc6726d, type: 3}
   m_PrefabInternal: {fileID: 2081559148}
 --- !u!1 &2085408222
+=======
+>>>>>>> parent of cdf0b6d... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 2085408223}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2085408223
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2085408222}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 519345483}
-  m_RootOrder: 12
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &2101538264
->>>>>>> a592ae9506183b3b5261ab37da235a0d8eb7c652
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-<<<<<<< HEAD
   - component: {fileID: 926248422}
   - component: {fileID: 926248421}
   m_Layer: 0
   m_Name: Directional Light
-=======
-  - component: {fileID: 2101538266}
-  - component: {fileID: 2101538265}
-  m_Layer: 0
-  m_Name: Point light (4)
->>>>>>> a592ae9506183b3b5261ab37da235a0d8eb7c652
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
-<<<<<<< HEAD
 --- !u!108 &926248421
-=======
---- !u!108 &2101538265
->>>>>>> a592ae9506183b3b5261ab37da235a0d8eb7c652
 Light:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 926248420}
   m_Enabled: 1
   serializedVersion: 8
@@ -4614,6 +4570,7 @@ Light:
   m_Color: {r: 1, g: 0.95686275, b: 0.8392157, a: 1}
   m_Intensity: 1
   m_Range: 10
+<<<<<<< HEAD
 =======
   m_GameObject: {fileID: 2101538264}
   m_Enabled: 1
@@ -4623,13 +4580,15 @@ Light:
   m_Intensity: 2
   m_Range: 20
 >>>>>>> a592ae9506183b3b5261ab37da235a0d8eb7c652
+=======
+>>>>>>> parent of cdf0b6d... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
-    m_Type: 2
+    m_Type: 0
     m_Resolution: -1
     m_CustomResolution: -1
-    m_Strength: 0.336
+    m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
     m_NearPlane: 0.2
@@ -4647,16 +4606,11 @@ Light:
   m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
-<<<<<<< HEAD
 --- !u!4 &926248422
-=======
---- !u!4 &2101538266
->>>>>>> a592ae9506183b3b5261ab37da235a0d8eb7c652
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 926248420}
   m_LocalRotation: {x: 0.40299445, y: -0.23521723, z: 0.10798202, w: 0.8778429}
   m_LocalPosition: {x: 0, y: 3, z: 0}
@@ -4666,54 +4620,25 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 49.317, y: -30.000002, z: 0}
 --- !u!1001 &1761322972
-=======
-  m_GameObject: {fileID: 2101538264}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.82931393, y: 0.919009, z: 2.6096926}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1557245969}
-  m_RootOrder: 4
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &2101864670 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400000, guid: 639708dbc21b34d4087257e1bff6d186, type: 3}
-  m_PrefabInternal: {fileID: 1489718732}
---- !u!1001 &2103825196
->>>>>>> a592ae9506183b3b5261ab37da235a0d8eb7c652
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-<<<<<<< HEAD
     - target: {fileID: 4135351925797864, guid: f005012ca55c3814190d7948f4a6a85c, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4135351925797864, guid: f005012ca55c3814190d7948f4a6a85c, type: 2}
-=======
-    - target: {fileID: 4119966746369876, guid: 612690dad8264164e81a0025e10e8be8, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4119966746369876, guid: 612690dad8264164e81a0025e10e8be8, type: 2}
->>>>>>> a592ae9506183b3b5261ab37da235a0d8eb7c652
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4135351925797864, guid: f005012ca55c3814190d7948f4a6a85c, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
 <<<<<<< HEAD
-    - target: {fileID: 4135351925797864, guid: f005012ca55c3814190d7948f4a6a85c, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4135351925797864, guid: f005012ca55c3814190d7948f4a6a85c, type: 2}
-=======
-    - target: {fileID: 4119966746369876, guid: 612690dad8264164e81a0025e10e8be8, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4119966746369876, guid: 612690dad8264164e81a0025e10e8be8, type: 2}
       propertyPath: m_LocalRotation.x
       value: -0
@@ -4839,6 +4764,9 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 8411743d28b695240b6a62c415ade56c, type: 3}
 >>>>>>> a592ae9506183b3b5261ab37da235a0d8eb7c652
+=======
+    - target: {fileID: 4135351925797864, guid: f005012ca55c3814190d7948f4a6a85c, type: 2}
+>>>>>>> parent of cdf0b6d... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
@@ -4861,21 +4789,3 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f005012ca55c3814190d7948f4a6a85c, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &2136831593 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: 05129b7a9fdedf947a92cd42e6cbaedd, type: 3}
-  m_PrefabInternal: {fileID: 1871851203}
---- !u!64 &2136831596
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2136831593}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Convex: 0
-  m_InflateMesh: 0
-  m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 05129b7a9fdedf947a92cd42e6cbaedd, type: 3}
