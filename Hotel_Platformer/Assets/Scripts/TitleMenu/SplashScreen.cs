@@ -7,7 +7,7 @@ public class SplashScreen : MonoBehaviour {
     private bool hasInput = false;
     private int disappearingSpeed= 1;
     public Text text;
-    public static bool isDestroyed = false;
+    public static  bool isDestroyed = false;
     public float x = 0;
     private bool textdes=false;
 	

@@ -11,6 +11,17 @@ public class StartButton : MonoBehaviour {
     {
         camera = FindObjectOfType<Camera>();
         anim = camera.GetComponent<Animator>();
+        this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+    }
+
+    private void Update()
+    {
+        Debug.Log(""+SplashScreen.isDestroyed);
+        if (SplashScreen.isDestroyed)
+        {
+
+            this.gameObject.GetComponent<MeshRenderer>().enabled = true;
+        }
     }
 
     public void OnMouseOver ()

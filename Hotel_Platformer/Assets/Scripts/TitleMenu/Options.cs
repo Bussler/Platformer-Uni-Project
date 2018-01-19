@@ -11,6 +11,15 @@ public class Options : MonoBehaviour {
     {
         camera = FindObjectOfType<Camera>();
         anim = camera.GetComponent<Animator>();
+        this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+    }
+
+  private void Update()
+    {
+        if (SplashScreen.isDestroyed)
+        {
+            this.gameObject.GetComponent<MeshRenderer>().enabled = true;
+        }
     }
 
     public void OnMouseOver()

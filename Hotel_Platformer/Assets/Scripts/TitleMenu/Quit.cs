@@ -7,13 +7,17 @@ public class Quit : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+        this.gameObject.GetComponent<MeshRenderer>().enabled = false;
+    }
+
+    // Update is called once per frame
+    private void Update()
+    {
+        if (SplashScreen.isDestroyed)
+        {
+            this.gameObject.GetComponent<MeshRenderer>().enabled = true;
+        }
+    }
 
 
     public void OnMouseOver()
