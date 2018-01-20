@@ -30,7 +30,7 @@ public class AuswählbaresLevel : MonoBehaviour {
 
     private void OnMouseOver()
     {
-        if (canBeClicked)
+        if (canBeClicked && SplashScreen.isDestroyed)
         {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
