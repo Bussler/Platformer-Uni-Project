@@ -38,7 +38,11 @@ public class SpawnInfinite : MonoBehaviour {
             isCloned = false;
             Destroy(obj);
             
+        } else if(other.tag=="Player" && count == 20)
+        {
+            Destroy(gameObject);
         }
+        
     }
 
     
