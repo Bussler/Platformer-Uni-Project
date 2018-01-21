@@ -7,6 +7,7 @@ public class SpawnInfinite : MonoBehaviour {
     public GameObject clone;
     public bool isCloned;
     private GameObject obj;
+    public GameObject lights;
     private float formerY;
     public float uprising;
     private float count = 0;
@@ -27,6 +28,10 @@ public class SpawnInfinite : MonoBehaviour {
             isCloned = true;
             obj = Instantiate(clone, new Vector3(this.transform.position.x, transform.position.y, transform.position.z+12f), Quaternion.identity);
             obj.GetComponent<SpawnInfinite>().count = count + 1;
+            Debug.Log(obj.GetComponent<SpawnInfinite>().count);
+            
+               
+            
             
         } else if (other.tag == "Player" && isCloned == true)
         {
