@@ -9,6 +9,8 @@ public class PowerUpBehaviour : MonoBehaviour {
     public bool doubleJump;
     public bool gliding;
     public bool jumping;
+    public bool platformSpawn;
+    public bool aufheben;
 
     private PlayerMovmentTest playerScript;
 
@@ -56,13 +58,30 @@ public class PowerUpBehaviour : MonoBehaviour {
                 playerScript.hasAbilityGliding = true;
                 t.transform.GetChild(0).GetComponent<TextMesh>().text = "Giding learned. Press 'F' while in air to glide";
             }
+            if (gliding==false)
+            {
+                playerScript.hasAbilityGliding = false;
+            }
             if (jumping==true)
             {
                 playerScript.hasAbilityJumping = true;
             }
+<<<<<<< HEAD
             Invoke("Destroytext", 3);
             this.GetComponent<MeshRenderer>().enabled = false;
             this.GetComponent<SphereCollider>().enabled = false;
+=======
+            if (platformSpawn==true)
+            {
+                playerScript.hasAbilityPlatform = true;
+            }
+            if (aufheben==true)
+            {
+                playerScript.hasAbilityAusheben = true;
+            }
+
+            Destroy(gameObject);
+>>>>>>> 068dd2932ed89bde9d57889a32b418e9d289d441
         }
     }
 
