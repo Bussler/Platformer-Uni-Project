@@ -98,7 +98,11 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
         health = maxHealth;
         buffer = FindObjectOfType<CircularBuffer>();
         trscript = GetComponent<TimeREverse>();
-        animator = this.transform.GetChild(0).GetComponent<Animator>();
+        if (this.transform.childCount > 0)
+        {
+            Debug.Log("Passt");
+            animator = this.transform.GetChild(0).GetComponent<Animator>();
+        }
        
     }
 

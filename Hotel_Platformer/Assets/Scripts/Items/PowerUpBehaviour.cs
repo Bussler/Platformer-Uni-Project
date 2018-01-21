@@ -66,11 +66,11 @@ public class PowerUpBehaviour : MonoBehaviour {
             {
                 playerScript.hasAbilityJumping = true;
             }
-<<<<<<< HEAD
+
             Invoke("Destroytext", 3);
             this.GetComponent<MeshRenderer>().enabled = false;
             this.GetComponent<SphereCollider>().enabled = false;
-=======
+
             if (platformSpawn==true)
             {
                 playerScript.hasAbilityPlatform = true;
@@ -81,7 +81,7 @@ public class PowerUpBehaviour : MonoBehaviour {
             }
 
             Destroy(gameObject);
->>>>>>> 068dd2932ed89bde9d57889a32b418e9d289d441
+
         }
     }
 
