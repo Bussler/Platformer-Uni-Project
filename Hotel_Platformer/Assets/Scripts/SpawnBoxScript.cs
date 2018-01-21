@@ -13,7 +13,7 @@ public class SpawnBoxScript : MonoBehaviour {
         {
             Debug.Log("Box detected");
             box.transform.position = top.position;
-            box.GetComponent<Rigidbody>().velocity = new Vector3(0, 5, 0);
+            //box.GetComponent<Rigidbody>().velocity = new Vector3(0, 5, 0);
         }
     }
 
