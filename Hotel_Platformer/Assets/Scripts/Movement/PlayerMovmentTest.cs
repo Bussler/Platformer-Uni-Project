@@ -99,6 +99,7 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
         buffer = FindObjectOfType<CircularBuffer>();
         trscript = GetComponent<TimeREverse>();
         animator = this.transform.GetChild(0).GetComponent<Animator>();
+       
     }
 
     //Movement in update, since we aren't using a rigidbody but a characterController
