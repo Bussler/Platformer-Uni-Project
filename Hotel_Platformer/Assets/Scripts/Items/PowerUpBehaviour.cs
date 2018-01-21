@@ -8,6 +8,8 @@ public class PowerUpBehaviour : MonoBehaviour {
     public bool doubleJump;
     public bool gliding;
     public bool jumping;
+    public bool platformSpawn;
+    public bool aufheben;
 
     private PlayerMovmentTest playerScript;
 	
@@ -37,9 +39,21 @@ public class PowerUpBehaviour : MonoBehaviour {
             {
                 playerScript.hasAbilityGliding = true;
             }
+            if (gliding==false)
+            {
+                playerScript.hasAbilityGliding = false;
+            }
             if (jumping==true)
             {
                 playerScript.hasAbilityJumping = true;
+            }
+            if (platformSpawn==true)
+            {
+                playerScript.hasAbilityPlatform = true;
+            }
+            if (aufheben==true)
+            {
+                playerScript.hasAbilityAusheben = true;
             }
 
             Destroy(gameObject);
