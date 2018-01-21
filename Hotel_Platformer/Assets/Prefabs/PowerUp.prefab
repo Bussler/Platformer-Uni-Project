@@ -24,7 +24,7 @@ GameObject:
   - component: {fileID: 23714650371267258}
   - component: {fileID: 114236002238092072}
   - component: {fileID: 54301837227608694}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: PowerUp
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -38,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1953825135026160}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.26, y: 2.7481253, z: -2.01}
+  m_LocalPosition: {x: -91.2, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -53,6 +53,7 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -68,6 +69,7 @@ MeshRenderer:
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -110,9 +112,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   run: 0
-  doubleJump: 0
+  doubleJump: 1
   gliding: 0
-  jumping: 1
+  jumping: 0
+  text: {fileID: 1810353703856988, guid: 2f634189c3af4784c9194e9ac24dbe2f, type: 2}
+  t: {fileID: 0}
 --- !u!135 &135600834552974528
 SphereCollider:
   m_ObjectHideFlags: 1

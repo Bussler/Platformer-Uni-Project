@@ -21,9 +21,15 @@ TagManager:
   - UI
   - 
   - 
+<<<<<<< HEAD
   - ground
   - 
   - 
+=======
+  - Player
+  - Checkpoint
+  - powerup
+>>>>>>> 48e646f05596808ad31ef379932190aefdca0038
   - 
   - 
   - 
