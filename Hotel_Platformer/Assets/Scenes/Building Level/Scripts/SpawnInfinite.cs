@@ -5,12 +5,18 @@ using UnityEngine;
 public class SpawnInfinite : MonoBehaviour {
 
     public GameObject clone;
-    public bool isCloned;
-    private GameObject obj;
     public GameObject lights;
-    private float formerY;
+    public GameObject spawn;
+    public GameObject light;
     public float uprising;
+    public bool isCloned;
+
+    private bool lastBuild = false;
+    private float formerY;
+    private GameObject obj;
     private float count = 0;
+
+
 	// Use this for initialization
 	void Start () {
         isCloned = false;
@@ -38,12 +44,17 @@ public class SpawnInfinite : MonoBehaviour {
             isCloned = false;
             Destroy(obj);
             
-        } else if(other.tag=="Player" && count == 20)
-        {
-            Destroy(gameObject);
         }
-        
+        if (other.tag == "Player" && count == 20 && lastBuild==false)
+        {
+            float randomX = Random.Range(transform.position.x - 15f, transform.position.x + 15f);
+            Vector3 pos = other.transform.position;
+            Instantiate(light, new Vector3(randomX, pos.y+5, pos.z + 15), Quaternion.identity);
+            Instantiate(spawn, new Vector3(randomX, pos.y - 50, pos.z + 15), Quaternion.identity);
+            lastBuild = true;
+        }
+
     }
 
-    
+
 }

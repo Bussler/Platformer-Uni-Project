@@ -400,5 +400,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clone: {fileID: 1592420545837740}
-  isCloned: 0
+  lights: {fileID: 1914731339270072, guid: ad1e50cfd1ed06c428c4f068ac1f4a97, type: 2}
+  spawn: {fileID: 1343968745614906, guid: baf974b2ebd5f184fb00e3d3bdc96a51, type: 2}
+  light: {fileID: 1366908817469768, guid: 10985cd3b9710564da3e33f41199f7e0, type: 2}
   uprising: 0
+  isCloned: 0
