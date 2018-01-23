@@ -356,6 +356,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b65dfe459c2dba4eb7fa4616f7b613c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clone: {fileID: 0}
   points:
   - {fileID: 4949976553961318}
   - {fileID: 4146803414336788}
@@ -401,7 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clone: {fileID: 1592420545837740}
   lights: {fileID: 1914731339270072, guid: ad1e50cfd1ed06c428c4f068ac1f4a97, type: 2}
-  spawn: {fileID: 1343968745614906, guid: baf974b2ebd5f184fb00e3d3bdc96a51, type: 2}
+  spawn: {fileID: 1772974065752360, guid: f0339ffdd83301c488ad6d8f401669c5, type: 2}
   light: {fileID: 1366908817469768, guid: 10985cd3b9710564da3e33f41199f7e0, type: 2}
   uprising: 0
   isCloned: 0

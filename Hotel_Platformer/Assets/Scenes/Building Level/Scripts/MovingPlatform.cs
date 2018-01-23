@@ -9,16 +9,20 @@ public class MovingPlatform : MonoBehaviour {
     public int index=0;
     private int platFormState;
     private int count;
+    private bool isSpawned;
 
 	// Use this for initialization
 	void Start () {
         count = 1;
+        index = 0;
+        isSpawned = false;
         this.transform.position = points[index].transform.position;
         index++;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+        Debug.Log(index);
         if(this.transform.position != points[index].transform.position)
         {
 
@@ -60,19 +64,23 @@ public class MovingPlatform : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
+        float RandomX = Random.Range(-70f, 70f);
+        float RandomZ = Random.Range(-70f, 70f);
 
-        if(other.tag=="Player" && count>1 && count < 5)
+        if (other.tag=="Player" && count>1 && count < 5 && isSpawned==false)
         {
             Debug.Log("Hit");
-            GameObject obj = Instantiate(clone, new Vector3(transform.position.x, transform.position.y - 20, transform.position.z + 15), Quaternion.identity);
-            obj.GetComponent<MovingPlatform>().Speed = 10;
-            count++;
-        } else if (other.tag == "Player" && count == 1)
+            GameObject obj = Instantiate(clone, new Vector3(transform.position.x + RandomX, transform.position.y - 30, transform.position.z + RandomZ), Quaternion.identity);
+            obj.transform.GetChild(2).GetComponent<MovingPlatform>().Speed = 15;
+            obj.transform.GetChild(2).GetComponent<MovingPlatform>().count = count + 1;
+            isSpawned = true;
+        } else if (other.tag == "Player" && count == 1 && isSpawned==false)
         {
             Debug.Log("Hit");
-            GameObject obj = Instantiate(clone, new Vector3(transform.position.x, transform.position.y - 20, transform.position.z + 15), Quaternion.identity);
-            obj.GetComponent<MovingPlatform>().Speed = 0;
-            count++;
+            GameObject obj = Instantiate(clone, new Vector3(transform.position.x + RandomX, transform.position.y - 30, transform.position.z + RandomZ), Quaternion.identity);
+            obj.transform.GetChild(2).GetComponent<MovingPlatform>().Speed = 0;
+            obj.transform.GetChild(2).GetComponent<MovingPlatform>().count = count+1;
+            isSpawned = true;
         }
         Debug.Log("Hit");
     }

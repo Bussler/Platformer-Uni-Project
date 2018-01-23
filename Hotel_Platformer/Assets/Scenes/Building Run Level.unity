@@ -17,7 +17,7 @@ RenderSettings:
   m_Fog: 1
   m_FogColor: {r: 0.125, g: 0.125, b: 0.125, a: 1}
   m_FogMode: 3
-  m_FogDensity: 0.1
+  m_FogDensity: 0.05
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}
@@ -240,7 +240,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4276161327411258, guid: 10985cd3b9710564da3e33f41199f7e0, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 10985cd3b9710564da3e33f41199f7e0, type: 2}
@@ -335,7 +335,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clone: {fileID: 1592420545837740, guid: 82c3644e09f48d049a7a7c2e59e6bc96, type: 2}
   lights: {fileID: 1914731339270072, guid: ad1e50cfd1ed06c428c4f068ac1f4a97, type: 2}
-  spawn: {fileID: 0}
+  spawn: {fileID: 1772974065752360, guid: f0339ffdd83301c488ad6d8f401669c5, type: 2}
   light: {fileID: 1701425272}
   uprising: 0
   isCloned: 0
@@ -961,7 +961,7 @@ Transform:
   - {fileID: 996025669}
   - {fileID: 703597264}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1107295146
 GameObject:
@@ -989,7 +989,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1183523841
 GameObject:
@@ -1499,7 +1499,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1412967993
 GameObject:
@@ -1546,6 +1546,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b65dfe459c2dba4eb7fa4616f7b613c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clone: {fileID: 0}
   points:
   - {fileID: 181985567}
   - {fileID: 616954651}
