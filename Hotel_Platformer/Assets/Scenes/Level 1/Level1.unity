@@ -18555,6 +18555,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b65dfe459c2dba4eb7fa4616f7b613c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clone: {fileID: 0}
   points:
   - {fileID: 43021439}
   - {fileID: 1312210355}
@@ -19479,6 +19480,11 @@ Prefab:
         type: 2}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: OptionMenuOpen
+      objectReference: {fileID: 0}
+    - target: {fileID: 114456508824207388, guid: 949a0a208eaf5dd4c86b972b757bf9a2,
+        type: 2}
+      propertyPath: m_Value
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 949a0a208eaf5dd4c86b972b757bf9a2, type: 2}
@@ -20812,6 +20818,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b65dfe459c2dba4eb7fa4616f7b613c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clone: {fileID: 0}
   points:
   - {fileID: 289126961}
   - {fileID: 502330360}
@@ -24522,6 +24529,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2b65dfe459c2dba4eb7fa4616f7b613c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  clone: {fileID: 0}
   points:
   - {fileID: 1325522209}
   - {fileID: 1032881366}
