@@ -6,6 +6,7 @@ using UnityEngine.SceneManagement;
 public class LoadNewLevel : MonoBehaviour
 {
     public string LevelName;
+    public int level;
     // Use this for initialization
     void Start()
     {
@@ -22,8 +23,9 @@ public class LoadNewLevel : MonoBehaviour
 
         if (other.tag == "Player")//collision with the player
         {
+            Debug.Log("trigger");
             SceneManager.LoadScene("LevelName");
-
+            SceneManager.LoadScene(level);
         }
     }
 }

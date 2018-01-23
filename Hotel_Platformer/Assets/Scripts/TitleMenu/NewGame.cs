@@ -22,7 +22,7 @@ public class NewGame : MonoBehaviour {
         {
 
             LevelManager.setFreigeschaltet(0);
-            SceneManager.LoadScene("Level1");
+            SceneManager.LoadScene("Lobby");
 
         }
     }

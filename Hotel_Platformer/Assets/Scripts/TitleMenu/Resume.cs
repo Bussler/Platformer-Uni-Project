@@ -24,7 +24,7 @@ public class Resume : MonoBehaviour {
             switch (LevelManager.getFreigeschaltet())
             {
                 case 0:
-
+                    SceneManager.LoadScene("Lobby"); break;
 
                     break;
                 case 1: SceneManager.LoadScene("Level1");break;
