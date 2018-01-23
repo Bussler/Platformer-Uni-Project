@@ -201,7 +201,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 52
+=======
+  m_RootOrder: 54
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 54
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -344,7 +348,10 @@ Prefab:
       value: 
       objectReference: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
     - target: {fileID: 143511246241257280, guid: 2c81fd5454ecef24797f396deda70fad,
         type: 2}
       propertyPath: m_Enabled
@@ -355,6 +362,9 @@ Prefab:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
+<<<<<<< HEAD
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
+=======
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
     - target: {fileID: 1547873573922266, guid: 2c81fd5454ecef24797f396deda70fad, type: 2}
       propertyPath: m_IsActive
@@ -532,7 +542,11 @@ Prefab:
     - target: {fileID: 4099644170263454, guid: 5faab83807958104f853eba2da5a3c05, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 23
+=======
+      value: 25
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 25
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -649,7 +663,11 @@ Prefab:
     - target: {fileID: 4777293653062448, guid: 943c523f10ee25145b940dd5c53e52a0, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 21
+=======
+      value: 23
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 23
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -758,7 +776,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 34
+=======
+  m_RootOrder: 36
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 36
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -824,7 +846,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 96
+=======
+      value: 98
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 98
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -1098,7 +1124,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 47
+=======
+  m_RootOrder: 49
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 49
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -1244,7 +1274,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 33
+=======
+  m_RootOrder: 35
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 35
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -1365,7 +1399,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 56
+=======
+  m_RootOrder: 58
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 58
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -1479,7 +1517,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 67
+=======
+  m_RootOrder: 69
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 69
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -1593,7 +1635,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 62
+=======
+  m_RootOrder: 64
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 64
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -1769,7 +1815,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 75
+=======
+      value: 77
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 77
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -1857,7 +1907,11 @@ Prefab:
     - target: {fileID: 4534318932409322, guid: 7e771e6eec26ce9488f07ae072d21eac, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 104
+=======
+      value: 106
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 106
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -1918,7 +1972,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 83
+=======
+      value: 85
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 85
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -1995,7 +2053,11 @@ Transform:
   - {fileID: 41657242}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 32
+=======
+  m_RootOrder: 34
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 34
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -2189,7 +2251,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 50
+=======
+  m_RootOrder: 52
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 52
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -2474,7 +2540,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 48
+=======
+  m_RootOrder: 50
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 50
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -2517,7 +2587,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 76
+=======
+      value: 78
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 78
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -2699,7 +2773,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 89
+=======
+      value: 91
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 91
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -2803,7 +2881,11 @@ Prefab:
     - target: {fileID: 4099644170263454, guid: 5faab83807958104f853eba2da5a3c05, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 26
+=======
+      value: 28
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 28
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -3052,7 +3134,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 61
+=======
+  m_RootOrder: 63
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 63
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -3095,7 +3181,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 99
+=======
+      value: 101
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 101
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -3238,7 +3328,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 45
+=======
+  m_RootOrder: 47
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 47
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -3385,7 +3479,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 44
+=======
+  m_RootOrder: 46
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 46
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -3428,7 +3526,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 84
+=======
+      value: 86
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 86
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -3677,7 +3779,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 63
+=======
+  m_RootOrder: 65
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 65
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -3736,7 +3842,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 79
+=======
+      value: 81
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 81
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -3824,7 +3934,11 @@ Prefab:
     - target: {fileID: 4099644170263454, guid: 5faab83807958104f853eba2da5a3c05, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 29
+=======
+      value: 31
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 31
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -4075,7 +4189,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 88
+=======
+      value: 90
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 90
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -4358,7 +4476,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 64
+=======
+  m_RootOrder: 66
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 66
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -4395,7 +4517,11 @@ Transform:
   - {fileID: 1205082855}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 30
+=======
+  m_RootOrder: 32
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 32
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -4493,7 +4619,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 55
+=======
+  m_RootOrder: 57
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 57
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -4683,7 +4813,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 101
+=======
+  m_RootOrder: 103
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 103
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -4801,7 +4935,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 36
+=======
+  m_RootOrder: 38
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 38
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -4911,7 +5049,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 41
+=======
+  m_RootOrder: 43
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 43
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -4954,7 +5096,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 71
+=======
+      value: 73
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 73
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -5092,7 +5238,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 46
+=======
+  m_RootOrder: 48
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 48
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -5140,7 +5290,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 94
+=======
+      value: 96
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 96
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -5348,7 +5502,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 103
+=======
+  m_RootOrder: 105
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 105
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -5407,7 +5565,11 @@ Prefab:
     - target: {fileID: 4099644170263454, guid: 5faab83807958104f853eba2da5a3c05, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 22
+=======
+      value: 24
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 24
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -5605,7 +5767,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 91
+=======
+      value: 93
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 93
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -5722,7 +5888,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 74
+=======
+      value: 76
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 76
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -5870,7 +6040,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 98
+=======
+      value: 100
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 100
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -5990,7 +6164,11 @@ Prefab:
     - target: {fileID: 4099644170263454, guid: 5faab83807958104f853eba2da5a3c05, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 27
+=======
+      value: 29
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 29
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -6196,7 +6374,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 72
+=======
+      value: 74
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 74
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -6390,7 +6572,11 @@ Prefab:
     - target: {fileID: 4099644170263454, guid: 5faab83807958104f853eba2da5a3c05, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 25
+=======
+      value: 27
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 27
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -6483,7 +6669,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 90
+=======
+      value: 92
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 92
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -6822,7 +7012,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 68
+=======
+  m_RootOrder: 70
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 70
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -6968,7 +7162,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 73
+=======
+      value: 75
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 75
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -7111,7 +7309,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 53
+=======
+  m_RootOrder: 55
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 55
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -7356,7 +7558,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 66
+=======
+  m_RootOrder: 68
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 68
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -7517,7 +7723,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 40
+=======
+  m_RootOrder: 42
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 42
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -7560,7 +7770,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 85
+=======
+      value: 87
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 87
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -7729,7 +7943,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 87
+=======
+      value: 89
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 89
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -7817,7 +8035,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 78
+=======
+      value: 80
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 80
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -8025,7 +8247,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 42
+=======
+  m_RootOrder: 44
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 44
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -8123,7 +8349,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 59
+=======
+  m_RootOrder: 61
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 61
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -8221,7 +8451,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 43
+=======
+  m_RootOrder: 45
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 45
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -8332,7 +8566,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 82
+=======
+      value: 84
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 84
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -8516,7 +8754,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 51
+=======
+  m_RootOrder: 53
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 53
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -8553,7 +8795,11 @@ Transform:
   - {fileID: 97817966}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 31
+=======
+  m_RootOrder: 33
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 33
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -8664,7 +8910,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 100
+=======
+  m_RootOrder: 102
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 102
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -8762,7 +9012,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 57
+=======
+  m_RootOrder: 59
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 59
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -8965,7 +9219,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 65
+=======
+  m_RootOrder: 67
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 67
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -9008,7 +9266,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 80
+=======
+      value: 82
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 82
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -9183,7 +9445,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 49
+=======
+  m_RootOrder: 51
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 51
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -9281,7 +9547,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 69
+=======
+  m_RootOrder: 71
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 71
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -9324,7 +9594,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 93
+=======
+      value: 95
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 95
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -9592,7 +9866,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 20
+=======
+  m_RootOrder: 22
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 22
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -9659,7 +9937,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 38
+=======
+      value: 40
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 40
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -9748,7 +10030,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 86
+=======
+      value: 88
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 88
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -9831,7 +10117,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 92
+=======
+      value: 94
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 94
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -9964,7 +10254,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 97
+=======
+      value: 99
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 99
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -10052,7 +10346,11 @@ Prefab:
     - target: {fileID: 4099644170263454, guid: 5faab83807958104f853eba2da5a3c05, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 28
+=======
+      value: 30
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 30
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -10187,7 +10485,11 @@ Prefab:
       propertyPath: followedObject
       value: 
 <<<<<<< HEAD
+<<<<<<< HEAD
       objectReference: {fileID: 301999405}
+=======
+      objectReference: {fileID: 1217362953}
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       objectReference: {fileID: 1217362953}
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -10291,7 +10593,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 95
+=======
+      value: 97
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 97
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -10429,7 +10735,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 60
+=======
+  m_RootOrder: 62
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 62
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -10498,7 +10808,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 37
+=======
+  m_RootOrder: 39
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 39
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -10596,7 +10910,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 39
+=======
+  m_RootOrder: 41
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 41
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -10655,7 +10973,11 @@ Prefab:
     - target: {fileID: 4777293653062448, guid: 943c523f10ee25145b940dd5c53e52a0, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 24
+=======
+      value: 26
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 26
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -10719,7 +11041,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 77
+=======
+      value: 79
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 79
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -10878,7 +11204,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 54
+=======
+  m_RootOrder: 56
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 56
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -11254,7 +11584,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 81
+=======
+      value: 83
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 83
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -11537,7 +11871,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 102
+=======
+  m_RootOrder: 104
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 104
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -11651,7 +11989,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 58
+=======
+  m_RootOrder: 60
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 60
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -11710,7 +12052,11 @@ Transform:
   - {fileID: 1927273255}
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 35
+=======
+  m_RootOrder: 37
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
   m_RootOrder: 37
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
@@ -11799,7 +12145,11 @@ Prefab:
     - target: {fileID: 4203076439445318, guid: 50a8c75a6f84529418fab77e2cdd6970, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 70
+=======
+      value: 72
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 72
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project

@@ -19485,7 +19485,11 @@ Prefab:
         type: 2}
       propertyPath: m_Value
 <<<<<<< HEAD
+<<<<<<< HEAD
       value: 0.5
+=======
+      value: 1
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
 =======
       value: 1
 >>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
