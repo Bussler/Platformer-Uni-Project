@@ -14,7 +14,7 @@ OcclusionCullingSettings:
 RenderSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 8
-  m_Fog: 0
+  m_Fog: 1
   m_FogColor: {r: 0.125, g: 0.125, b: 0.125, a: 1}
   m_FogMode: 3
   m_FogDensity: 0.05
@@ -971,10 +971,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1107295147}
-  - component: {fileID: 1107295148}
   m_Layer: 0
-  m_Name: Rock Spawner
-  m_TagString: Spawner
+  m_Name: End Spawner
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -992,18 +991,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1107295148
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1107295146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d252eec29d8c8564f96e4c9c58d3a8e3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawn: {fileID: 1859502452553206, guid: eca4eba5510a0ba438c86f33cbec6204, type: 2}
 --- !u!1 &1183523841
 GameObject:
   m_ObjectHideFlags: 0

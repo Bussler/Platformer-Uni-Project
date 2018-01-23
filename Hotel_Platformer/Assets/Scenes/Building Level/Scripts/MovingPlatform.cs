@@ -67,23 +67,22 @@ public class MovingPlatform : MonoBehaviour {
         float RandomX = Random.Range(-70f, 70f);
         float RandomZ = Random.Range(-70f, 70f);
 
-        if (other.tag=="Player" && count>0 && count < 5 && isSpawned==false)
+        if (other.tag=="Player" && count>1 && count < 5 && isSpawned==false)
         {
+            Debug.Log("Hit");
             GameObject obj = Instantiate(clone, new Vector3(transform.position.x + RandomX, transform.position.y - 30, transform.position.z + RandomZ), Quaternion.identity);
             obj.transform.GetChild(2).GetComponent<MovingPlatform>().Speed = 15;
             obj.transform.GetChild(2).GetComponent<MovingPlatform>().count = count + 1;
             isSpawned = true;
-            Debug.Log(count);
-        } else if (other.tag == "Player" && count == 0 && isSpawned==false)
+        } else if (other.tag == "Player" && count == 1 && isSpawned==false)
         {
-            
+            Debug.Log("Hit");
             GameObject obj = Instantiate(clone, new Vector3(transform.position.x + RandomX, transform.position.y - 30, transform.position.z + RandomZ), Quaternion.identity);
             obj.transform.GetChild(2).GetComponent<MovingPlatform>().Speed = 0;
             obj.transform.GetChild(2).GetComponent<MovingPlatform>().count = count+1;
             isSpawned = true;
-            Debug.Log(count);
         }
-        Debug.Log(count);
+        Debug.Log("Hit");
     }
 
 
