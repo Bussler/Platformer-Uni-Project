@@ -388,9 +388,9 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
 public void SpawnPlatform()
     {
         //TODO maybe use the storeyYData to spawn enemies when you are falling
-        Transform spawnPosition = transform.GetChild(1).transform;
+        Transform spawnPosition = transform.GetChild(0).transform;
         GameObject p = Instantiate(SpawnablePlatform, new Vector3(spawnPosition.position.x, spawnPosition.position.y, spawnPosition.position.z), Quaternion.identity)as GameObject;
-        
+
         
             GameObject[] newArray = new GameObject[objectArray.Length + 1];
             for (int i=0;i<objectArray.Length;i++)

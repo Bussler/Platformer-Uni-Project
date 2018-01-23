@@ -19484,7 +19484,11 @@ Prefab:
     - target: {fileID: 114456508824207388, guid: 949a0a208eaf5dd4c86b972b757bf9a2,
         type: 2}
       propertyPath: m_Value
+<<<<<<< HEAD
       value: 0.5
+=======
+      value: 1
+>>>>>>> parent of d1035fa... Merge branch 'master' of https://github.com/Bussler/Platformer-Uni-Project
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 949a0a208eaf5dd4c86b972b757bf9a2, type: 2}
