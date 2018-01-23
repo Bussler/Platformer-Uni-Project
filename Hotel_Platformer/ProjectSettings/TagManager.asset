@@ -9,6 +9,9 @@ TagManager:
   - RotatingPlatform
   - DeathZone
   - "Z\xE4hlerPlatform"
+  - Fracture
+  - FixPlatform
+  - OldPlatform
   layers:
   - Default
   - TransparentFX

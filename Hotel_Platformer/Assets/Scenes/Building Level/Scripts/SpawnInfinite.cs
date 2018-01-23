@@ -29,7 +29,7 @@ public class SpawnInfinite : MonoBehaviour {
 	}
     private void OnTriggerEnter(Collider other)
     {
-        if (other.tag == "Player" && isCloned == false && count<20)
+        if (other.tag == "Player" && isCloned == false && count<10)
         {
             isCloned = true;
             obj = Instantiate(clone, new Vector3(this.transform.position.x, transform.position.y, transform.position.z+12f), Quaternion.identity);
@@ -45,7 +45,7 @@ public class SpawnInfinite : MonoBehaviour {
             Destroy(obj);
             
         }
-        if (other.tag == "Player" && count == 20 && lastBuild==false)
+        if (other.tag == "Player" && count == 10 && lastBuild==false)
         {
             float randomX = Random.Range(transform.position.x - 15f, transform.position.x + 15f);
             Vector3 pos = other.transform.position;
