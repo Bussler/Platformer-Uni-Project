@@ -56,11 +56,12 @@ public class PowerUpBehaviour : MonoBehaviour {
             if (gliding==true)
             {
                 playerScript.hasAbilityGliding = true;
-                t.transform.GetChild(0).GetComponent<TextMesh>().text = "Giding learned. Press 'F' while in air to glide";
+                t.transform.GetChild(0).GetComponent<TextMesh>().text = "Giding learned. Press 'V' while in air to glide";
             }
             if (gliding==false)
             {
                 playerScript.hasAbilityGliding = false;
+                t.transform.GetChild(0).GetComponent<TextMesh>().text = "You can't glide anymore!";
             }
             if (jumping==true)
             {
@@ -74,10 +75,12 @@ public class PowerUpBehaviour : MonoBehaviour {
             if (platformSpawn==true)
             {
                 playerScript.hasAbilityPlatform = true;
+                t.transform.GetChild(0).GetComponent<TextMesh>().text = "PlatformSpwan learned. Press 'F' to spawn up to 3 Plazforms!";
             }
             if (aufheben==true)
             {
                 playerScript.hasAbilityAusheben = true;
+                t.transform.GetChild(0).GetComponent<TextMesh>().text = "Grabbing learned. LeftClick to grab a box, Rightclick to let it fall down!";
             }
 
             Destroy(gameObject);
