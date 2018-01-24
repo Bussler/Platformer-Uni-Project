@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityStandardAssets.Utility;
+using UnityEngine.SceneManagement;
 
 public class Godmode : MonoBehaviour {
     public bool godmode;
@@ -59,8 +60,8 @@ public class Godmode : MonoBehaviour {
             }
             */
             //this.transform.rotation = new Quaternion(this.transform.rotation.x, this.transform.rotation.y, 0,1);
-            
-           
+          
+
         }
 		
 	}

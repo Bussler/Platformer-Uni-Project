@@ -33,6 +33,7 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
     public bool canBeControlled = true;
 
     private bool isFloating=false; //bool for floating
+    private float Scale;
 
     public Vector3 lastMoveDirection;
     private bool dirSet = false;
@@ -85,6 +86,8 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
     public float MinSize;
     public float MaxSize;
 
+    private float t=0;
+
     void Start()
     {
         maxHealth = health;
@@ -103,7 +106,7 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
             Debug.Log("Passt");
             animator = this.transform.GetChild(0).GetComponent<Animator>();
         }
-       
+        Scale = this.transform.lossyScale.y;
     }
 
     //Movement in update, since we aren't using a rigidbody but a characterController
@@ -130,8 +133,9 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
             if (moveDirection.y < storedYValue && !isFloating)//falling
             {
                 this.transform.parent = null;
+           
 
-                moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
+            moveDirection.y -= gravity * fallmultiplier * Time.deltaTime;
             }
             if (!Input.GetButton("Jump") && moveDirection.y > storedYValue && !isFloating)
             {
@@ -141,10 +145,20 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
             moveDirection.y -= gravity * Time.deltaTime;  //applying gravity;
         }
             playerController.Move(moveDirection * Time.deltaTime);//making the player move ingame 
-        
-       // }
 
-     
+        // }
+
+        if (!isGrounded)
+        {
+            t = t + Time.deltaTime;
+            if (t > 0.2f)
+            {
+                animator.SetTrigger("jump");
+                t = 0;
+            }
+        }
+
+
         Turn();
 
 
@@ -465,25 +479,25 @@ public void SpawnPlatform()
 
     void ScalingUp()
     {
-        if (this.transform.localScale.x > 1 - 0.1 && this.transform.localScale.x < 1 + 0.1)
+        if ((this.transform.localScale.y >Scale - 0.1 && this.transform.localScale.y < Scale + 0.1)||this.transform.localScale.y==Scale)
         {
             this.transform.localScale = new Vector3(MaxSize, MaxSize, MaxSize);
-        }else if(this.transform.localScale.x > MinSize-0.1&& this.transform.localScale.x < MinSize + 0.1)
+        }else if(this.transform.localScale.y > MinSize-0.1&& this.transform.localScale.y < MinSize + 0.1)
         {
-            this.transform.localScale = new Vector3(1, 1, 1);
+            this.transform.localScale = new Vector3(Scale, Scale, Scale);
         }
     }
 
     void ScalingDown()
     {
 
-        if (this.transform.localScale.x > 1-0.1&& this.transform.localScale.x < 1 + 0.1)
+        if (this.transform.localScale.y > Scale-0.1&& this.transform.localScale.y < Scale + 0.1)
         {
             this.transform.localScale = new Vector3(MinSize, MinSize, MinSize);
         }
-        else if (this.transform.localScale.x > MaxSize - 0.1 && this.transform.localScale.x < MaxSize + 0.1)
+        else if (this.transform.localScale.y > MaxSize - 0.1 && this.transform.localScale.y < MaxSize + 0.1)
         {
-            this.transform.localScale = new Vector3(1, 1, 1);
+            this.transform.localScale = new Vector3(Scale, Scale, Scale);
         }
 
 

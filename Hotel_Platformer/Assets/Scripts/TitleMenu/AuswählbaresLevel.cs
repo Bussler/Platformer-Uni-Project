@@ -35,7 +35,7 @@ public class AuswählbaresLevel : MonoBehaviour {
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
                 
-                SceneManager.LoadScene(LevelName);
+                SceneManager.LoadScene(LevelIndex);
             }
         }
     }

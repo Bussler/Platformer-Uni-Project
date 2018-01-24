@@ -17,6 +17,21 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 1/Level1.unity
     guid: ad2aba4b2df518048aaad775d6b83e02
+  - enabled: 1
+    path: Assets/Scenes/Hotelzimmer/HotelzimmerOhneAnimationen.unity
+    guid: fc97b15526a3075498287a8b261b1fcb
+  - enabled: 1
+    path: Assets/Scenes/FallLevel/FallingScene.unity
+    guid: ddf83d8dd292ae840937618276de3308
+  - enabled: 1
+    path: Assets/Scenes/AbstractLevel_Luc/abstractLevel_luca.unity
+    guid: 33c4c0d3e623d6b46b6851170b4c294c
+  - enabled: 1
+    path: Assets/Scenes/Hotelzimmer/Hotelzimmer_2.unity
+    guid: 99f21129b4e7d654c8cf9a7f6bad5f6b
+  - enabled: 1
+    path: Assets/Scenes/Building Run Level.unity
+    guid: 63dc7a447b0667449b10087f25956a65
   - enabled: 0
     path: Assets/Scenes/testScene.unity
     guid: 1368ebb8e627fdc4bbaee7c7052a49f3
