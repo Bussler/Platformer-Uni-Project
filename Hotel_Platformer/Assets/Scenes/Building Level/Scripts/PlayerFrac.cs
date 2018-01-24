@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class PlayerFrac : MonoBehaviour {
 
+    public bool isWon;
+
 	// Use this for initialization
 	void Start () {
-		
+        isWon = false;
 	}
 	
 	// Update is called once per frame

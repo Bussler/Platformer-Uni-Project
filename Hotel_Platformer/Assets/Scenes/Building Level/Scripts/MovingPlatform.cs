@@ -81,6 +81,7 @@ public class MovingPlatform : MonoBehaviour {
         {
             GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
             camera.GetComponent<Camera>().clearFlags = CameraClearFlags.Depth;
+            other.transform.GetComponent<PlayerFrac>().isWon = true;
             Instantiate(text);
         }
     }

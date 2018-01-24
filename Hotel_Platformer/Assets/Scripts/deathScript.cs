@@ -19,7 +19,7 @@ public class deathScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-            if (other.tag == "Player" || other.tag=="Fracture")
+            if (other.tag == "Player" )
             {
              other.gameObject.GetComponent<PlayerMovmentTest>().health--;
                
@@ -27,9 +27,13 @@ public class deathScript : MonoBehaviour {
               
                 other.gameObject.GetComponent<PlayerMovmentTest>().Spawn();
             }
-           // pScript = other.gameObject.GetComponent<PlayerMovmentTest>();
-           // pScript.Spawn();
-            }
+        if ( other.tag == "Fracture")
+        {
+            Destroy(other.gameObject);
+        }
+        // pScript = other.gameObject.GetComponent<PlayerMovmentTest>();
+        // pScript.Spawn();
+    }
     }
 
 

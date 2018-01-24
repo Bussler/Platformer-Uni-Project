@@ -17,7 +17,7 @@ public class RockSPawner : MonoBehaviour {
 	void Update () {
         this.transform.position = player.transform.position;
         float randomNo = Random.Range(0f, 60f);
-        if (randomNo < 1f)
+        if (randomNo < 2.5f)
         {
             if (player.GetComponent<PlayerMovmentTest>().moveSpeed != 0)
             {

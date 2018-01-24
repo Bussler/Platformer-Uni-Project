@@ -489,7 +489,7 @@ RectTransform:
   m_Children:
   - {fileID: 211001518}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1895,8 +1895,24 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1612697826 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1832605978633966, guid: 943c523f10ee25145b940dd5c53e52a0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1002439877}
+--- !u!114 &1612697827
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1612697826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306f8e9ca06cd514fa418c5b0b741706, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1701425272 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1366908817469768, guid: 10985cd3b9710564da3e33f41199f7e0,
@@ -1935,43 +1951,6 @@ Transform:
   m_Father: {fileID: 1025362334}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1780271400
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1780271401}
-  - component: {fileID: 1780271402}
-  m_Layer: 0
-  m_Name: GameObject
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1780271401
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1780271400}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 137.62, y: -1.9474, z: 10585.9}
-  m_LocalScale: {x: 0.16256618, y: 0.16256624, z: 0.16256624}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!45 &1780271402
-Skybox:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1780271400}
-  m_Enabled: 0
-  m_CustomSkybox: {fileID: 2100000, guid: 9094a2a8c50273e41bf2c923658b390a, type: 2}
 --- !u!1001 &2014306327
 Prefab:
   m_ObjectHideFlags: 0
@@ -2124,6 +2103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9b185267547040545ba7a085a2e14928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isWon: 0
 --- !u!65 &2033216007
 BoxCollider:
   m_ObjectHideFlags: 0
