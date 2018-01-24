@@ -11,7 +11,7 @@ public class PowerUpBehaviour : MonoBehaviour {
     public bool jumping;
     public bool platformSpawn;
     public bool aufheben;
-
+    public bool wallJump;
     private PlayerMovmentTest playerScript;
 
     public GameObject text;
@@ -62,7 +62,15 @@ public class PowerUpBehaviour : MonoBehaviour {
             if (gliding==false)
             {
                 playerScript.hasAbilityGliding = false;
-                t.transform.GetChild(0).GetComponent<TextMesh>().text = "You can't glide anymore!";
+             //   t.transform.GetChild(0).GetComponent<TextMesh>().text = "You can't glide anymore!";
+            }
+            if (wallJump == false) {
+                playerScript.hasAbilityWallJump = false;
+                //   t.transform.GetChild(0).GetComponent<TextMesh>().text = "You can't glide anymore!";
+            }
+            if (wallJump == true) {
+                playerScript.hasAbilityWallJump = true;
+                t.transform.GetChild(0).GetComponent<TextMesh>().text = "Walk next to a wall and walk sideways against it and jump";
             }
             if (jumping==true)
             {

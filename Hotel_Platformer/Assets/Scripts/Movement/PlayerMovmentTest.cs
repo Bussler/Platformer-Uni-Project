@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using UnityEngine.SceneManagement;
 public class PlayerMovmentTest : MonoBehaviour, ITR
 {
     public int health;
@@ -180,10 +180,10 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
 
     void Death()
     {
-      
-        SpawnPoint = GameObject.Find("SpawnPoint").transform;
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        /*SpawnPoint = GameObject.Find("SpawnPoint").transform;
         Spawn();
-        health = maxHealth;
+        health = maxHealth;*/
 
     }
 
