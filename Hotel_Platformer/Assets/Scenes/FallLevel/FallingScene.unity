@@ -431,6 +431,7 @@ MonoBehaviour:
   - {fileID: 1501290923}
   Speed: 13
   index: 0
+  text: {fileID: 0}
 --- !u!23 &41657246
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1008,6 +1009,7 @@ MonoBehaviour:
   - {fileID: 52708045}
   Speed: 15
   index: 0
+  text: {fileID: 0}
 --- !u!23 &97817970
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1934,6 +1936,39 @@ Prefab:
       propertyPath: receiver
       value: 
       objectReference: {fileID: 1179274566}
+    - target: {fileID: 23277572356017788, guid: 7e771e6eec26ce9488f07ae072d21eac,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 16e0aff4df3cf4e44b3669a0061445f3, type: 2}
+    - target: {fileID: 4218900484371446, guid: 7e771e6eec26ce9488f07ae072d21eac, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218900484371446, guid: 7e771e6eec26ce9488f07ae072d21eac, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218900484371446, guid: 7e771e6eec26ce9488f07ae072d21eac, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218900484371446, guid: 7e771e6eec26ce9488f07ae072d21eac, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218900484371446, guid: 7e771e6eec26ce9488f07ae072d21eac, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218900484371446, guid: 7e771e6eec26ce9488f07ae072d21eac, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 4218900484371446, guid: 7e771e6eec26ce9488f07ae072d21eac, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 90
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7e771e6eec26ce9488f07ae072d21eac, type: 2}
   m_IsPrefabParent: 0
@@ -5206,8 +5241,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0.5, z: 0}
+  m_Size: {x: 1, y: 7.0004272, z: 1}
+  m_Center: {x: 0, y: 3.9307861, z: 0}
 --- !u!33 &789159309
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7865,6 +7900,7 @@ MonoBehaviour:
   - {fileID: 2114503027}
   Speed: 17
   index: 0
+  text: {fileID: 0}
 --- !u!23 &1205082859
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -12406,6 +12442,7 @@ MonoBehaviour:
   - {fileID: 758018347}
   Speed: 13
   index: 0
+  text: {fileID: 0}
 --- !u!23 &1927273259
 MeshRenderer:
   m_ObjectHideFlags: 0
