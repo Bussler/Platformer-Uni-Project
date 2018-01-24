@@ -526,7 +526,6 @@ public void SpawnPlatform()
             if (isGrounded)
             {
                 moveDirection.y = jumpSpeed;//setting the y value, therefore making the player jump
-               // Debug.Log(moveDirection.y);
                 hasJumped=1;
                 // Debug.Log("Jump");                           
                 animator.SetTrigger("jump");

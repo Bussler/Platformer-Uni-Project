@@ -19,7 +19,7 @@ public class deathScript : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-            if (other.tag == "Player")
+            if (other.tag == "Player" || other.tag=="Fracture")
             {
              other.gameObject.GetComponent<PlayerMovmentTest>().health--;
                

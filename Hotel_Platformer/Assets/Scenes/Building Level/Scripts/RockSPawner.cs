@@ -21,7 +21,7 @@ public class RockSPawner : MonoBehaviour {
         {
             if (player.GetComponent<PlayerMovmentTest>().moveSpeed != 0)
             {
-                Instantiate(spawn, new Vector3(transform.position.x + Random.Range(-3f, 3f), transform.position.y + 15f, transform.position.z + 10f), Quaternion.identity);
+                Instantiate(spawn, new Vector3(transform.position.x + Random.Range(-3f, 3f), transform.position.y + 15f, transform.position.z + 15f), Quaternion.identity);
             } else
             {
                 Instantiate(spawn, new Vector3(transform.position.x + Random.Range(-5f, 5f), transform.position.y + 15f, transform.position.z ), Quaternion.identity);
