@@ -38,6 +38,7 @@ public class PowerUpBehaviour : MonoBehaviour {
             t.transform.LookAt(GameObject.FindObjectOfType<Camera>().transform);
             t.transform.GetChild(0).GetComponent<TextMesh>().fontSize = 10;
             t.transform.GetChild(0).GetComponent<TextMesh>().characterSize = 0.2f;
+            t.transform.GetChild(0).GetComponent<TextMesh>().color = Color.black;//changing color
             Debug.Log("Power");
             playerScript =other.gameObject.GetComponent<PlayerMovmentTest>();
             
