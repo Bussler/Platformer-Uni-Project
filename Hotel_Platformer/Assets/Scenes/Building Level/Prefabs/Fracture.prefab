@@ -21,8 +21,8 @@ GameObject:
   - component: {fileID: 4620959011988512}
   - component: {fileID: 33662401839830552}
   - component: {fileID: 23415379285918244}
-  - component: {fileID: 54005790988537434}
   - component: {fileID: 64224691165066638}
+  - component: {fileID: 54005790988537434}
   m_Layer: 0
   m_Name: Sphere_fracturepart30
   m_TagString: Fracture
@@ -40,8 +40,8 @@ GameObject:
   - component: {fileID: 4199573791392008}
   - component: {fileID: 33117896197177632}
   - component: {fileID: 23918553888637994}
-  - component: {fileID: 54064682906679538}
   - component: {fileID: 64661705946506536}
+  - component: {fileID: 54064682906679538}
   m_Layer: 0
   m_Name: Sphere_fracturepart38
   m_TagString: Fracture
@@ -59,8 +59,8 @@ GameObject:
   - component: {fileID: 4229837590267108}
   - component: {fileID: 33404670346194048}
   - component: {fileID: 23118185599957210}
-  - component: {fileID: 54739347408895306}
   - component: {fileID: 64395147130131270}
+  - component: {fileID: 54739347408895306}
   m_Layer: 0
   m_Name: Sphere_fracturepart15
   m_TagString: Fracture
@@ -78,8 +78,8 @@ GameObject:
   - component: {fileID: 4614740080669166}
   - component: {fileID: 33778762970619478}
   - component: {fileID: 23613599342647274}
-  - component: {fileID: 54704856596376812}
   - component: {fileID: 64783234582536946}
+  - component: {fileID: 54704856596376812}
   m_Layer: 0
   m_Name: Sphere_fracturepart33
   m_TagString: Fracture
@@ -97,8 +97,8 @@ GameObject:
   - component: {fileID: 4586559421394320}
   - component: {fileID: 33436211109332614}
   - component: {fileID: 23751606566556504}
-  - component: {fileID: 54375982518742208}
   - component: {fileID: 64709849002423156}
+  - component: {fileID: 54375982518742208}
   m_Layer: 0
   m_Name: Sphere_fracturepart19
   m_TagString: Fracture
@@ -116,8 +116,8 @@ GameObject:
   - component: {fileID: 4393860297327302}
   - component: {fileID: 33102590074821448}
   - component: {fileID: 23666196808417872}
-  - component: {fileID: 54051243611418274}
   - component: {fileID: 64499369777611940}
+  - component: {fileID: 54051243611418274}
   m_Layer: 0
   m_Name: Sphere_fracturepart17
   m_TagString: Fracture
@@ -135,8 +135,8 @@ GameObject:
   - component: {fileID: 4435147462243736}
   - component: {fileID: 33867676497067072}
   - component: {fileID: 23493022843691468}
-  - component: {fileID: 54502731386234716}
   - component: {fileID: 64976943171144664}
+  - component: {fileID: 54502731386234716}
   m_Layer: 0
   m_Name: Sphere_fracturepart35
   m_TagString: Fracture
@@ -154,8 +154,8 @@ GameObject:
   - component: {fileID: 4068534487147744}
   - component: {fileID: 33932006285323666}
   - component: {fileID: 23475608775688810}
-  - component: {fileID: 54201911118084918}
   - component: {fileID: 64898997801209540}
+  - component: {fileID: 54201911118084918}
   m_Layer: 0
   m_Name: Sphere_fracturepart18
   m_TagString: Fracture
@@ -173,8 +173,8 @@ GameObject:
   - component: {fileID: 4694042162511814}
   - component: {fileID: 33659805816233306}
   - component: {fileID: 23942287631637732}
-  - component: {fileID: 54317322961806432}
   - component: {fileID: 64983845165769330}
+  - component: {fileID: 54317322961806432}
   m_Layer: 0
   m_Name: Sphere_fracturepart6
   m_TagString: Fracture
@@ -192,8 +192,8 @@ GameObject:
   - component: {fileID: 4794554427896182}
   - component: {fileID: 33519381608659442}
   - component: {fileID: 23236156677560816}
-  - component: {fileID: 54474135417972412}
   - component: {fileID: 64108215588512932}
+  - component: {fileID: 54474135417972412}
   m_Layer: 0
   m_Name: Sphere_fracturepart37
   m_TagString: Fracture
@@ -211,8 +211,8 @@ GameObject:
   - component: {fileID: 4444113066975018}
   - component: {fileID: 33484235875147082}
   - component: {fileID: 23556722053225956}
-  - component: {fileID: 54634917801947906}
   - component: {fileID: 64691339346791348}
+  - component: {fileID: 54634917801947906}
   m_Layer: 0
   m_Name: Sphere_fracturepart5
   m_TagString: Fracture
@@ -230,8 +230,8 @@ GameObject:
   - component: {fileID: 4228150125934814}
   - component: {fileID: 33197835946723444}
   - component: {fileID: 23632105868720208}
-  - component: {fileID: 54458433224106960}
   - component: {fileID: 64219194410246636}
+  - component: {fileID: 54458433224106960}
   m_Layer: 0
   m_Name: Sphere_fracturepart25
   m_TagString: Fracture
@@ -249,8 +249,8 @@ GameObject:
   - component: {fileID: 4056133170760306}
   - component: {fileID: 33891716210885696}
   - component: {fileID: 23072122779611104}
-  - component: {fileID: 54406762135691944}
   - component: {fileID: 64613691589500796}
+  - component: {fileID: 54406762135691944}
   m_Layer: 0
   m_Name: Sphere_fracturepart23
   m_TagString: Fracture
@@ -268,8 +268,8 @@ GameObject:
   - component: {fileID: 4052734103851728}
   - component: {fileID: 33393916840837808}
   - component: {fileID: 23454905372305058}
-  - component: {fileID: 54331787258954830}
   - component: {fileID: 64121856193756890}
+  - component: {fileID: 54331787258954830}
   m_Layer: 0
   m_Name: Sphere_fracturepart27
   m_TagString: Fracture
@@ -287,8 +287,8 @@ GameObject:
   - component: {fileID: 4790206121518190}
   - component: {fileID: 33354390354388646}
   - component: {fileID: 23697523576622822}
-  - component: {fileID: 54729722228317520}
   - component: {fileID: 64397772285872470}
+  - component: {fileID: 54729722228317520}
   m_Layer: 0
   m_Name: Sphere_fracturepart36
   m_TagString: Fracture
@@ -306,8 +306,8 @@ GameObject:
   - component: {fileID: 4375666483610398}
   - component: {fileID: 33399488688867810}
   - component: {fileID: 23655495261365334}
-  - component: {fileID: 54824506013875364}
   - component: {fileID: 64780952304419890}
+  - component: {fileID: 54824506013875364}
   m_Layer: 0
   m_Name: Sphere_fracturepart39
   m_TagString: Fracture
@@ -325,8 +325,8 @@ GameObject:
   - component: {fileID: 4265652717044250}
   - component: {fileID: 33776142050179146}
   - component: {fileID: 23436754433913944}
-  - component: {fileID: 54382395176285266}
   - component: {fileID: 64443106148306658}
+  - component: {fileID: 54382395176285266}
   m_Layer: 0
   m_Name: Sphere_fracturepart11
   m_TagString: Fracture
@@ -344,8 +344,8 @@ GameObject:
   - component: {fileID: 4766305619013990}
   - component: {fileID: 33415413356732746}
   - component: {fileID: 23878128983177718}
-  - component: {fileID: 54356717576766180}
   - component: {fileID: 64403554174510278}
+  - component: {fileID: 54356717576766180}
   m_Layer: 0
   m_Name: Sphere_fracturepart9
   m_TagString: Fracture
@@ -363,8 +363,8 @@ GameObject:
   - component: {fileID: 4821464035544280}
   - component: {fileID: 33087677771391442}
   - component: {fileID: 23036359833709134}
-  - component: {fileID: 54989281014886216}
   - component: {fileID: 64557993699860706}
+  - component: {fileID: 54989281014886216}
   m_Layer: 0
   m_Name: Sphere_fracturepart31
   m_TagString: Fracture
@@ -382,8 +382,8 @@ GameObject:
   - component: {fileID: 4207505538137100}
   - component: {fileID: 33755574440777732}
   - component: {fileID: 23144160305373774}
-  - component: {fileID: 54536828322356070}
   - component: {fileID: 64150125845242500}
+  - component: {fileID: 54536828322356070}
   m_Layer: 0
   m_Name: Sphere_fracturepart20
   m_TagString: Fracture
@@ -401,8 +401,8 @@ GameObject:
   - component: {fileID: 4122681278815300}
   - component: {fileID: 33178192935045852}
   - component: {fileID: 23184397126831928}
-  - component: {fileID: 54090389836387678}
   - component: {fileID: 64552265579580898}
+  - component: {fileID: 54090389836387678}
   m_Layer: 0
   m_Name: Sphere_fracturepart16
   m_TagString: Fracture
@@ -420,8 +420,8 @@ GameObject:
   - component: {fileID: 4657610515269208}
   - component: {fileID: 33489394808468346}
   - component: {fileID: 23399379126993556}
-  - component: {fileID: 54514790711381356}
   - component: {fileID: 64252200602804208}
+  - component: {fileID: 54514790711381356}
   m_Layer: 0
   m_Name: Sphere_fracturepart26
   m_TagString: Fracture
@@ -439,8 +439,8 @@ GameObject:
   - component: {fileID: 4026857676100640}
   - component: {fileID: 33136886627578036}
   - component: {fileID: 23020548927698288}
-  - component: {fileID: 54691989700150866}
   - component: {fileID: 64691985627950312}
+  - component: {fileID: 54691989700150866}
   m_Layer: 0
   m_Name: Sphere_fracturepart40
   m_TagString: Fracture
@@ -458,8 +458,8 @@ GameObject:
   - component: {fileID: 4827781298692150}
   - component: {fileID: 33108265938989418}
   - component: {fileID: 23833080176374070}
-  - component: {fileID: 54492037600167610}
   - component: {fileID: 64708061785851404}
+  - component: {fileID: 54492037600167610}
   m_Layer: 0
   m_Name: Sphere_fracturepart2
   m_TagString: Fracture
@@ -477,8 +477,8 @@ GameObject:
   - component: {fileID: 4016686728556276}
   - component: {fileID: 33879237826641576}
   - component: {fileID: 23545150601974234}
-  - component: {fileID: 54075832407545156}
   - component: {fileID: 64390319602026920}
+  - component: {fileID: 54075832407545156}
   m_Layer: 0
   m_Name: Sphere_fracturepart22
   m_TagString: Fracture
@@ -496,8 +496,8 @@ GameObject:
   - component: {fileID: 4239623261387832}
   - component: {fileID: 33428970643186960}
   - component: {fileID: 23904266934733670}
-  - component: {fileID: 54627957469587676}
   - component: {fileID: 64144210078253686}
+  - component: {fileID: 54627957469587676}
   m_Layer: 0
   m_Name: Sphere_fracturepart4
   m_TagString: Fracture
@@ -515,8 +515,8 @@ GameObject:
   - component: {fileID: 4700303442822446}
   - component: {fileID: 33446187391739146}
   - component: {fileID: 23442510728835314}
-  - component: {fileID: 54201257586249722}
   - component: {fileID: 64082218390333734}
+  - component: {fileID: 54201257586249722}
   m_Layer: 0
   m_Name: Sphere_fracturepart13
   m_TagString: Fracture
@@ -534,8 +534,8 @@ GameObject:
   - component: {fileID: 4239385612329898}
   - component: {fileID: 33534732978196390}
   - component: {fileID: 23399526686105204}
-  - component: {fileID: 54638926820898702}
   - component: {fileID: 64683187005241458}
+  - component: {fileID: 54638926820898702}
   m_Layer: 0
   m_Name: Sphere_fracturepart7
   m_TagString: Fracture
@@ -553,8 +553,8 @@ GameObject:
   - component: {fileID: 4961014037331726}
   - component: {fileID: 33848578355218568}
   - component: {fileID: 23776753837868286}
-  - component: {fileID: 54365067560059586}
   - component: {fileID: 64242814921146842}
+  - component: {fileID: 54365067560059586}
   m_Layer: 0
   m_Name: Sphere_fracturepart12
   m_TagString: Fracture
@@ -572,8 +572,8 @@ GameObject:
   - component: {fileID: 4860108286586620}
   - component: {fileID: 33141298452132126}
   - component: {fileID: 23588428416760784}
-  - component: {fileID: 54846581066647500}
   - component: {fileID: 64155028552279034}
+  - component: {fileID: 54846581066647500}
   m_Layer: 0
   m_Name: Sphere_fracturepart3
   m_TagString: Fracture
@@ -591,8 +591,8 @@ GameObject:
   - component: {fileID: 4825803852956674}
   - component: {fileID: 33872200422994944}
   - component: {fileID: 23991294215854282}
-  - component: {fileID: 54421474635722266}
   - component: {fileID: 64877486787685448}
+  - component: {fileID: 54421474635722266}
   m_Layer: 0
   m_Name: Sphere_fracturepart24
   m_TagString: Fracture
@@ -610,8 +610,8 @@ GameObject:
   - component: {fileID: 4128886718127616}
   - component: {fileID: 33288574945018930}
   - component: {fileID: 23915473384613176}
-  - component: {fileID: 54148362466733114}
   - component: {fileID: 64748976744354346}
+  - component: {fileID: 54148362466733114}
   m_Layer: 0
   m_Name: Sphere_fracturepart28
   m_TagString: Fracture
@@ -629,7 +629,7 @@ GameObject:
   - component: {fileID: 4351989137898180}
   m_Layer: 0
   m_Name: Fracture
-  m_TagString: Untagged
+  m_TagString: KILLME
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -644,8 +644,8 @@ GameObject:
   - component: {fileID: 4986634937138886}
   - component: {fileID: 33644885863275166}
   - component: {fileID: 23919853963728942}
-  - component: {fileID: 54595502116538502}
   - component: {fileID: 64177585703984636}
+  - component: {fileID: 54595502116538502}
   m_Layer: 0
   m_Name: Sphere_fracturepart8
   m_TagString: Fracture
@@ -663,8 +663,8 @@ GameObject:
   - component: {fileID: 4188160729030966}
   - component: {fileID: 33464418348231748}
   - component: {fileID: 23280909560251622}
-  - component: {fileID: 54226733652993624}
   - component: {fileID: 64984577901280426}
+  - component: {fileID: 54226733652993624}
   m_Layer: 0
   m_Name: Sphere_fracturepart14
   m_TagString: Fracture
@@ -682,8 +682,8 @@ GameObject:
   - component: {fileID: 4007051677444630}
   - component: {fileID: 33630090652361998}
   - component: {fileID: 23201146594963596}
-  - component: {fileID: 54103405604118774}
   - component: {fileID: 64820636189058892}
+  - component: {fileID: 54103405604118774}
   m_Layer: 0
   m_Name: Sphere_fracturepart10
   m_TagString: Fracture
@@ -701,8 +701,8 @@ GameObject:
   - component: {fileID: 4285500037540464}
   - component: {fileID: 33802295413244570}
   - component: {fileID: 23461289171424468}
-  - component: {fileID: 54315865443378274}
   - component: {fileID: 64855147849573150}
+  - component: {fileID: 54315865443378274}
   m_Layer: 0
   m_Name: Sphere_fracturepart29
   m_TagString: Fracture
@@ -720,8 +720,8 @@ GameObject:
   - component: {fileID: 4001193372508548}
   - component: {fileID: 33449438402376824}
   - component: {fileID: 23331584773962930}
-  - component: {fileID: 54852851546714154}
   - component: {fileID: 64697190877170676}
+  - component: {fileID: 54852851546714154}
   m_Layer: 0
   m_Name: Sphere_fracturepart21
   m_TagString: Fracture
@@ -739,8 +739,8 @@ GameObject:
   - component: {fileID: 4919295830956044}
   - component: {fileID: 33874138669787720}
   - component: {fileID: 23907876162034760}
-  - component: {fileID: 54616168297116280}
   - component: {fileID: 64966141025991118}
+  - component: {fileID: 54616168297116280}
   m_Layer: 0
   m_Name: Sphere_fracturepart1
   m_TagString: Fracture
@@ -758,8 +758,8 @@ GameObject:
   - component: {fileID: 4542979508249576}
   - component: {fileID: 33978447606103308}
   - component: {fileID: 23789768846451394}
-  - component: {fileID: 54676015799965344}
   - component: {fileID: 64479276554840620}
+  - component: {fileID: 54676015799965344}
   m_Layer: 0
   m_Name: Sphere_fracturepart32
   m_TagString: Fracture
@@ -777,8 +777,8 @@ GameObject:
   - component: {fileID: 4856868445800620}
   - component: {fileID: 33852366804921834}
   - component: {fileID: 23189754260448866}
-  - component: {fileID: 54024381412361884}
   - component: {fileID: 64932383143712790}
+  - component: {fileID: 54024381412361884}
   m_Layer: 0
   m_Name: Sphere_fracturepart34
   m_TagString: Fracture
@@ -1368,7 +1368,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1384,7 +1383,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1402,7 +1400,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1418,7 +1415,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1436,7 +1432,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1452,7 +1447,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1470,7 +1464,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1486,7 +1479,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1504,7 +1496,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1520,7 +1511,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1538,7 +1528,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1554,7 +1543,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1572,7 +1560,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1588,7 +1575,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1606,7 +1592,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1622,7 +1607,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1640,7 +1624,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1656,7 +1639,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1674,7 +1656,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1690,7 +1671,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1708,7 +1688,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1724,7 +1703,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1742,7 +1720,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1758,7 +1735,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1776,7 +1752,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1792,7 +1767,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1810,7 +1784,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1826,7 +1799,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1844,7 +1816,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1860,7 +1831,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1878,7 +1848,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1894,7 +1863,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1912,7 +1880,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1928,7 +1895,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1946,7 +1912,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1962,7 +1927,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -1980,7 +1944,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -1996,7 +1959,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2014,7 +1976,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2030,7 +1991,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2048,7 +2008,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2064,7 +2023,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2082,7 +2040,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2098,7 +2055,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2116,7 +2072,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2132,7 +2087,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2150,7 +2104,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2166,7 +2119,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2184,7 +2136,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2200,7 +2151,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2218,7 +2168,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2234,7 +2183,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2252,7 +2200,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2268,7 +2215,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2286,7 +2232,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2302,7 +2247,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2320,7 +2264,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2336,7 +2279,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2354,7 +2296,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2370,7 +2311,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2388,7 +2328,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2404,7 +2343,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2422,7 +2360,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2438,7 +2375,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2456,7 +2392,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2472,7 +2407,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2490,7 +2424,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2506,7 +2439,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2524,7 +2456,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2540,7 +2471,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2558,7 +2488,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2574,7 +2503,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2592,7 +2520,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2608,7 +2535,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2626,7 +2552,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2642,7 +2567,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2660,7 +2584,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2676,7 +2599,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -2694,7 +2616,6 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -2710,7 +2631,6 @@ MeshRenderer:
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
   m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
@@ -3010,7 +2930,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3025,7 +2945,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3040,7 +2960,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3055,7 +2975,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3070,7 +2990,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3085,7 +3005,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3100,7 +3020,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3115,7 +3035,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3130,7 +3050,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3145,7 +3065,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3160,7 +3080,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3175,7 +3095,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3190,7 +3110,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3205,7 +3125,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3220,7 +3140,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3235,7 +3155,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3250,7 +3170,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3265,7 +3185,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3280,7 +3200,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3295,7 +3215,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3310,7 +3230,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3325,7 +3245,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3340,7 +3260,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3355,7 +3275,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3370,7 +3290,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3385,7 +3305,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3400,7 +3320,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3415,7 +3335,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3430,7 +3350,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3445,7 +3365,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3460,7 +3380,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3475,7 +3395,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3490,7 +3410,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3505,7 +3425,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3520,7 +3440,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3535,7 +3455,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3550,7 +3470,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3565,7 +3485,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3580,7 +3500,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3595,7 +3515,7 @@ Rigidbody:
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
-  m_IsKinematic: 1
+  m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
@@ -3608,9 +3528,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300024, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64108215588512932
@@ -3622,9 +3542,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300072, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64121856193756890
@@ -3636,9 +3556,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300052, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64144210078253686
@@ -3650,9 +3570,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300006, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64150125845242500
@@ -3664,9 +3584,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300038, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64155028552279034
@@ -3678,9 +3598,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300004, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64177585703984636
@@ -3692,9 +3612,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300014, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64219194410246636
@@ -3706,9 +3626,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300048, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64224691165066638
@@ -3720,9 +3640,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300058, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64242814921146842
@@ -3734,9 +3654,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300022, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64252200602804208
@@ -3748,9 +3668,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300050, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64390319602026920
@@ -3762,9 +3682,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300042, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64395147130131270
@@ -3776,9 +3696,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300028, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64397772285872470
@@ -3790,9 +3710,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300070, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64403554174510278
@@ -3804,9 +3724,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300016, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64443106148306658
@@ -3818,9 +3738,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300020, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64479276554840620
@@ -3832,9 +3752,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300062, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64499369777611940
@@ -3846,9 +3766,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300032, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64552265579580898
@@ -3860,9 +3780,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300030, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64557993699860706
@@ -3874,9 +3794,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300060, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64613691589500796
@@ -3888,9 +3808,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300044, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64661705946506536
@@ -3902,9 +3822,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300074, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64683187005241458
@@ -3916,9 +3836,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300012, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64691339346791348
@@ -3930,9 +3850,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300008, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64691985627950312
@@ -3944,9 +3864,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300078, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64697190877170676
@@ -3958,9 +3878,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300040, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64708061785851404
@@ -3972,9 +3892,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300002, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64709849002423156
@@ -3986,9 +3906,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300036, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64748976744354346
@@ -4000,9 +3920,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300054, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64780952304419890
@@ -4014,9 +3934,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300076, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64783234582536946
@@ -4028,9 +3948,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300064, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64820636189058892
@@ -4042,9 +3962,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300018, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64855147849573150
@@ -4056,9 +3976,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300056, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64877486787685448
@@ -4070,9 +3990,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300046, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64898997801209540
@@ -4084,9 +4004,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300034, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64932383143712790
@@ -4098,9 +4018,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300066, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64966141025991118
@@ -4112,9 +4032,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64976943171144664
@@ -4126,9 +4046,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300068, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64983845165769330
@@ -4140,9 +4060,9 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300010, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}
 --- !u!64 &64984577901280426
@@ -4154,8 +4074,8 @@ MeshCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 3
+  serializedVersion: 2
   m_Convex: 1
-  m_CookingOptions: 14
+  m_InflateMesh: 0
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300026, guid: c0923896d8f1bd14aabe0a07f1c61463, type: 3}

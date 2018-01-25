@@ -561,7 +561,7 @@ GameObject:
   - component: {fileID: 4962201744759202}
   m_Layer: 0
   m_Name: Moving Hochhaus
-  m_TagString: Untagged
+  m_TagString: KILLME
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2646,9 +2646,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clone: {fileID: 1772974065752360}
+  spawner: {fileID: 0}
   points:
   - {fileID: 4476194630046846}
   - {fileID: 4300993932422162}
   Speed: 5
   index: 0
+  isSpawned: 0
   text: {fileID: 1981955519253436, guid: 7fabe0e341772e04697bce086f71eb50, type: 2}

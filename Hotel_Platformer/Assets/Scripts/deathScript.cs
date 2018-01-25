@@ -27,7 +27,7 @@ public class deathScript : MonoBehaviour {
               
                 other.gameObject.GetComponent<PlayerMovmentTest>().Spawn();
             }
-        if ( other.tag == "Fracture")
+        else if ( other.tag == "Fracture" || other.tag=="KILLME")
         {
             Destroy(other.gameObject);
         }

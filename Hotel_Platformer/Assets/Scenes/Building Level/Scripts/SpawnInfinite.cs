@@ -3,11 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SpawnInfinite : MonoBehaviour {
-
+    public GameObject spawner;
     public GameObject clone;
     public GameObject lights;
     public GameObject spawn;
     public GameObject light;
+    public GameObject final;
     public float uprising;
     public bool isCloned;
 
@@ -39,19 +40,21 @@ public class SpawnInfinite : MonoBehaviour {
                
             
             
-        } else if (other.tag == "Player" && isCloned == true)
+        } else if (other.tag == "Player" && this.isCloned == true) 
         {
             isCloned = false;
-            Destroy(obj);
+            Destroy(obj);   
             
         }
-        if (other.tag == "Player" && count == 10 && lastBuild==false)
+        if (other.tag == "Player" && count == 10 )
         {
-            float randomX = Random.Range(transform.position.x - 15f, transform.position.x + 15f);
+            Destroy(GameObject.FindGameObjectWithTag("KILLSPAWN"));
+            Instantiate(final, new Vector3(this.transform.position.x, this.transform.position.y, this.transform.position.z + 12f), Quaternion.identity);
+            /* float randomX = Random.Range(transform.position.x - 15f, transform.position.x + 15f);
             Vector3 pos = other.transform.position;
             Instantiate(light, new Vector3(randomX, pos.y+5, pos.z + 15), Quaternion.identity);
-            Instantiate(spawn, new Vector3(randomX, pos.y - 50, pos.z + 15), Quaternion.identity);
-            lastBuild = true;
+            Instantiate(spawn, new Vector3(randomX, pos.y, pos.z + 15), Quaternion.identity);
+            lastBuild = true;*/ // Hab ich
         }
 
     }

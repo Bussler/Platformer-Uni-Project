@@ -12,6 +12,9 @@ TagManager:
   - Fracture
   - FixPlatform
   - OldPlatform
+  - KILLME
+  - STARTPLATFORM
+  - KILLSPAWN
   layers:
   - Default
   - TransparentFX

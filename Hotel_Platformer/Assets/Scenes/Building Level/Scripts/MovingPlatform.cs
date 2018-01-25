@@ -4,12 +4,13 @@ using UnityEngine;
 
 public class MovingPlatform : MonoBehaviour {
     public GameObject clone;
+    public GameObject spawner;
     public Transform[] points;
     public float Speed;
     public int index=0;
     private int platFormState;
     private int count;
-    private bool isSpawned;
+    public bool isSpawned;
     public GameObject text;
 
 	// Use this for initialization
@@ -63,28 +64,7 @@ public class MovingPlatform : MonoBehaviour {
     }
 
     private void OnTriggerEnter(Collider other)
-    {
-        float RandomX = Random.Range(-70f, 70f);
-        float RandomZ = Random.Range(70f, 100f);
-
-        if (other.tag=="Player" &&  count < 5 && isSpawned==false)
-        {
-            Debug.Log("Hit");
-            GameObject obj = Instantiate(clone, new Vector3(transform.position.x + RandomX, transform.position.y , transform.position.z +RandomZ), Quaternion.identity);
-            obj.transform.GetChild(2).GetComponent<MovingPlatform>().Speed = Random.Range(5f, 15f);
-            obj.transform.GetChild(2).GetComponent<MovingPlatform>().count = this.count + 1;
-            isSpawned = true;
-            Debug.Log(count);
-        } 
-        Debug.Log("Hit");
-        if (count == 5)
-        {
-            GameObject camera = GameObject.FindGameObjectWithTag("MainCamera");
-            camera.GetComponent<Camera>().clearFlags = CameraClearFlags.Depth;
-            other.transform.GetComponent<PlayerFrac>().isWon = true;
-            Instantiate(text);
-        }
-    }
+    { }
 
 
 }

@@ -15,13 +15,15 @@ public class RockSPawner : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        this.transform.position = player.transform.position;
+        player = GameObject.FindGameObjectWithTag("Player");
+        if (player!=null)
+            this.transform.position = player.transform.position;
         float randomNo = Random.Range(0f, 60f);
         if (randomNo < 2.5f)
         {
             if (player.GetComponent<PlayerMovmentTest>().moveSpeed != 0)
             {
-                Instantiate(spawn, new Vector3(transform.position.x + Random.Range(-3f, 3f), transform.position.y + 15f, transform.position.z + 15f), Quaternion.identity);
+                Instantiate(spawn, new Vector3(transform.position.x + Random.Range(-3f, 3f), transform.position.y + 15f, transform.position.z + Random.Range(7f, 15f)), Quaternion.identity);
             } else
             {
                 Instantiate(spawn, new Vector3(transform.position.x + Random.Range(-5f, 5f), transform.position.y + 15f, transform.position.z ), Quaternion.identity);
