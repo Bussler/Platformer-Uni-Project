@@ -18731,11 +18731,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clone: {fileID: 0}
+  spawner: {fileID: 0}
   points:
   - {fileID: 43021439}
   - {fileID: 1312210355}
   Speed: 4
   index: 0
+  isSpawned: 0
   text: {fileID: 0}
 --- !u!23 &1422103449
 MeshRenderer:
@@ -20719,11 +20721,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clone: {fileID: 0}
+  spawner: {fileID: 0}
   points:
   - {fileID: 289126961}
   - {fileID: 502330360}
   Speed: 4
   index: 0
+  isSpawned: 0
   text: {fileID: 0}
 --- !u!23 &1549389188
 MeshRenderer:
@@ -24032,7 +24036,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4521725643726446, guid: 11c95935c2a2a614f87e952e5c0b1e2f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 29.82
+      value: 30.07
       objectReference: {fileID: 0}
     - target: {fileID: 4521725643726446, guid: 11c95935c2a2a614f87e952e5c0b1e2f, type: 2}
       propertyPath: m_LocalRotation.x
@@ -24067,7 +24071,7 @@ Prefab:
         type: 3}
     - target: {fileID: 4962300401863796, guid: 11c95935c2a2a614f87e952e5c0b1e2f, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.08585958
+      value: 0.10348558
       objectReference: {fileID: 0}
     - target: {fileID: 4962300401863796, guid: 11c95935c2a2a614f87e952e5c0b1e2f, type: 2}
       propertyPath: m_LocalScale.y
@@ -24079,7 +24083,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4962300401863796, guid: 11c95935c2a2a614f87e952e5c0b1e2f, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 0.24
+      value: 0.021
       objectReference: {fileID: 0}
     - target: {fileID: 4962300401863796, guid: 11c95935c2a2a614f87e952e5c0b1e2f, type: 2}
       propertyPath: m_LocalPosition.x
@@ -24123,6 +24127,18 @@ Prefab:
         type: 2}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1430677571177656, guid: 11c95935c2a2a614f87e952e5c0b1e2f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1735663303439352, guid: 11c95935c2a2a614f87e952e5c0b1e2f, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4521725643726446, guid: 11c95935c2a2a614f87e952e5c0b1e2f, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 6.298654
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 11c95935c2a2a614f87e952e5c0b1e2f, type: 2}
@@ -24361,6 +24377,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clone: {fileID: 0}
+  spawner: {fileID: 0}
   points:
   - {fileID: 1325522209}
   - {fileID: 1032881366}
@@ -24368,6 +24385,7 @@ MonoBehaviour:
   - {fileID: 2074017039}
   Speed: 4
   index: 0
+  isSpawned: 0
   text: {fileID: 0}
 --- !u!23 &1754907209
 MeshRenderer:

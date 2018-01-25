@@ -426,11 +426,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clone: {fileID: 0}
+  spawner: {fileID: 0}
   points:
   - {fileID: 1098426375}
   - {fileID: 1501290923}
   Speed: 13
   index: 0
+  isSpawned: 0
   text: {fileID: 0}
 --- !u!23 &41657246
 MeshRenderer:
@@ -1004,11 +1006,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clone: {fileID: 0}
+  spawner: {fileID: 0}
   points:
   - {fileID: 127459895}
   - {fileID: 52708045}
   Speed: 15
   index: 0
+  isSpawned: 0
   text: {fileID: 0}
 --- !u!23 &97817970
 MeshRenderer:
@@ -1520,7 +1524,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4962300401863796, guid: 11c95935c2a2a614f87e952e5c0b1e2f, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.528
+      value: 0.537
       objectReference: {fileID: 0}
     - target: {fileID: 4962300401863796, guid: 11c95935c2a2a614f87e952e5c0b1e2f, type: 2}
       propertyPath: m_LocalPosition.y
@@ -1550,7 +1554,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1735663303439352, guid: 11c95935c2a2a614f87e952e5c0b1e2f, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114961438278259772, guid: 11c95935c2a2a614f87e952e5c0b1e2f,
         type: 2}
@@ -8261,11 +8265,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clone: {fileID: 0}
+  spawner: {fileID: 0}
   points:
   - {fileID: 692844147}
   - {fileID: 2114503027}
   Speed: 17
   index: 0
+  isSpawned: 0
   text: {fileID: 0}
 --- !u!23 &1205082859
 MeshRenderer:
@@ -13144,11 +13150,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clone: {fileID: 0}
+  spawner: {fileID: 0}
   points:
   - {fileID: 1687840259}
   - {fileID: 758018347}
   Speed: 13
   index: 0
+  isSpawned: 0
   text: {fileID: 0}
 --- !u!23 &1927273259
 MeshRenderer:
