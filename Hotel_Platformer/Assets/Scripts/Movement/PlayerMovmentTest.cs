@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class PlayerMovmentTest : MonoBehaviour, ITR
+public class PlayerMovmentTest : MonoBehaviour
 {
     public int health;
     private int maxHealth;
@@ -24,7 +24,7 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
     public GameObject SpawnablePlatform;
 
     public Animator animator;
-    private TimeREverse trscript;
+    //private TimeREverse trscript;
     CharacterController playerController;
     private Vector3 moveDirection;
     private Quaternion playerRotation;
@@ -100,7 +100,7 @@ public class PlayerMovmentTest : MonoBehaviour, ITR
         Spawn();
         health = maxHealth;
         buffer = FindObjectOfType<CircularBuffer>();
-        trscript = GetComponent<TimeREverse>();
+        //trscript = GetComponent<TimeREverse>();
         if (this.transform.childCount > 0)
         {
             Debug.Log("Passt");
@@ -647,7 +647,7 @@ public void SpawnPlatform()
         public Quaternion myRotation;
     }
 
-    public void SaveTRObject()
+    /*public void SaveTRObject()
     {
         MyStatus status = new MyStatus();
         status.myPosition = transform.position;
@@ -661,6 +661,6 @@ public void SpawnPlatform()
         transform.position = newStatus.myPosition;
         transform.rotation = newStatus.myRotation;
        // playerRigidbody.isKinematic = true;
-    }
+    }*/
 
 }

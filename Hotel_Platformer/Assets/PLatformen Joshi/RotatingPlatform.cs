@@ -8,7 +8,7 @@ public class RotatingPlatform : MonoBehaviour, ITR
     public Vector3 rotatingDirection;
     public bool rotateAroundPoint;
     public Transform point;
-    private TimeREverse trscript;
+    //private TimeREverse trscript;
    
 
     public void LoadTRObject(TRObject trobject)
@@ -21,13 +21,13 @@ public class RotatingPlatform : MonoBehaviour, ITR
     {
         MyStatus status = new MyStatus();
         status.myRotation = transform.rotation;
-        trscript.PushTRObject(status);
+        //trscript.PushTRObject(status);
     }
 
     // Use this for initialization
     void Start()
     {
-        trscript = GetComponent<TimeREverse>();
+        //trscript = GetComponent<TimeREverse>();
         if (rotateAroundPoint)
         {
             this.transform.parent = point;
@@ -37,9 +37,9 @@ public class RotatingPlatform : MonoBehaviour, ITR
     // Update is called once per frame
     void Update()
     {
-        if (GameData.Instance.Paused &&
+       /* if (GameData.Instance.Paused &&
             gameObject.GetComponent<TimeREverse>() != null)
-            return;
+            return;*/
 
 
       
