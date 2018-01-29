@@ -25,17 +25,17 @@ public class GameController : MonoBehaviour {
     {
         if (canvas.gameObject.activeInHierarchy==false)
             {
-
-           
-                canvas.gameObject.SetActive(true);//activate
-                Time.timeScale = 0;//pauses the game
+            canvas.gameObject.SetActive(true);//activate
+            Time.timeScale = 0;//pauses the game
+            Cursor.visible = true;//activate cursor
             }
             else
             {
             optionsMenu.gameObject.SetActive(false);
             canvas.gameObject.SetActive(false);//deactivate
-                Time.timeScale = 1;//normal timeflow
-            }
+            Time.timeScale = 1;//normal timeflow
+            Cursor.visible = false;//activate cursor
+        }
     }
 
     //ButtonControl
