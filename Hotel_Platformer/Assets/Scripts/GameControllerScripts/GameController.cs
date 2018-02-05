@@ -11,6 +11,8 @@ public class GameController : MonoBehaviour {
     public AudioSource bMusic;
     public GameObject VolumeSlider;
 
+    private bool visiblecursor;
+
 	// Update is called once per frame
 	void Update () {
 
@@ -19,22 +21,31 @@ public class GameController : MonoBehaviour {
         {
             Pause();
         }
+        if (visiblecursor)
+        {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
+        }
 	}
 
     public void Pause()
     {
         if (canvas.gameObject.activeInHierarchy==false)
             {
-            canvas.gameObject.SetActive(true);//activate
-            Time.timeScale = 0;//pauses the game
             Cursor.visible = true;//activate cursor
+            visiblecursor = true;
+            canvas.gameObject.SetActive(true);//activate
+            //Time.timeScale = 0;//pauses the game
+            
             }
             else
             {
+            Cursor.visible = false;//activate cursor
+            visiblecursor = false;
             optionsMenu.gameObject.SetActive(false);
             canvas.gameObject.SetActive(false);//deactivate
-            Time.timeScale = 1;//normal timeflow
-            Cursor.visible = false;//activate cursor
+            //Time.timeScale = 1;//normal timeflow
+           
         }
     }
 
