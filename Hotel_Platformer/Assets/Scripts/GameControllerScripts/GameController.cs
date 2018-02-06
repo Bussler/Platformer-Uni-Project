@@ -35,7 +35,7 @@ public class GameController : MonoBehaviour {
             Cursor.visible = true;//activate cursor
             visiblecursor = true;
             canvas.gameObject.SetActive(true);//activate
-            //Time.timeScale = 0;//pauses the game
+            Time.timeScale = 0;//pauses the game
             
             }
             else
@@ -44,7 +44,7 @@ public class GameController : MonoBehaviour {
             visiblecursor = false;
             optionsMenu.gameObject.SetActive(false);
             canvas.gameObject.SetActive(false);//deactivate
-            //Time.timeScale = 1;//normal timeflow
+            Time.timeScale = 1;//normal timeflow
            
         }
     }

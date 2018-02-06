@@ -10355,7 +10355,7 @@ MonoBehaviour:
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Toggle+ToggleEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
-  m_IsOn: 1
+  m_IsOn: 0
 --- !u!4 &791530480 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 4114ff9fa60d20d448735f407547a678, type: 3}
@@ -10700,12 +10700,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1547873573922266, guid: 2c81fd5454ecef24797f396deda70fad,
     type: 2}
   m_PrefabInternal: {fileID: 117273341}
---- !u!114 &837372340 stripped
-MonoBehaviour:
-  m_PrefabParentObject: {fileID: 114074741394139936, guid: 2c81fd5454ecef24797f396deda70fad,
-    type: 2}
-  m_PrefabInternal: {fileID: 117273341}
-  m_Script: {fileID: 11500000, guid: b3bd78c0109b55a479b7d88c5d2562c6, type: 3}
 --- !u!114 &837372346
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10717,7 +10711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fb822aaa812b55a4aa180e54855917af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 837372340}
 --- !u!95 &837372347
 Animator:
   serializedVersion: 3

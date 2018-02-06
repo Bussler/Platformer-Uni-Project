@@ -6595,7 +6595,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: ebf69880bffb8e04baf4ca843eed03d6, type: 3}
+      objectReference: {fileID: 8300000, guid: df0835c040aab7c439dfdaa34ca0cf7c, type: 3}
     - target: {fileID: 82308339274208690, guid: 0663a698bdb8ba74a87ecc2efb5682ac,
         type: 2}
       propertyPath: panLevelCustomCurve.m_Curve.Array.data[0].value
